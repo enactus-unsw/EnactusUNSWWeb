@@ -1,5 +1,5 @@
 {
-  "name": "vital",
+  "name": "enactus-unsw",
   "type": "module",
   "version": "1.0.0",
   "description": "Starter template for Vite with React (TypeScript). Supports Tailwind. Vitest and @react/testing-library configured and ready to go. Also ESLint, Prettier, Husky, Commit-lint and Atomic Design for components.",
@@ -8,7 +8,7 @@
     "type": "git",
     "url": "git+https://github.com/jvidalv/vital.git"
   },
-  "author": "Josep Vidal <josepvidalvidal@gmail.com>",
+  "author": "EnactusUNSWIt ",
   "license": "MIT",
   "bugs": {
     "url": "https://github.com/jvidalv/vital/issues"

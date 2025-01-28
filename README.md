@@ -54,12 +54,12 @@ yarn # If you don't have yarn installed, run: npm install -g yarn
 
 When you use this template, try follow the checklist to update your info properly
 
-- [ ] Rename `name` and `author` fields in `package.json`
-- [ ] Change the author name in `LICENSE`
-- [ ] Change the title in `index.html`
+- [X] Rename `name` and `author` fields in `package.json`
+- [X] Change the author name in `LICENSE`
+- [X] Change the title in `index.html`
 - [ ] Change the favicon in `public`
 - [ ] Modify the manifest in `public`
-- [ ] Clean up the README's
+- [X] Clean up the README's
 
 And, enjoy :)
 
