@@ -1,0 +1,66 @@
+{
+  "name": "vital",
+  "type": "module",
+  "version": "1.0.0",
+  "description": "Starter template for Vite with React (TypeScript). Supports Tailwind. Vitest and @react/testing-library configured and ready to go. Also ESLint, Prettier, Husky, Commit-lint and Atomic Design for components.",
+  "homepage": "https://github.com/jvidalv/vital#readme",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/jvidalv/vital.git"
+  },
+  "author": "Josep Vidal <josepvidalvidal@gmail.com>",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/jvidalv/vital/issues"
+  },
+  "keywords": [
+    "react",
+    "vite",
+    "typescript",
+    "tailwind",
+    "template",
+    "starter",
+    "eslint",
+    "prettier"
+  ],
+  "browserslist": [
+    ">0.2%",
+    "not dead",
+    "not IE 11"
+  ],
+  "engines": {
+    "node": ">=18",
+    "yarn": ">=1.22.5"
+  },
+  "scripts": {
+    "dev": "vite",
+    "build": "tsc && vite build",
+    "lint": "eslint .",
+    "preview": "vite preview"
+  },
+  "dependencies": {
+    "@heroicons/react": "2.1.5",
+    "react": "18.3.1",
+    "react-dom": "18.3.1"
+  },
+  "devDependencies": {
+    "@eslint/js": "9.13.0",
+    "@commitlint/cli": "19.5.0",
+    "@tailwindcss/forms": "0.5.9",
+    "@types/react": "18.3.12",
+    "@types/react-dom": "18.3.1",
+    "@vitejs/plugin-react": "4.3.3",
+    "autoprefixer": "10.4.20",
+    "eslint": "9.13.0",
+    "eslint-plugin-react-hooks": "5.0.0",
+    "eslint-plugin-react-refresh": "0.4.14",
+    "lint-staged": "15.2.10",
+    "postcss": "8.4.47",
+    "prettier": "3.3.3",
+    "tailwindcss": "3.4.14",
+    "typescript": "5.6.3",
+    "typescript-eslint": "8.10.0",
+    "vite": "5.4.10",
+    "vite-preset-react": "2.3.0"
+  }
+}
