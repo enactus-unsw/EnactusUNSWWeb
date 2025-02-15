@@ -12,15 +12,19 @@ function App() {
   return (
     // Routes for the different pages
     <BrowserRouter>
-      <Routes>
-        <Route path="/" element={<Home />} />
-        <Route path="/about-us" element={<AboutUs />} />
-        <Route path="/our-team" element={<OurTeam />} />
-        <Route path="/projects" element={<Projects />} />
-        <Route path="/events" element={<Events />} />
-        <Route path="/sponsors-partners" element={<Sponsors />} />
-        <Route path="/contact-us" element={<ContactUs />} />
-      </Routes>
+      <>
+        {/* TODO: add header */}
+        <Routes>
+          <Route path="/" element={<Home />} />
+          <Route path="/about-us" element={<AboutUs />} />
+          <Route path="/our-team" element={<OurTeam />} />
+          <Route path="/projects" element={<Projects />} />
+          <Route path="/events" element={<Events />} />
+          <Route path="/sponsors-partners" element={<Sponsors />} />
+          <Route path="/contact-us" element={<ContactUs />} />
+        </Routes>
+        {/* TODO: add footer */}
+      </>
     </BrowserRouter>
   );
 }
