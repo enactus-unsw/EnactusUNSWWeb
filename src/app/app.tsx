@@ -1,23 +1,27 @@
-import Logos from "components/atoms/logos";
-import Card from "components/organisms/card";
-import {
-  BeakerIcon,
-  BookmarkIcon,
-  ChevronDownIcon,
-  CubeTransparentIcon,
-  PhoneXMarkIcon,
-  Bars3Icon,
-  PencilIcon,
-  PhotoIcon,
-} from "@heroicons/react/24/outline";
-import Button from "components/atoms/button";
-import CopyButton from "components/molecules/copy-button";
+import { BrowserRouter, Routes, Route } from "react-router";
+
+import Home from "../pages/Home";
+import AboutUs from "../pages/AboutUs";
+import OurTeam from "../pages/OurTeam";
+import Projects from "../pages/Projects";
+import Events from "../pages/Events";
+import Sponsors from "../pages/Sponsors";
+import ContactUs from "../pages/ContactUs";
 
 function App() {
   return (
-    <main>
-      <h1>HELLO</h1>
-    </main>
+    // Routes for the different pages
+    <BrowserRouter>
+      <Routes>
+        <Route path="/" element={<Home />} />
+        <Route path="/about-us" element={<AboutUs />} />
+        <Route path="/our-team" element={<OurTeam />} />
+        <Route path="/projects" element={<Projects />} />
+        <Route path="/events" element={<Events />} />
+        <Route path="/sponsors-partners" element={<Sponsors />} />
+        <Route path="/contact-us" element={<ContactUs />} />
+      </Routes>
+    </BrowserRouter>
   );
 }
 
