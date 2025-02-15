@@ -28,3 +28,13 @@
     animation: slide 4s linear infinite;
   } */
 }
+
+@font-face {
+  font-family: "Montserrat";
+  src: local("Montserrat"),
+    url("./fonts/Montserrat-VariableFont_wght.ttf") format("truetype");
+} 
+
+h1 {
+  font-family: "Montserrat"
+}
