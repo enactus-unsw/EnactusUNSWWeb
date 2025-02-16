@@ -35,6 +35,6 @@
     url("./fonts/Montserrat-VariableFont_wght.ttf") format("truetype");
 } 
 
-h1 {
+body {
   font-family: "Montserrat"
 }
