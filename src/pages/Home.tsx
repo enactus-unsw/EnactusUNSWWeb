@@ -64,7 +64,7 @@ export default function Home() {
         <header className="font-bold text-4xl text-center mb-10">
           The Student Hub of Social Impact <br /> and Entrepreneurship
         </header>
-        <img className="w-2/3 rounded-xl block ml-auto mr-auto saturate-[1.15] mb-20" src={enactusTeamPhoto} alt="Enactus Team Photo" />
+        <img className="w-3/5 rounded-xl block ml-auto mr-auto saturate-[1.15] mb-20" src={enactusTeamPhoto} alt="Enactus Team Photo" />
       </div>
       {/* About Us */}
       <div>
@@ -79,11 +79,11 @@ export default function Home() {
             strive to foster project growth from the initial stages onward, <br />
             until they can function independently.
           </p>
-          <EnactusButton to="/about-us">
+          <EnactusButton to="/about-us" className="text-white">
             LEARN MORE
           </EnactusButton>
         </section>
-        <img src={triangle} alt="Triangle Shape" />
+        <img src={triangle} alt="Triangle Shape" className="w-full"/>
       </div>
       {/* Projects */}
       <section className="text-center pt-14 pb-20">
@@ -102,11 +102,11 @@ export default function Home() {
         <div className="flex justify-center items-center mb-12">
           <HomeEventsCarousel />
         </div>
-        <EnactusButton to="/events" className="bg-[#fff] border-[#2A2D32] border-solid border-4 text-black hover:bg-[#D9D9D9]">
+        <EnactusButton to="/events" className="bg-[#fff] text-black border-[#2A2D32] border-solid border-4 hover:bg-[#D9D9D9]">
           MORE EVENTS
         </EnactusButton>
       </section>
-      <img src={tiltedShape} alt="Tilted Shape" />
+      <img src={tiltedShape} alt="Tilted Shape" className="w-full"/>
       {/* Join Us */}
       <section className="text-center pt-12 pb-20">
         <h1 className="font-bold text-3xl">
@@ -132,7 +132,7 @@ export default function Home() {
             </Link>
           ))}
         </div>
-        <EnactusButton to="/contact-us">
+        <EnactusButton to="/contact-us" className="text-white">
           CONTACT US
         </EnactusButton>
       </section>
