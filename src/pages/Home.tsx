@@ -4,6 +4,7 @@ import triangle from "../images/Triangle shape.png";
 import HomeProjectCards from "components/home-project-cards";
 import { Link } from "react-router-dom";
 import EnactusButton from "components/atoms/button/enactusButton";
+import HomeEventsCarousel from "components/home-events-carousel";
 
 export default function Home() {
   return (
@@ -41,10 +42,34 @@ export default function Home() {
           <HomeProjectCards />
         </Link>
       </section>
-      <section className="bg-[#FFEBB6] pt-16 pb-10">
-        <h1 className="text-center font-bold text-3xl">
+      <section className="bg-[#FFEBB6] pt-16 pb-20">
+        <h1 className="text-center font-bold text-3xl mb-12">
           Our Events
         </h1>
+        <div className="flex justify-center items-center">
+          <HomeEventsCarousel />
+        </div>
+      </section>
+      <section className="text-center">
+        <h1 className="font-bold text-3xl">
+          How to get involved?
+        </h1>
+        <h3>
+          Join Us on SpArc
+        </h3>
+        {/* TODO: link to sparc website */}
+        <EnactusButton to="/">
+          JOIN US
+        </EnactusButton>
+        <h3>
+          Follow Our Socials
+        </h3>
+        <div>
+          insert social icons
+        </div>
+        <EnactusButton to="/contact-us">
+          CONTACT US
+        </EnactusButton>
       </section>
     </>
   )
