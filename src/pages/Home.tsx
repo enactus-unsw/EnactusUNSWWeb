@@ -1,10 +1,60 @@
 import enactusUNSWLogo from "../images/Enactus UNSW Logo (Grey).jpg";
 import enactusTeamPhoto from "../images/enactus team.jpg";
 import triangle from "../images/Triangle shape.png";
+import tiltedShape from "../images/tilted shape.png";
+
+// Social Media Logos
+import instagramLogo from "../images/Logos/Instagram.png";
+import facebookLogo from "../images/Logos/Facebook.png";
+import linkedInLogo from "../images/Logos/LinkedIn.png";
+import tiktokLogo from "../images/Logos/Tiktok.png";
+// import youtubeLogo from "../images/Logos/Youtube.png";
+
 import HomeProjectCards from "components/home-project-cards";
 import { Link } from "react-router-dom";
 import EnactusButton from "components/atoms/button/enactusButton";
 import HomeEventsCarousel from "components/home-events-carousel";
+
+// Website Links
+const enactusSparcWebsite = "https://www.arc.unsw.edu.au/get-involved/opportunity?name=Enactus%20UNSW";
+const instagramLink = "https://www.instagram.com/enactus_unsw/";
+const facebookLink = "https://www.facebook.com/profile.php?id=61568234819798";
+const linkedInLink = "https://www.linkedin.com/school/enactus-unsw/posts/?feedView=all";
+const tiktokLink = "https://www.tiktok.com/@enactusunsw";
+// const youtubeLink = "https://www.youtube.com/@enactusunsw/featured";
+
+const socialLinks = [
+  { 
+    link: instagramLink, 
+    src: instagramLogo, 
+    alt: "Instagram Logo", 
+    size: "h-14" 
+  },
+  { 
+    link: facebookLink, 
+    src: facebookLogo, 
+    alt: "Facebook Logo", 
+    size: "h-16" 
+  },
+  { 
+    link: linkedInLink, 
+    src: linkedInLogo, 
+    alt: "LinkedIn Logo", 
+    size: "h-14" 
+  },
+  { 
+    link: tiktokLink, 
+    src: tiktokLogo, 
+    alt: "Tiktok Logo", 
+    size: "h-14" 
+  },
+  // { 
+  //   ref: youtubeLink, 
+  //   src: youtubeLogo, 
+  //   alt: "Youtube Logo", 
+  //   size: "h-14" 
+  // },
+];
 
 export default function Home() {
   return (
@@ -16,6 +66,7 @@ export default function Home() {
         </header>
         <img className="w-2/3 rounded-xl block ml-auto mr-auto saturate-[1.15] mb-20" src={enactusTeamPhoto} alt="Enactus Team Photo" />
       </div>
+      {/* About Us */}
       <div>
         <section className="bg-[#FFEBB6] text-center pt-16 pb-2">
           <h1 className="font-bold text-3xl">
@@ -34,6 +85,7 @@ export default function Home() {
         </section>
         <img src={triangle} alt="Triangle Shape" />
       </div>
+      {/* Projects */}
       <section className="text-center pt-14 pb-20">
         <h1 className="font-bold text-3xl mb-12">
           Our Projects
@@ -42,30 +94,43 @@ export default function Home() {
           <HomeProjectCards />
         </Link>
       </section>
-      <section className="bg-[#FFEBB6] pt-16 pb-20">
-        <h1 className="text-center font-bold text-3xl mb-12">
+      {/* Events */}
+      <section className="bg-[#FFEBB6] pt-16 pb-10 text-center">
+        <h1 className="font-bold text-3xl mb-12">
           Our Events
         </h1>
-        <div className="flex justify-center items-center">
+        <div className="flex justify-center items-center mb-12">
           <HomeEventsCarousel />
         </div>
+        <EnactusButton to="/events" className="bg-[#fff] border-[#2A2D32] border-solid border-4 text-black hover:bg-[#D9D9D9]">
+          MORE EVENTS
+        </EnactusButton>
       </section>
-      <section className="text-center">
+      <img src={tiltedShape} alt="Tilted Shape" />
+      {/* Join Us */}
+      <section className="text-center pt-12 pb-20">
         <h1 className="font-bold text-3xl">
           How to get involved?
         </h1>
-        <h3>
+        <h3 className="font-bold text-lg pt-10 pb-4">
           Join Us on SpArc
         </h3>
-        {/* TODO: link to sparc website */}
-        <EnactusButton to="/">
+        <EnactusButton to={enactusSparcWebsite} target="_blank" rel="noopener noreferrer" className="bg-[#FFC222] text-black hover:bg-[#FFDD83]">
           JOIN US
         </EnactusButton>
-        <h3>
+        <h3 className="font-bold text-lg pt-10 pb-4">
           Follow Our Socials
         </h3>
-        <div>
-          insert social icons
+        <div className="flex justify-center items-center gap-6 mb-12">
+          {socialLinks.map(({ link, src, alt, size }, index) => (
+            <Link key={index} to={link as string} target="_blank" rel="noopener noreferrer">
+              <img 
+                src={src} 
+                alt={alt} 
+                className={`${size} transition ease-in-out hover:-translate-y-1 hover:scale-110 cursor-pointer rounded-full`} 
+              />
+            </Link>
+          ))}
         </div>
         <EnactusButton to="/contact-us">
           CONTACT US

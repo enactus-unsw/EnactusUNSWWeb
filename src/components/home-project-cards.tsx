@@ -9,7 +9,7 @@ import shareplateLogo from "../images/Shareplate_Logo_Grey.png";
 import tech4ImpactLogo from "../images/tech4impact_logo.png";
 import procketsLogo from "../images/prockets_logo.png";
 
-const cards = [
+const projects = [
   {
     id: 1,
     title: 'Shareplate',
@@ -41,7 +41,7 @@ export default function HomeProjectCards() {
         gap: 5,
       }}
     >
-      {cards.map((card) => (
+      {projects.map((card) => (
         <Card
           key={card.id}
           sx={{
