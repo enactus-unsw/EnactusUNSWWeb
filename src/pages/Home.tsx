@@ -1,3 +1,10 @@
+import { Link } from "react-router-dom";
+
+import HomeProjectCards from "components/home-project-cards";
+import EnactusButton from "components/atoms/button/enactusButton";
+import HomeEventsCarousel from "components/home-events-carousel";
+
+// Images
 import enactusUNSWLogo from "../images/Enactus UNSW Logo (Grey).jpg";
 import enactusTeamPhoto from "../images/enactus team.jpg";
 import triangle from "../images/Triangle shape.png";
@@ -9,11 +16,6 @@ import facebookLogo from "../images/Logos/Facebook.png";
 import linkedInLogo from "../images/Logos/LinkedIn.png";
 import tiktokLogo from "../images/Logos/Tiktok.png";
 // import youtubeLogo from "../images/Logos/Youtube.png";
-
-import HomeProjectCards from "components/home-project-cards";
-import { Link } from "react-router-dom";
-import EnactusButton from "components/atoms/button/enactusButton";
-import HomeEventsCarousel from "components/home-events-carousel";
 
 // Website Links
 const enactusSparcWebsite = "https://www.arc.unsw.edu.au/get-involved/opportunity?name=Enactus%20UNSW";
@@ -59,13 +61,13 @@ const socialLinks = [
 export default function Home() {
   return (
     <>
-      <div>
+      <header className="text-center">
         <img className="h-20 block ml-auto mr-auto m-4" src={enactusUNSWLogo} alt="Enactus UNSW Logo" />
-        <header className="font-bold text-4xl text-center mb-10">
+        <h1 className="font-bold text-4xl mb-10">
           The Student Hub of Social Impact <br /> and Entrepreneurship
-        </header>
+        </h1>
         <img className="w-3/5 rounded-xl block ml-auto mr-auto saturate-[1.15] mb-20" src={enactusTeamPhoto} alt="Enactus Team Photo" />
-      </div>
+      </header>
       {/* About Us */}
       <div>
         <section className="bg-[#FFEBB6] text-center pt-16 pb-2">
