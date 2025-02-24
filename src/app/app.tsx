@@ -8,6 +8,10 @@ import Events from "../pages/Events";
 import Sponsors from "../pages/Sponsors";
 import ContactUs from "../pages/ContactUs";
 
+import Header from "../components/header"; 
+import Footer from "../components/footer"; 
+
+
 import { createTheme, ThemeProvider } from "@mui/material/styles";
 
 const theme = createTheme({
@@ -21,6 +25,7 @@ function App() {
     <ThemeProvider theme={theme}>
       <BrowserRouter>
         <>
+        <Header/>
           <Routes>
             <Route path="/" element={<Home />} />
             <Route path="/about-us" element={<AboutUs />} />
@@ -30,6 +35,7 @@ function App() {
             <Route path="/sponsors-partners" element={<Sponsors />} />
             <Route path="/contact-us" element={<ContactUs />} />
           </Routes>
+          <Footer/>
         </>
       </BrowserRouter>
     </ThemeProvider>

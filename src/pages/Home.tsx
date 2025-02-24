@@ -1,4 +1,6 @@
 import { Link } from "react-router-dom";
+import { useEffect } from 'react';
+import { useLocation } from 'react-router-dom';
 
 import HomeProjectCards from "components/home-project-cards";
 import EnactusButton from "components/atoms/button/enactusButton";
@@ -59,6 +61,19 @@ const socialLinks = [
 ];
 
 export default function Home() {
+  const location = useLocation();
+
+useEffect(() => {
+  // Wait until the page is loaded and then scroll to the section
+  const hash = location.hash;
+  if (hash) {
+    const element = document.querySelector(hash);
+    if (element) {
+      element.scrollIntoView({ behavior: 'smooth' });
+    }
+  }
+}, [location]);
+
   return (
     <>
       <header className="text-center">
@@ -108,7 +123,7 @@ export default function Home() {
           MORE EVENTS
         </EnactusButton>
       </section>
-      <img src={tiltedShape} alt="Tilted Shape" className="w-full"/>
+      <img src={tiltedShape} alt="Tilted Shape" className="w-full" id="join-us"/>
       {/* Join Us */}
       <section className="text-center pt-12 pb-20">
         <h1 className="font-bold text-3xl">
@@ -123,7 +138,7 @@ export default function Home() {
         <h3 className="font-bold text-lg pt-10 pb-4">
           Follow Our Socials
         </h3>
-        <div className="flex justify-center items-center gap-6 mb-12">
+        <div className="flex justify-center items-center gap-6 mb-12" >
           {socialLinks.map(({ link, src, alt, size }, index) => (
             <Link key={index} to={link as string} target="_blank" rel="noopener noreferrer">
               <img 
