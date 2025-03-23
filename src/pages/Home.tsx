@@ -2,9 +2,9 @@ import { Link } from "react-router-dom";
 import { useEffect } from 'react';
 import { useLocation } from 'react-router-dom';
 
-import HomeProjectCards from "components/home-project-cards";
-import EnactusButton from "components/atoms/button/enactusButton";
-import HomeEventsCarousel from "components/home-events-carousel";
+import HomeProjectCards from "../components/home-project-cards";
+import EnactusButton from "../components/atoms/button/enactusButton";
+import HomeEventsCarousel from "../components/home-events-carousel";
 
 // Images
 import enactusUNSWLogo from "../images/Enactus UNSW Logo (Grey).jpg";
