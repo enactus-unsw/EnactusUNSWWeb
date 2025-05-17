@@ -1,4 +1,6 @@
+import EnactusButton from "../components/atoms/button/enactusButton";
 import EventsEventsCarousel from "../components/events-events-carousel";
+import PastEventCards from "../components/past-event-cards";
 
 export default function Events() {
   return (
@@ -11,7 +13,7 @@ export default function Events() {
         </div>
       </header>
       {/* Upcoming Events */}
-      <section className="pt-16 pb-10 text-center">
+      <section className="pt-16 pb-2 text-center">
         <h1 className="font-bold text-3xl mb-12">
           Upcoming Events
         </h1>
@@ -19,7 +21,19 @@ export default function Events() {
           <EventsEventsCarousel />
         </div>
       </section>
+      <br/>
       {/* Past Events */}
+      <section className="pt-2 pb-10 text-center">
+        <h1 className="font-bold text-3xl mb-6">
+          Past Events
+        </h1>
+        <EnactusButton to="/events" className="bg-[#FFC222] text-black pl-5 pr-5 mb-8 rounded-full hover:bg-[#FFDD83]">
+          2025
+        </EnactusButton>
+        <div className="flex flex-col justify-center items-center mb-12">
+          <PastEventCards />
+        </div>
+      </section>
     </>
   )
 }
