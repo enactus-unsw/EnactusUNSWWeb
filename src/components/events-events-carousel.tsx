@@ -45,8 +45,15 @@ export default function EventsEventsCarousel() {
       setCurrIndex((prevIndex) => (prevIndex - 1 + events.length) % events.length);
       setFade(false);
     }, 250);
-
   };
+
+  const handleJump = (position: number) => {
+    setFade(true);
+    setTimeout(() => {
+      setCurrIndex(position);
+      setFade(false);
+    }, 250);
+  }
 
   return (
     <>
@@ -100,7 +107,7 @@ export default function EventsEventsCarousel() {
       </Box>
       <div className="mt-6 flex gap-x-3">
         {events.map((_, i) => (
-          <span key={i} className={`w-3 h-3 rounded-full ${i === currIndex ? 'bg-[#A8A8A8]' : 'bg-[#E8E8E8]'}`}></span>
+          <span key={i} className={`w-3 h-3 rounded-full ${i === currIndex ? 'bg-[#A8A8A8]' : 'bg-[#E8E8E8]'}`} onClick={() => handleJump(i)}></span>
         ))}
       </div>
     </>

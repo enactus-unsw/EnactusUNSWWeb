@@ -19,17 +19,6 @@ export default function Events() {
           <EventsEventsCarousel />
         </div>
       </section>
-      {/* <section className="bg-[#FFEBB6] pt-16 pb-10 text-center">
-        <h1 className="font-bold text-3xl mb-12">
-          Our Events
-        </h1>
-        <div className="flex justify-center items-center mb-12">
-          <HomeEventsCarousel />
-        </div>
-        <EnactusButton to="/events" className="bg-[#fff] text-black border-[#2A2D32] border-solid border-4 hover:bg-[#D9D9D9]">
-          MORE EVENTS
-        </EnactusButton>
-      </section> */}
       {/* Past Events */}
     </>
   )
