@@ -8,7 +8,7 @@ import HomeEventsCarousel from "../components/home-events-carousel";
 
 // Images
 import enactusUNSWLogo from "../images/Enactus UNSW Logo (Grey).jpg";
-import enactusTeamPhoto from "../images/enactus team.jpg";
+import enactusTeamPhoto from "../images/enactus team 2025.jpeg";
 import triangle from "../images/Triangle shape.png";
 import tiltedShape from "../images/tilted shape.png";
 
