@@ -21,7 +21,7 @@ import tiktokLogo from "../images/Logos/Tiktok.png";
 
 // Website Links
 const enactusSparcWebsite = "https://www.arc.unsw.edu.au/get-involved/opportunity?name=Enactus%20UNSW";
-const instagramLink = "https://www.instagram.com/enactus_unsw/";
+const instagramLink = "https://www.instagram.com/enactusunsw/?hl=en";
 const facebookLink = "https://www.facebook.com/profile.php?id=61568234819798";
 const linkedInLink = "https://www.linkedin.com/school/enactus-unsw/posts/?feedView=all";
 const tiktokLink = "https://www.tiktok.com/@enactusunsw";

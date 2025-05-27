@@ -21,7 +21,7 @@ const Footer = () => {
           <a href="https://www.facebook.com/share/g/1BDWn237rq/" target="_blank" rel="noopener noreferrer">
             <img className="h-14 block ml-auto mr-auto m-4" src={Facebook} alt="Facebook" />
           </a>
-          <a href="https://www.instagram.com/enactus_unsw?utm_source=ig_web_button_share_sheet&igsh=ZDNlZDc0MzIxNw==" target="_blank" rel="noopener noreferrer">
+          <a href="https://www.instagram.com/enactusunsw/?hl=en" target="_blank" rel="noopener noreferrer">
             <img className="h-14 block ml-auto mr-auto m-4" src={Instagram} alt="Instagram" />
           </a>
           <a href="https://au.linkedin.com/school/enactus-unsw/" target="_blank" rel="noopener noreferrer">
