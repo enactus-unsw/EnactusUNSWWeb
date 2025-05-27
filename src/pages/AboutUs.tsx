@@ -49,9 +49,11 @@ export default function AboutUs() {
         <h3 className="font-semibold text-xl mb-6">
           What are Sustainable Development Goals (SDGs)?
         </h3>
-        <EnactusButton to={sdgGoals} target="_blank" rel="noopener noreferrer" className="bg-[#FFC222] text-black hover:bg-[#FFDD83]">
-          LEARN MORE
-        </EnactusButton>
+        <div className="mb-8">
+          <EnactusButton to={sdgGoals} target="_blank" rel="noopener noreferrer" className="bg-[#FFC222] text-black hover:bg-[#FFDD83]">
+            LEARN MORE
+          </EnactusButton>
+        </div>
       </section>
     </div>
   )
