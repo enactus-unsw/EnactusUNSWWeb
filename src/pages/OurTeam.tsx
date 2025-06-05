@@ -99,7 +99,7 @@ export default function OurTeam() {
 
     {/* top row */}
     <div style={{ display: 'flex', justifyContent: 'center', gap: '14rem', marginTop: '2rem' }}>
-      <TeamMember imageSrc="src/images/teamPhotos/1.jpg" name="Amrutha Sivaranjan" role="Co-President" />
+      <TeamMember imageSrc="src/images/teamPhotos/amrutha.jpg" name="Amrutha Sivaranjan" role="Co-President" />
       <TeamMember imageSrc="src/images/teamPhotos/benjamin.jpg" name="Benjamin Liu" role="Co-President" />
     </div>
 
@@ -112,8 +112,8 @@ export default function OurTeam() {
 
     {/* third row */}
     <div style={{ display: 'flex', justifyContent: 'center', gap: '14rem', marginTop: '2rem' }}>
-      <TeamMember imageSrc="src/images/teamPhotos/6.jpg" name="Alice Khau" role="Vice President of Externals" />
-      <TeamMember imageSrc="src/images/teamPhotos/7.jpg" name="Rifah Riyadh" role="Vice President of Projects" />
+      <TeamMember imageSrc="src/images/teamPhotos/alice.jpg" name="Alice Khau" role="Vice President of Externals" />
+      <TeamMember imageSrc="src/images/teamPhotos/rifah.jpg" name="Rifah Riyadh" role="Vice President of Projects" />
       <TeamMember imageSrc="src/images/teamPhotos/akanksha.jpg" name="Akanksha Sood" role="Vice President of Projects" />
     </div>
 
@@ -147,13 +147,13 @@ export default function OurTeam() {
 
     {/* tech4impact row */}
     <div style={{ display: 'flex', justifyContent: 'center', gap: '14rem', marginTop: '2rem' }}>
-      <TeamMember imageSrc="src/images/teamPhotos/9.jpg" name="Aryan Thukral" role="Tech4Impact Director" />
-      <TeamMember imageSrc="src/images/teamPhotos/10.jpg" name="Noyal Shaji" role="Tech4Impact Director" />
+      <TeamMember imageSrc="src/images/teamPhotos/aryan.jpg" name="Aryan Thukral" role="Tech4Impact Director" />
+      <TeamMember imageSrc="src/images/teamPhotos/noyal.jpg" name="Noyal Shaji" role="Tech4Impact Director" />
     </div>
 
     {/* shareplate row */}
     <div style={{ display: 'flex', justifyContent: 'center', gap: '14rem', marginTop: '2rem' }}>
-      <TeamMember imageSrc="src/images/teamPhotos/9.jpg" name="Karen Huo" role="SharePlate Director" />
+      <TeamMember imageSrc="src/images/teamPhotos/karen.jpg" name="Karen Huo" role="SharePlate Director" />
       <TeamMember imageSrc="src/images/teamPhotos/jennifer.jpg" name="Jennifer Yu" role="SharePlate Director" />
     </div>
 
@@ -189,7 +189,7 @@ export default function OurTeam() {
 
     {/* multimedia row */}
     <div style={{ display: 'flex', justifyContent: 'center', gap: '14rem', marginTop: '2rem' }}>
-      <TeamMember imageSrc="src/images/teamPhotos/9.jpg" name="Zainab Atif" role="Multimedia Director" />
+      <TeamMember imageSrc="src/images/teamPhotos/zainab.jpg" name="Zainab Atif" role="Multimedia Director" />
       <TeamMember imageSrc="src/images/teamPhotos/dummy.jpg" name="Amaya Polutele" role="Multimedia Director" />
     </div>
 
