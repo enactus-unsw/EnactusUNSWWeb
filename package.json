@@ -3,7 +3,7 @@
   "type": "module",
   "version": "1.0.0",
   "description": "Starter template for Vite with React (TypeScript). Supports Tailwind. Vitest and @react/testing-library configured and ready to go. Also ESLint, Prettier, Husky, Commit-lint and Atomic Design for components.",
-  "homepage": "https://github.com/jvidalv/vital#readme",
+  "homepage": "https://enactus-unsw.github.io/EnactusUNSWWeb/",
   "repository": {
     "type": "git",
     "url": "git+https://github.com/jvidalv/vital.git"
@@ -32,12 +32,10 @@
     "node": ">=18",
     "yarn": ">=1.22.5"
   },
-  "scripts": {
-    "dev": "vite",
-    "build": "tsc && vite build",
-    "lint": "eslint .",
-    "preview": "vite preview"
-  },
+"scripts": {
+"predeploy": "npm run build",
+"deploy": "gh-pages -d build"
+},
   "dependencies": {
     "@emotion/react": "^11.14.0",
     "@emotion/styled": "^11.14.0",
@@ -59,6 +57,7 @@
     "eslint": "9.13.0",
     "eslint-plugin-react-hooks": "5.0.0",
     "eslint-plugin-react-refresh": "0.4.14",
+    "gh-pages": "^6.3.0",
     "lint-staged": "15.2.10",
     "postcss": "8.4.47",
     "prettier": "3.3.3",
