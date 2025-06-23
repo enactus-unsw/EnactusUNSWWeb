@@ -4,11 +4,11 @@ import { Link } from "react-router-dom";
 
 const Header = () => {
   return (
-    <header className="bg-white shadow-md px-6 md:px-10 lg:px-20">
-      <nav className="max-w-screen-2xl mx-auto flex  items-center justify-between ">
-        <div className="flex align-self: flex-start">
+    <header className="bg-white shadow-md  ">
+      <nav className="max-w-full mx-auto flex flex-nowrap overflow-x-auto items-center justify-between px-6 md:px-10 lg:px-20 ">
+        <div className="flex align-self: flex-start shrink-0 min-w-2">
         <Link to="/">
-        <img className="h-16 block ml-auto mr-auto m-4" src={enactusLogo} alt="Enactus UNSW Logo" />
+        <img className="h-12 md:h-16 w-auto m-4"  src={enactusLogo} alt="Enactus UNSW Logo" />
         </Link>
         </div>
         <div className="flex align-self: flex-end space-x-16">
