@@ -16,7 +16,7 @@ export default function AboutUs() {
         <h4 className="text-2xl">Be the change you want to see <br /> in the world.</h4>
       </header>
       {/* Our story section */}
-      <section className="text-center bg-[url(src/images/aboutUsPage/aboutUs_rectangle.png)] bg-contain bg-center bg-no-repeat">
+      <section className="text-center bg-[url(images/aboutUsPage/aboutUs_rectangle.png)] bg-contain bg-center bg-no-repeat">
         <h2 className="font-bold text-3xl pt-20 pb-6">Our Story</h2>
         <div className="my-8">
           <p className="pb-8 text-[18px]">

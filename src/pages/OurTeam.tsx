@@ -34,7 +34,6 @@ import henry from "../images/teamPhotos/henry.jpg";
 import jessica from "../images/teamPhotos/jessica.jpg";
 
 import zainab from "../images/teamPhotos/zainab.jpg";
-//import amaya from "../images/teamPhotos/amaya.jpg";
 
 import maanya from "../images/teamPhotos/maanya.jpg";
 //import saarthak from "../images/teamPhotos/saarthak.jpg";
@@ -233,7 +232,6 @@ export default function OurTeam() {
     {/* multimedia row */}
     <div style={{ display: 'flex', justifyContent: 'center', gap: '14rem', marginTop: '2rem' }}>
       <TeamMember imageSrc={zainab} name="Zainab Atif" role="Multimedia Director" />
-      <TeamMember imageSrc={dummy} name="Amaya Polutele" role="Multimedia Director" />
     </div>
 
     {/* socials row */}
@@ -368,7 +366,6 @@ export default function OurTeam() {
               <div>Manya Garg</div>
             </div>
             <div>
-              <div>Mohnish Puvvena</div>
               <div>Rimsha Laiqa</div>
             </div>
           </div>
@@ -399,7 +396,6 @@ export default function OurTeam() {
           <div style={{ display: 'flex', justifyContent: 'center', gap: '5rem', marginTop: '1rem' }}>
             <div>
               <div>Aaron Tran</div>
-              <div>Amon Saito</div>
             </div>
             <div>
               <div>Gina Nguyen</div>
