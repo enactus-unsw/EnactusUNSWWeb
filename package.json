@@ -32,8 +32,12 @@
     "node": ">=18",
     "yarn": ">=1.22.5"
   },
-"scripts": {
-"predeploy": "npm run build",
+  "scripts": {
+    "dev": "vite",
+    "build": "tsc && vite build",
+    "lint": "eslint .",
+    "preview": "vite preview",
+    "predeploy": "npm run build",
 "deploy": "gh-pages -d build"
 },
   "dependencies": {
