@@ -23,7 +23,7 @@ const theme = createTheme({
 function App() {
   return (
     <ThemeProvider theme={theme}>
-      <BrowserRouter>
+      <BrowserRouter basename="/EnactusUNSWWeb">
         <>
         <Header/>
           <Routes>
