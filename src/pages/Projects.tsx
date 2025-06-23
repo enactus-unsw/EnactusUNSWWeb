@@ -1,6 +1,8 @@
 import tech4impactlogo from "../images/tech4impact_logo.png";
 import shareplatelogo from "../images/Shareplate_Logo_Grey.png";
-import procketslogo from "../images/Logos/Instagram.png";
+import procketslogo from "../images/prockets_logo.png";
+import instagramlogo from "../images/Logos/Instagram.png";
+
 export default function Projects() {
   return ( 
     <div className="text-[#2A2D32] w-full flex-grow">
@@ -13,7 +15,7 @@ export default function Projects() {
       <div className="flex flex-row justify-evenly p-5 pl-20 pr-20 ml-[6rem] mr-20 min-h-[25vh]">
         {/* Prockets Image */}
         <div className="flex w-1/2 justify-center items-center h-1/4 mt-8">
-          <img className="object-contain h-[30rem]" src="src/images/prockets_logo.png" alt="Prockets Logo" />
+          <img className="object-contain h-[30rem]" src={procketslogo} alt="Prockets Logo" />
         </div>
         {/* Prockets description */}
         <div className="flex flex-col w-1/2 p-2 pr-20 ml-[4.5rem]">
@@ -29,7 +31,7 @@ export default function Projects() {
               LEARN MORE
             </button> */}
             <a href="https://www.instagram.com/prockets.au/" target="_blank" rel="noopener noreferrer">
-              <img className="h-15 block ml-4" src="src/images/Logos/Instagram.png" alt="Instagram" />
+              <img className="h-15 block ml-4" src={instagramlogo} alt="Instagram" />
             </a>
           </div> 
         </div>
@@ -52,7 +54,7 @@ export default function Projects() {
               LEARN MORE
             </button> */}
             <a href="https://www.instagram.com/shareplate.au/" target="_blank" rel="noopener noreferrer">
-              <img className="h-15 block" src={procketslogo} alt="Instagram" />
+              <img className="h-15 block" src={instagramlogo} alt="Instagram" />
             </a>
           </div>
         </div>
@@ -83,7 +85,7 @@ export default function Projects() {
                 LEARN MORE
               </button> */}
               <a href="https://www.instagram.com/tech4impact.au/" target="_blank" rel="noopener noreferrer">
-              <img className="h-15 block" src={procketslogo} alt="Instagram" />
+              <img className="h-15 block" src={instagramlogo} alt="Instagram" />
             </a>
             </div>
           </div>
