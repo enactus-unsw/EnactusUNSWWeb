@@ -1,3 +1,45 @@
+//Importing this way so vite bundle it up for deployment
+import teamPhoto from "../images/enactus_board_cropped.jpg";
+
+import amrutha from "../images/teamPhotos/amrutha.jpg";
+import benjamin from "../images/teamPhotos/benjamin.jpg";
+import sehej from "../images/teamPhotos/sehej.jpg";
+import iqtidar from "../images/teamPhotos/iqtidar.jpg";
+
+import alice from "../images/teamPhotos/alice.jpg";
+import rifah from "../images/teamPhotos/rifah.jpg";
+import akanksha from "../images/teamPhotos/akanksha.jpg";
+
+import olivia from "../images/teamPhotos/olivia.jpg";
+import saaini from "../images/teamPhotos/saaini.jpg";
+
+import aryan from "../images/teamPhotos/aryan.jpg";
+import noyal from "../images/teamPhotos/noyal.jpg";
+
+import karen from "../images/teamPhotos/karen.jpg";
+import jennifer from "../images/teamPhotos/jennifer.jpg";
+
+import emily from "../images/teamPhotos/emily.jpg";
+
+import sarah from "../images/teamPhotos/sarah.jpg";
+import meenal from "../images/teamPhotos/meenal.jpg";
+
+import fleur from "../images/teamPhotos/fleur.jpg";
+//import justin from "../images/teamPhotos/justin.jpg";
+
+//import amy from "../images/teamPhotos/amy.jpg";
+import iris from "../images/teamPhotos/iris.jpg";
+
+import henry from "../images/teamPhotos/henry.jpg";
+import jessica from "../images/teamPhotos/jessica.jpg";
+
+import zainab from "../images/teamPhotos/zainab.jpg";
+
+import maanya from "../images/teamPhotos/maanya.jpg";
+//import saarthak from "../images/teamPhotos/saarthak.jpg";
+
+import dummy from "../images/teamPhotos/dummy.jpg";
+
 type TeamMemberProps = {
   imageSrc: string;
   name: string;
@@ -51,7 +93,7 @@ export default function OurTeam() {
       }}>
         {/* team photo */}
         <img
-          src="src/images/enactus_board_cropped.jpg"
+          src={teamPhoto}
           alt="team-photo"
           style={{
             borderRadius: '1rem',
@@ -99,22 +141,22 @@ export default function OurTeam() {
 
     {/* top row */}
     <div style={{ display: 'flex', justifyContent: 'center', gap: '14rem', marginTop: '2rem' }}>
-      <TeamMember imageSrc="src/images/teamPhotos/amrutha.jpg" name="Amrutha Sivaranjan" role="Co-President" />
-      <TeamMember imageSrc="src/images/teamPhotos/benjamin.jpg" name="Benjamin Liu" role="Co-President" />
+      <TeamMember imageSrc={amrutha} name="Amrutha Sivaranjan" role="Co-President" />
+      <TeamMember imageSrc={benjamin} name="Benjamin Liu" role="Co-President" />
     </div>
 
     {/* second row */}
     <div style={{ display: 'flex', justifyContent: 'center', gap: '14rem', marginTop: '2rem' }}>
-      <TeamMember imageSrc="src/images/teamPhotos/sehej.jpg" name="Sehej Panesar" role="Secretary" />
-      <TeamMember imageSrc="src/images/teamPhotos/iqtidar.jpg" name="Iqtidar Rahman" role="Treasurer" />
-      <TeamMember imageSrc="src/images/teamPhotos/dummy.jpg" name="Brendan Huynh" role="Vice President of Internals" />
+      <TeamMember imageSrc={sehej} name="Sehej Panesar" role="Secretary" />
+      <TeamMember imageSrc={iqtidar} name="Iqtidar Rahman" role="Treasurer" />
+      <TeamMember imageSrc={dummy} name="Brendan Huynh" role="Vice President of Internals" />
     </div>
 
     {/* third row */}
     <div style={{ display: 'flex', justifyContent: 'center', gap: '14rem', marginTop: '2rem' }}>
-      <TeamMember imageSrc="src/images/teamPhotos/alice.jpg" name="Alice Khau" role="Vice President of Externals" />
-      <TeamMember imageSrc="src/images/teamPhotos/rifah.jpg" name="Rifah Riyadh" role="Vice President of Projects" />
-      <TeamMember imageSrc="src/images/teamPhotos/akanksha.jpg" name="Akanksha Sood" role="Vice President of Projects" />
+      <TeamMember imageSrc={alice} name="Alice Khau" role="Vice President of Externals" />
+      <TeamMember imageSrc={rifah} name="Rifah Riyadh" role="Vice President of Projects" />
+      <TeamMember imageSrc={akanksha} name="Akanksha Sood" role="Vice President of Projects" />
     </div>
 
     {/* bottom row (returning officers) */}
@@ -141,62 +183,61 @@ export default function OurTeam() {
 
     {/* prockets row */}
     <div style={{ display: 'flex', justifyContent: 'center', gap: '14rem', marginTop: '2rem' }}>
-      <TeamMember imageSrc="src/images/teamPhotos/olivia.jpg" name="Olivia Vu" role="Prockets Director" />
-      <TeamMember imageSrc="src/images/teamPhotos/saaini.jpg" name="Saaini Balakrishna" role="Prockets Director" />
+      <TeamMember imageSrc={olivia} name="Olivia Vu" role="Prockets Director" />
+      <TeamMember imageSrc={saaini} name="Saaini Balakrishna" role="Prockets Director" />
     </div>
 
     {/* tech4impact row */}
     <div style={{ display: 'flex', justifyContent: 'center', gap: '14rem', marginTop: '2rem' }}>
-      <TeamMember imageSrc="src/images/teamPhotos/aryan.jpg" name="Aryan Thukral" role="Tech4Impact Director" />
-      <TeamMember imageSrc="src/images/teamPhotos/noyal.jpg" name="Noyal Shaji" role="Tech4Impact Director" />
+      <TeamMember imageSrc={aryan} name="Aryan Thukral" role="Tech4Impact Director" />
+      <TeamMember imageSrc={noyal} name="Noyal Shaji" role="Tech4Impact Director" />
     </div>
 
     {/* shareplate row */}
     <div style={{ display: 'flex', justifyContent: 'center', gap: '14rem', marginTop: '2rem' }}>
-      <TeamMember imageSrc="src/images/teamPhotos/karen.jpg" name="Karen Huo" role="SharePlate Director" />
-      <TeamMember imageSrc="src/images/teamPhotos/jennifer.jpg" name="Jennifer Yu" role="SharePlate Director" />
+      <TeamMember imageSrc={karen} name="Karen Huo" role="SharePlate Director" />
+      <TeamMember imageSrc={jennifer} name="Jennifer Yu" role="SharePlate Director" />
     </div>
 
     {/* careers row */} 
     <div style={{ display: 'flex', justifyContent: 'center', gap: '14rem', marginTop: '2rem' }}>
-      <TeamMember imageSrc="src/images/teamPhotos/dummy.jpg" name="Jayden Truong" role="Careers Director" />
-      <TeamMember imageSrc="src/images/teamPhotos/emily.jpg" name="Emily Goh" role="Careers Director" />
+      <TeamMember imageSrc={dummy} name="Jayden Truong" role="Careers Director" />
+      <TeamMember imageSrc={emily} name="Emily Goh" role="Careers Director" />
     </div>
   
     {/* sponsorships row */}
     <div style={{ display: 'flex', justifyContent: 'center', gap: '14rem', marginTop: '2rem' }}>
-      <TeamMember imageSrc="src/images/teamPhotos/sarah.jpg" name="Sarah Zhong" role="Sponsorships Director" />
-      <TeamMember imageSrc="src/images/teamPhotos/meenal.jpg" name="Meenal Janjua" role="Sponsorships Director" />
+      <TeamMember imageSrc={sarah} name="Sarah Zhong" role="Sponsorships Director" />
+      <TeamMember imageSrc={meenal} name="Meenal Janjua" role="Sponsorships Director" />
     </div>
 
     {/* hr row */}
     <div style={{ display: 'flex', justifyContent: 'center', gap: '14rem', marginTop: '2rem' }}>
-      <TeamMember imageSrc="src/images/teamPhotos/fleur.jpg" name="Fleur Randerath" role="HR Director" />
-      <TeamMember imageSrc="src/images/teamPhotos/dummy.jpg" name="Justin Bu" role="HR Director" />
+      <TeamMember imageSrc={fleur} name="Fleur Randerath" role="HR Director" />
+      <TeamMember imageSrc={dummy} name="Justin Bu" role="HR Director" />
     </div>
 
     {/* it row */}
     <div style={{ display: 'flex', justifyContent: 'center', gap: '14rem', marginTop: '2rem' }}>
-      <TeamMember imageSrc="src/images/teamPhotos/dummy.jpg" name="Amy Wang" role="IT   Director" />
-      <TeamMember imageSrc="src/images/teamPhotos/iris.jpg" name="Iris Dautriat" role="IT Director" />
+      <TeamMember imageSrc={dummy} name="Amy Wang" role="IT   Director" />
+      <TeamMember imageSrc={iris} name="Iris Dautriat" role="IT Director" />
     </div>
 
     {/* marketing row */}
     <div style={{ display: 'flex', justifyContent: 'center', gap: '14rem', marginTop: '2rem' }}>
-      <TeamMember imageSrc="src/images/teamPhotos/henry.jpg" name="Henry Tat" role="Marketing Director" />
-      <TeamMember imageSrc="src/images/teamPhotos/jessica.jpg" name="Jessica Tran" role="Marketing Director" />
+      <TeamMember imageSrc={henry} name="Henry Tat" role="Marketing Director" />
+      <TeamMember imageSrc={jessica} name="Jessica Tran" role="Marketing Director" />
     </div>
 
     {/* multimedia row */}
     <div style={{ display: 'flex', justifyContent: 'center', gap: '14rem', marginTop: '2rem' }}>
-      <TeamMember imageSrc="src/images/teamPhotos/zainab.jpg" name="Zainab Atif" role="Multimedia Director" />
-      <TeamMember imageSrc="src/images/teamPhotos/dummy.jpg" name="Amaya Polutele" role="Multimedia Director" />
+      <TeamMember imageSrc={zainab} name="Zainab Atif" role="Multimedia Director" />
     </div>
 
     {/* socials row */}
     <div style={{ display: 'flex', justifyContent: 'center', gap: '14rem', marginTop: '2rem' }}>
-      <TeamMember imageSrc="src/images/teamPhotos/maanya.jpg" name="Maanya Gawande" role="Social Director" />
-      <TeamMember imageSrc="src/images/teamPhotos/dummy.jpg" name="Saarthak Aggarwal" role="Social Director" />
+      <TeamMember imageSrc={maanya} name="Maanya Gawande" role="Social Director" />
+      <TeamMember imageSrc={dummy} name="Saarthak Aggarwal" role="Social Director" />
     </div>
 
     {/* dashed section seperator line */}
@@ -325,7 +366,6 @@ export default function OurTeam() {
               <div>Manya Garg</div>
             </div>
             <div>
-              <div>Mohnish Puvvena</div>
               <div>Rimsha Laiqa</div>
             </div>
           </div>
@@ -356,7 +396,6 @@ export default function OurTeam() {
           <div style={{ display: 'flex', justifyContent: 'center', gap: '5rem', marginTop: '1rem' }}>
             <div>
               <div>Aaron Tran</div>
-              <div>Amon Saito</div>
             </div>
             <div>
               <div>Gina Nguyen</div>
