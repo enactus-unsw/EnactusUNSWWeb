@@ -410,7 +410,7 @@ export default function OurTeam() {
 
        {/* multi team */}
        <div>
-          <h4 style={{ fontSize: '1.6rem', fontWeight: 'bold', marginTop: '2rem'  }}>Marketing Team</h4>
+          <h4 style={{ fontSize: '1.6rem', fontWeight: 'bold', marginTop: '2rem'  }}>Multimedia Team</h4>
           <div style={{ display: 'flex', justifyContent: 'center', gap: '5rem', marginTop: '1rem' }}>
             <div>
               <div>Calvin Bae</div>
@@ -429,7 +429,7 @@ export default function OurTeam() {
 
         {/* socials team*/}
         <div>
-          <h4 style={{ fontSize: '1.6rem', fontWeight: 'bold', marginTop: '2rem'  }}>Marketing Team</h4>
+          <h4 style={{ fontSize: '1.6rem', fontWeight: 'bold', marginTop: '2rem'  }}>Socials Team</h4>
           <div style={{ display: 'flex', justifyContent: 'center', gap: '5rem', marginTop: '1rem' }}>
             <div>
               <div>Anonna Das</div>
