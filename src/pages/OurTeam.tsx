@@ -140,20 +140,16 @@ export default function OurTeam() {
     <h3 style={{ fontSize: '2.4rem', fontWeight: 'bold', marginTop: '3rem' }}>STEER</h3>
 
     {/* top row */}
-    <div style={{ display: 'flex', justifyContent: 'center', gap: '14rem', marginTop: '2rem' }}>
+    <div className="flex justify-evenly mt-8">
       <TeamMember imageSrc={amrutha} name="Amrutha Sivaranjan" role="Co-President" />
       <TeamMember imageSrc={benjamin} name="Benjamin Liu" role="Co-President" />
     </div>
 
     {/* second row */}
-    <div style={{ display: 'flex', justifyContent: 'center', gap: '14rem', marginTop: '2rem' }}>
+    <div className="grid grid-cols-2 md:grid-cols-3 gap-x-8 gap-y-8 mt-8">
       <TeamMember imageSrc={sehej} name="Sehej Panesar" role="Secretary" />
       <TeamMember imageSrc={iqtidar} name="Iqtidar Rahman" role="Treasurer" />
       <TeamMember imageSrc={dummy} name="Brendan Huynh" role="Vice President of Internals" />
-    </div>
-
-    {/* third row */}
-    <div style={{ display: 'flex', justifyContent: 'center', gap: '14rem', marginTop: '2rem' }}>
       <TeamMember imageSrc={alice} name="Alice Khau" role="Vice President of Externals" />
       <TeamMember imageSrc={rifah} name="Rifah Riyadh" role="Vice President of Projects" />
       <TeamMember imageSrc={akanksha} name="Akanksha Sood" role="Vice President of Projects" />
@@ -182,60 +178,60 @@ export default function OurTeam() {
     <h3 style={{ fontSize: '2.4rem', fontWeight: 'bold', marginTop: '3rem' }}>DIRECTORS</h3>
 
     {/* prockets row */}
-    <div style={{ display: 'flex', justifyContent: 'center', gap: '14rem', marginTop: '2rem' }}>
+    <div className="flex justify-evenly mt-8">
       <TeamMember imageSrc={olivia} name="Olivia Vu" role="Prockets Director" />
       <TeamMember imageSrc={saaini} name="Saaini Balakrishna" role="Prockets Director" />
     </div>
 
     {/* tech4impact row */}
-    <div style={{ display: 'flex', justifyContent: 'center', gap: '14rem', marginTop: '2rem' }}>
+    <div className="flex justify-evenly mt-8">
       <TeamMember imageSrc={aryan} name="Aryan Thukral" role="Tech4Impact Director" />
       <TeamMember imageSrc={noyal} name="Noyal Shaji" role="Tech4Impact Director" />
     </div>
 
     {/* shareplate row */}
-    <div style={{ display: 'flex', justifyContent: 'center', gap: '14rem', marginTop: '2rem' }}>
+    <div className="flex justify-evenly mt-8">
       <TeamMember imageSrc={karen} name="Karen Huo" role="SharePlate Director" />
       <TeamMember imageSrc={jennifer} name="Jennifer Yu" role="SharePlate Director" />
     </div>
 
     {/* careers row */} 
-    <div style={{ display: 'flex', justifyContent: 'center', gap: '14rem', marginTop: '2rem' }}>
+    <div className="flex justify-evenly mt-8">
       <TeamMember imageSrc={dummy} name="Jayden Truong" role="Careers Director" />
       <TeamMember imageSrc={emily} name="Emily Goh" role="Careers Director" />
     </div>
   
     {/* sponsorships row */}
-    <div style={{ display: 'flex', justifyContent: 'center', gap: '14rem', marginTop: '2rem' }}>
+    <div className="flex justify-evenly mt-8">
       <TeamMember imageSrc={sarah} name="Sarah Zhong" role="Sponsorships Director" />
       <TeamMember imageSrc={meenal} name="Meenal Janjua" role="Sponsorships Director" />
     </div>
 
     {/* hr row */}
-    <div style={{ display: 'flex', justifyContent: 'center', gap: '14rem', marginTop: '2rem' }}>
+    <div className="flex justify-evenly mt-8">
       <TeamMember imageSrc={fleur} name="Fleur Randerath" role="HR Director" />
       <TeamMember imageSrc={dummy} name="Justin Bu" role="HR Director" />
     </div>
 
     {/* it row */}
-    <div style={{ display: 'flex', justifyContent: 'center', gap: '14rem', marginTop: '2rem' }}>
-      <TeamMember imageSrc={dummy} name="Amy Wang" role="IT   Director" />
+    <div className="flex justify-evenly mt-8">
+      <TeamMember imageSrc={dummy} name="Amy Wang" role="IT Director" />
       <TeamMember imageSrc={iris} name="Iris Dautriat" role="IT Director" />
     </div>
 
     {/* marketing row */}
-    <div style={{ display: 'flex', justifyContent: 'center', gap: '14rem', marginTop: '2rem' }}>
+    <div className="flex justify-evenly mt-8">
       <TeamMember imageSrc={henry} name="Henry Tat" role="Marketing Director" />
       <TeamMember imageSrc={jessica} name="Jessica Tran" role="Marketing Director" />
     </div>
 
     {/* multimedia row */}
-    <div style={{ display: 'flex', justifyContent: 'center', gap: '14rem', marginTop: '2rem' }}>
+    <div className="flex justify-evenly mt-8">
       <TeamMember imageSrc={zainab} name="Zainab Atif" role="Multimedia Director" />
     </div>
 
     {/* socials row */}
-    <div style={{ display: 'flex', justifyContent: 'center', gap: '14rem', marginTop: '2rem' }}>
+    <div className="flex justify-evenly mt-8">
       <TeamMember imageSrc={maanya} name="Maanya Gawande" role="Social Director" />
       <TeamMember imageSrc={dummy} name="Saarthak Aggarwal" role="Social Director" />
     </div>
