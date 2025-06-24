@@ -11,25 +11,25 @@ import sdgImage from "../images/aboutUsPage/SDGImage.png";
 export default function AboutUs() {
   return (
     <div>
-      <header className="text-center pt-20 pb-14">
+      <header className="text-center pt-20 md:pb-14">
         <h1 className="font-bold text-5xl mb-8">Welcome to Enactus UNSW!</h1>
         <h4 className="text-2xl">Be the change you want to see <br /> in the world.</h4>
       </header>
       {/* Our story section */}
-      <section className="text-center bg-[url(images/aboutUsPage/aboutUs_rectangle.png)] bg-contain bg-center bg-no-repeat">
+      <section className="flex flex-col items-center justify-center text-center bg-[url(images/aboutUsPage/aboutUs_rectangle.png)] bg-contain bg-center bg-no-repeat m-5">
         <h2 className="font-bold text-3xl pt-20 pb-6">Our Story</h2>
-        <div className="my-8">
-          <p className="pb-8 text-[18px]">
-            Enactus (formerly known as Students in Free Enterprise, or SIFE) is an international <br />
-            non-profit organization with a global network of over 70,500 university students in <br />
-            36 countries. Students collaborate with leaders in business and academia by taking <br />
-            entrepreneurial action to develop social enterprise projects which empower their <br />
-            communities. We target the SDGs to create impactful change in humanitarians start <br />
-            ups that aims at an issue and delivers a solution.
+        <div className="sm:w-4/5 md:my-8 md:w-3/5">
+          <p className="pb-8 sm:text-sm md:text-xl">
+            Enactus (formerly known as Students in Free Enterprise, or SIFE) is an international
+            non-profit organization with a global network of over 70,500 university students in 
+            36 countries. Students collaborate with leaders in business and academia by taking 
+            entrepreneurial action to develop social enterprise projects which empower their 
+            communities. We target the SDGs to create impactful change in humanitarians startups 
+            that aims at an issue and delivers a solution.
           </p>
-          <p className="pb-6 text-[18px]">
-            Enactus UNSW is now one of the largest student organizations at UNSW, with <br />
-            members ranging over 6 faculties and 20 disciplines. Originally established in 2000, <br />
+          <p className="pb-5 sm:text-sm md:text-xl">
+            Enactus UNSW is now one of the largest student organizations at UNSW, with 
+            members ranging over 6 faculties and 20 disciplines. Originally established in 2000, 
             the organisation quickly grew to over 100 active members within the first few years.
           </p>
         </div>
@@ -40,7 +40,7 @@ export default function AboutUs() {
         </div>
       </section>
       {/* the world needs us section */}
-      <section className="text-center flex flex-col justify-center items-center mt-16">
+      <section className="text-center flex flex-col justify-center items-center md:mt-16">
         <img src={enactusSDGLogo} alt="Enactus SDG Logo" className="mb-14"/>
         <h2 className="font-bold text-3xl">
           The World Needs Us
