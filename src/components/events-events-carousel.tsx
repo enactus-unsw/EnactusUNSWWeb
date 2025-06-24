@@ -63,8 +63,11 @@ export default function EventsEventsCarousel() {
             <Link to={events[currIndex].link} target="_blank" rel="noopener noreferrer">
               <Card
                 sx={{
-                  width: 500,
-                  height: 277,
+                  width: {
+                    xs: '70vw',
+                    sm: '80vw',
+                    md: 500,
+                  },
                   borderRadius: 5,
                   boxShadow: "0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19)",
                   position: "relative",
