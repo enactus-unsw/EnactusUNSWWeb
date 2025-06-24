@@ -64,7 +64,7 @@ export default function HomeEventsCarousel() {
         <Card
           sx={{
             width: {
-              xs: '70vw', // 90% of viewport width on small screens
+              xs: '70vw', 
               sm: '80vw',
               md: 500,
             },
