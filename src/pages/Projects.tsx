@@ -7,26 +7,26 @@ export default function Projects() {
   return ( 
     <div className="text-[#2A2D32] w-full flex-grow">
       {/* title container */}
-      <div className="bg-[url(src/images/ProjectsPage/titleBackground.png)] bg-cover mx-auto flex justify-center items-center font-[800] text-8xl tracking-wide w-full h-[26rem]">
+      <div className="bg-[url(src/images/ProjectsPage/titleBackground.png)] bg-cover mx-auto flex justify-center items-center font-[800] text-4xl md:text-8xl tracking-wide w-full h-[10rem] md:h-[26rem]">
         Our Projects
       </div>
 
       {/* Prockets conatiner */}
-      <div className="flex flex-row justify-evenly p-5 pl-20 pr-20 ml-[6rem] mr-20 min-h-[25vh]">
+      <div className="flex flex-col md:flex-row justify-evenly p-5 md:px-20 mx-auto md:min-h-[25vh]">
         {/* Prockets Image */}
-        <div className="flex w-1/2 justify-center items-center h-1/4 mt-8">
-          <img className="object-contain h-[30rem]" src={procketslogo} alt="Prockets Logo" />
+        <div className="flex justify-center items-center w-full md:w-1/2 md:mt-8">
+          <img className="object-contain h-[10rem] md:h-[30rem]" src={procketslogo} alt="Prockets Logo" />
         </div>
         {/* Prockets description */}
-        <div className="flex flex-col w-1/2 p-2 pr-20 ml-[4.5rem]">
-          <div className="font-[700] mt-20 text-4xl">
+        <div className="flex flex-col w-full md:w-1/2 p-2 md:pr-20 md:ml-[4.5rem]">
+          <div className="font-[700] md:mt-20 text-xl md:text-4xl">
             Prockets
           </div>
-          <p className="items-center justify-center text-xl leading-10 font-[400] mt-12">
+          <p className="items-center justify-center text-sm md:text-xl md:leading-10 font-[400] mt-5 md:mt-12">
             Creating prosthetics more accessible to amputees - financially by developing a cost-effective component of the prosthetic and socially through a support network platform.
           </p>
           {/* Prockets website  and if*/}
-          <div className="flex flex-row items-center mt-10">
+          <div className="flex flex-row justify-center md:justify-start items-center mt-10">
             {/* <button className="bg-[#FFC222] hover:bg-yellow-700 text-xl font-bold py-2 px-4 rounded-2xl h-[3.5rem] w-[15rem]">
               LEARN MORE
             </button> */}
@@ -39,17 +39,17 @@ export default function Projects() {
 
 
       {/* SharePlate conatiner */}
-      <div className="flex flex-row justify-center bg-[#F6F6F6] rounded-t-[5vw] p-5 pl-20 pr-20 min-h-[25vh]">
+      <div className="flex flex-col-reverse md:flex-row justify-center bg-[#F6F6F6] rounded-t-[5vw] p-5 md:pl-20 md:pr-20 md:min-h-[25vh]">
         {/* SharePlate description */}
-        <div className="flex flex-col w-1/2 p-2 ml-[12rem]">
-          <div className="font-[700] mt-20 text-4xl tracking-tight">
+        <div className="flex flex-col w-full md:w-1/2 p-2 md:ml-[12rem]">
+          <div className="font-[700] md:mt-20 text-xl md:text-4xl tracking-tight">
             Shareplate
           </div>
-          <p className="items-center justify-center text-xl leading-10 font-[400] mt-12">
+          <p className="items-center justify-center text-sm md:text-xl md:leading-10 font-[400] mt-5 md:mt-12">
             A not for profit initiative dedicated to bridging the gap between households experiencing food insecurity and those who have the capacity to provide resources through a digital platform known as 'Shareplate'.           
           </p>
 
-          <div className="flex flex-row items-center mt-10">
+          <div className="flex flex-row justify-center md:justify-start items-center mt-10">
             {/* <button className="bg-[#FFC222] hover:bg-yellow-700 text-2xl font-bold py-2 px-4 rounded-2xl h-[3.5rem] w-[15rem]">
               LEARN MORE
             </button> */}
@@ -59,28 +59,28 @@ export default function Projects() {
           </div>
         </div>
         {/* SharePlate Image */}
-        <div className="flex w-1/2 justify-center items-center h-1/4 mt-10 pr-20">
-          <img className="object-contain h-[30rem]" src={shareplatelogo} alt="SharePlate Logo" />
+        <div className="flex md:w-1/2 justify-center items-center h-1/4 md:mt-10 md:pr-20">
+          <img className="object-contain h-[10rem] md:h-[30rem]" src={shareplatelogo} alt="SharePlate Logo" />
         </div>
       </div>
 
       {/* Tech4Impact conatiner */}
       <div className="bg-[#F6F6F6] w-full">
-        <div className="flex flex-row justify-evenly bg-white rounded-t-[5vw] p-5 pl-20 pr-20 pb-20 min-h-[25vh]">
+        <div className="flex flex-col md:flex-row justify-evenly bg-white rounded-t-[5vw] p-5 pt-9 md:pl-20 md:pr-20 md:pb-20 md:min-h-[25vh]">
           {/* Tech4Impact Image */}
-          <div className="flex w-1/2 justify-center items-center h-1/4 mt-[16rem] ml-[4rem]">
-            <img className="object-contain h-[12rem]" src={tech4impactlogo} alt="Tech4Impact Logo" />
+          <div className="flex w-full md:w-1/2 justify-center items-center h-1/4 md:mt-[12rem] md:ml-[4rem]">
+            <img className="object-contain h-[6rem] md:h-[12rem]" src={tech4impactlogo} alt="Tech4Impact Logo" />
           </div>
           {/* Tech4Impact description */}
-          <div className="flex flex-col w-1/2 p-2">
-            <div className="font-[700] mt-20 text-4xl tracking-tight">
+          <div className="flex flex-col md:w-1/2 p-2">
+            <div className="font-[700] mt-5 md:mt-20 text-xl md:text-4xl tracking-tight">
               Tech4Impact
             </div>
-            <p className="items-center justify-center text-xl leading-10 font-[400] mt-12 mr-[6rem]">
+            <p className="items-center justify-center text-sm md:text-xl md:leading-10 font-[400] mt-5 md:mt-12 md:mr-[6rem]">
               Tech4Impact is a project focused on helping those with limited access to technology overcome the digital divide. We refurbish old devices, giving them new life and donating them to those in need. Our goal is to increase technology access; creating equal opportunities for education, employment, and connectivity.
             </p>
 
-            <div className="flex flex-row items-center mt-[3rem]">
+            <div className="flex flex-row justify-center md:justify-start items-center mt-[3rem]">
               {/* <button className="bg-[#FFC222] hover:bg-yellow-700 text-2xl font-bold py-2 px-4 rounded-2xl h-[3.5rem] w-[15rem]">
                 LEARN MORE
               </button> */}
