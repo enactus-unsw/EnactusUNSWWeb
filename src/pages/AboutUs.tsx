@@ -16,10 +16,10 @@ export default function AboutUs() {
         <h4 className="text-2xl">Be the change you want to see <br /> in the world.</h4>
       </header>
       {/* Our story section */}
-      <section className="flex flex-col items-center justify-center text-center bg-[url(images/aboutUsPage/aboutUs_rectangle.png)] bg-contain bg-center bg-no-repeat m-5">
+      <section className="flex flex-col items-center justify-center text-center bg-[url(images/aboutUsPage/aboutUs_rectangle.png)] md:bg-contain bg-center bg-no-repeat m-5">
         <h2 className="font-bold text-3xl pt-20 pb-6">Our Story</h2>
         <div className="sm:w-4/5 md:my-8 md:w-3/5">
-          <p className="pb-8 sm:text-sm md:text-xl">
+          <p className="pb-8 text-sm md:text-xl">
             Enactus (formerly known as Students in Free Enterprise, or SIFE) is an international
             non-profit organization with a global network of over 70,500 university students in 
             36 countries. Students collaborate with leaders in business and academia by taking 
@@ -27,7 +27,7 @@ export default function AboutUs() {
             communities. We target the SDGs to create impactful change in humanitarians startups 
             that aims at an issue and delivers a solution.
           </p>
-          <p className="pb-5 sm:text-sm md:text-xl">
+          <p className="pb-5 text-sm md:text-xl">
             Enactus UNSW is now one of the largest student organizations at UNSW, with 
             members ranging over 6 faculties and 20 disciplines. Originally established in 2000, 
             the organisation quickly grew to over 100 active members within the first few years.

@@ -140,13 +140,13 @@ export default function OurTeam() {
     <h3 style={{ fontSize: '2.4rem', fontWeight: 'bold', marginTop: '3rem' }}>STEER</h3>
 
     {/* top row */}
-    <div className="flex justify-evenly mt-8">
+    <div className="grid grid-cols-1 sm:grid-cols-2 gap-10 sm:gap-30 md:gap-60 mt-8 w-fit mx-auto">
       <TeamMember imageSrc={amrutha} name="Amrutha Sivaranjan" role="Co-President" />
       <TeamMember imageSrc={benjamin} name="Benjamin Liu" role="Co-President" />
     </div>
 
     {/* second row */}
-    <div className="grid grid-cols-2 md:grid-cols-3 gap-x-8 gap-y-8 mt-8">
+    <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 gap-10 mt-8">
       <TeamMember imageSrc={sehej} name="Sehej Panesar" role="Secretary" />
       <TeamMember imageSrc={iqtidar} name="Iqtidar Rahman" role="Treasurer" />
       <TeamMember imageSrc={dummy} name="Brendan Huynh" role="Vice President of Internals" />
@@ -178,60 +178,60 @@ export default function OurTeam() {
     <h3 style={{ fontSize: '2.4rem', fontWeight: 'bold', marginTop: '3rem' }}>DIRECTORS</h3>
 
     {/* prockets row */}
-    <div className="flex justify-evenly mt-8">
+    <div className="grid grid-cols-1 sm:grid-cols-2 gap-10 sm:gap-30 md:gap-60 mt-8 w-fit mx-auto">
       <TeamMember imageSrc={olivia} name="Olivia Vu" role="Prockets Director" />
       <TeamMember imageSrc={saaini} name="Saaini Balakrishna" role="Prockets Director" />
     </div>
 
     {/* tech4impact row */}
-    <div className="flex justify-evenly mt-8">
+    <div className="grid grid-cols-1 sm:grid-cols-2 gap-10 sm:gap-30 md:gap-60 mt-8 w-fit mx-auto">
       <TeamMember imageSrc={aryan} name="Aryan Thukral" role="Tech4Impact Director" />
       <TeamMember imageSrc={noyal} name="Noyal Shaji" role="Tech4Impact Director" />
     </div>
 
     {/* shareplate row */}
-    <div className="flex justify-evenly mt-8">
+    <div className="grid grid-cols-1 sm:grid-cols-2 gap-10 sm:gap-30 md:gap-60 mt-8 w-fit mx-auto">
       <TeamMember imageSrc={karen} name="Karen Huo" role="SharePlate Director" />
       <TeamMember imageSrc={jennifer} name="Jennifer Yu" role="SharePlate Director" />
     </div>
 
     {/* careers row */} 
-    <div className="flex justify-evenly mt-8">
+    <div className="grid grid-cols-1 sm:grid-cols-2 gap-10 sm:gap-30 md:gap-60 mt-8 w-fit mx-auto">
       <TeamMember imageSrc={dummy} name="Jayden Truong" role="Careers Director" />
       <TeamMember imageSrc={emily} name="Emily Goh" role="Careers Director" />
     </div>
   
     {/* sponsorships row */}
-    <div className="flex justify-evenly mt-8">
+    <div className="grid grid-cols-1 sm:grid-cols-2 gap-10 sm:gap-30 md:gap-60 mt-8 w-fit mx-auto">
       <TeamMember imageSrc={sarah} name="Sarah Zhong" role="Sponsorships Director" />
       <TeamMember imageSrc={meenal} name="Meenal Janjua" role="Sponsorships Director" />
     </div>
 
     {/* hr row */}
-    <div className="flex justify-evenly mt-8">
+    <div className="grid grid-cols-1 sm:grid-cols-2 gap-10 sm:gap-30 md:gap-60 mt-8 w-fit mx-auto">
       <TeamMember imageSrc={fleur} name="Fleur Randerath" role="HR Director" />
       <TeamMember imageSrc={dummy} name="Justin Bu" role="HR Director" />
     </div>
 
     {/* it row */}
-    <div className="flex justify-evenly mt-8">
+    <div className="grid grid-cols-1 sm:grid-cols-2 gap-10 sm:gap-30 md:gap-60 mt-8 w-fit mx-auto">
       <TeamMember imageSrc={dummy} name="Amy Wang" role="IT Director" />
       <TeamMember imageSrc={iris} name="Iris Dautriat" role="IT Director" />
     </div>
 
     {/* marketing row */}
-    <div className="flex justify-evenly mt-8">
+    <div className="grid grid-cols-1 sm:grid-cols-2 gap-10 sm:gap-30 md:gap-60 mt-8 w-fit mx-auto">
       <TeamMember imageSrc={henry} name="Henry Tat" role="Marketing Director" />
       <TeamMember imageSrc={jessica} name="Jessica Tran" role="Marketing Director" />
     </div>
 
     {/* multimedia row */}
-    <div className="flex justify-evenly mt-8">
+    <div className="grid grid-cols-1 gap-x-8 gap-y-8 mt-8">
       <TeamMember imageSrc={zainab} name="Zainab Atif" role="Multimedia Director" />
     </div>
 
     {/* socials row */}
-    <div className="flex justify-evenly mt-8">
+    <div className="grid grid-cols-1 sm:grid-cols-2 gap-10 sm:gap-30 md:gap-60 mt-8 w-fit mx-auto">
       <TeamMember imageSrc={maanya} name="Maanya Gawande" role="Social Director" />
       <TeamMember imageSrc={dummy} name="Saarthak Aggarwal" role="Social Director" />
     </div>
@@ -250,13 +250,13 @@ export default function OurTeam() {
     />
 
       {/* subcomittee  profile heading */}
-      <h3 style={{ fontSize: '2.4rem', fontWeight: 'bold', marginTop: '3rem' }}>SUBCOMMITTEES</h3>
+      <h3 className="text-[2rem] md:text-[2.4rem] font-bold mt-12"> SUBCOMMITTEES </h3>
 
       {/* subcom team list*/}
         {/* prockets team */}
         <div>
           <h4 style={{ fontSize: '1.6rem', fontWeight: 'bold', marginTop: '2rem'  }}>Prockets Team</h4>
-          <div style={{ display: 'flex', justifyContent: 'center', gap: '5rem', marginTop: '1rem' }}>
+          <div className="flex justify-center gap-[2rem] sm:gap-[5rem] mt-4">
             <div>
               <div>Diana So</div>
               <div>Guntas Sandhu</div>
@@ -276,7 +276,7 @@ export default function OurTeam() {
         {/* tech4i team */}
         <div>
           <h4 style={{ fontSize: '1.6rem', fontWeight: 'bold', marginTop: '2rem'  }}>Tech4Impact Team</h4>
-          <div style={{ display: 'flex', justifyContent: 'center', gap: '5rem', marginTop: '1rem' }}>
+          <div className="flex justify-center gap-[2rem] sm:gap-[5rem] mt-4">
             <div>
               <div>Anna Vu</div>
               <div>Emmy Luu</div>
@@ -295,7 +295,7 @@ export default function OurTeam() {
         {/* shareplate team */}
         <div>
           <h4 style={{ fontSize: '1.6rem', fontWeight: 'bold', marginTop: '2rem'  }}>SharePlate Team</h4>
-          <div style={{ display: 'flex', justifyContent: 'center', gap: '5rem', marginTop: '1rem' }}>
+          <div className="flex justify-center gap-[2rem] sm:gap-[5rem] mt-4">
             <div>
               <div>Andrew Tan</div>
               <div>Eric Yang</div>
@@ -314,7 +314,7 @@ export default function OurTeam() {
         {/* careers team */}
         <div>
           <h4 style={{ fontSize: '1.6rem', fontWeight: 'bold', marginTop: '2rem'  }}>Careers Team</h4>
-          <div style={{ display: 'flex', justifyContent: 'center', gap: '5rem', marginTop: '1rem' }}>
+          <div className="flex justify-center gap-[2rem] sm:gap-[5rem] mt-4">
             <div>
               <div>Adarsh Wijesinghe</div>
               <div>Henry Huang</div>
@@ -333,7 +333,7 @@ export default function OurTeam() {
         {/* spons team */}
         <div>
           <h4 style={{ fontSize: '1.6rem', fontWeight: 'bold', marginTop: '2rem'  }}>Sponsorships Team</h4>
-          <div style={{ display: 'flex', justifyContent: 'center', gap: '5rem', marginTop: '1rem' }}>
+          <div className="flex justify-center gap-[2rem] sm:gap-[5rem] mt-4">
             <div>
               <div>Arthi Kathiravelupillai</div>
               <div>Nikhil Sawant</div>
@@ -352,7 +352,7 @@ export default function OurTeam() {
         {/* hr team */}
         <div>
           <h4 style={{ fontSize: '1.6rem', fontWeight: 'bold', marginTop: '2rem'  }}>Human Resources Team</h4>
-          <div style={{ display: 'flex', justifyContent: 'center', gap: '5rem', marginTop: '1rem' }}>
+          <div className="flex justify-center gap-[2rem] sm:gap-[5rem] mt-4">
             <div>
               <div>Aaryan Khan</div>
               <div>Heidi Ho</div>
@@ -370,7 +370,7 @@ export default function OurTeam() {
         {/* it team */}
         <div>
           <h4 style={{ fontSize: '1.6rem', fontWeight: 'bold', marginTop: '2rem'  }}>Information Technology Team</h4>
-          <div style={{ display: 'flex', justifyContent: 'center', gap: '5rem', marginTop: '1rem' }}>
+          <div className="flex justify-center gap-[2rem] sm:gap-[5rem] mt-4">
             <div>
               <div>Jasmine Nguyen</div>
               <div>Jason Chen</div>
@@ -389,7 +389,7 @@ export default function OurTeam() {
         {/* marketing team */}
         <div>
           <h4 style={{ fontSize: '1.6rem', fontWeight: 'bold', marginTop: '2rem'  }}>Marketing Team</h4>
-          <div style={{ display: 'flex', justifyContent: 'center', gap: '5rem', marginTop: '1rem' }}>
+          <div className="flex justify-center gap-[2rem] sm:gap-[5rem] mt-4">
             <div>
               <div>Aaron Tran</div>
             </div>
@@ -407,7 +407,7 @@ export default function OurTeam() {
        {/* multi team */}
        <div>
           <h4 style={{ fontSize: '1.6rem', fontWeight: 'bold', marginTop: '2rem'  }}>Multimedia Team</h4>
-          <div style={{ display: 'flex', justifyContent: 'center', gap: '5rem', marginTop: '1rem' }}>
+          <div className="flex justify-center gap-[2rem] sm:gap-[5rem] mt-4">
             <div>
               <div>Calvin Bae</div>
               <div>Maxwell Su</div>
@@ -426,7 +426,7 @@ export default function OurTeam() {
         {/* socials team*/}
         <div>
           <h4 style={{ fontSize: '1.6rem', fontWeight: 'bold', marginTop: '2rem'  }}>Socials Team</h4>
-          <div style={{ display: 'flex', justifyContent: 'center', gap: '5rem', marginTop: '1rem' }}>
+          <div className="flex justify-center gap-[2rem] sm:gap-[5rem] mt-4">
             <div>
               <div>Anonna Das</div>
               <div>Chyna Probert</div>
