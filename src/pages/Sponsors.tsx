@@ -20,10 +20,9 @@ export default function Sponsors() {
             absolute 
             text-[#2A2D32] 
             font-bold 
-            text-lg
-            sm:text-xl
-            md:text-9xl
+            text-[clamp(10px,3vw,60px)]
             md:mb-60 
+            md:mt-[120px]
             z-[1] 
             text-center 
             w-full
@@ -36,12 +35,10 @@ export default function Sponsors() {
             absolute 
             text-[#2A2D32] 
             font-normal 
-            text-xs
-            sm:text-lg
-            md:text-6xl
-            mt-20
-            md:mt-60
-            z-[2] 
+            text-[clamp(6px,1.7vw,34px)]
+            md:leading-[clamp(18px,5vw,44px)]
+            mt-[100px]
+            z-[1] 
             text-center 
             w-full
           "
@@ -58,7 +55,7 @@ export default function Sponsors() {
             fontSize: 'clamp(30px, 5vw, 45px)',
             margin: 0,
             marginTop: "10vh",
-            zIndex: 3,
+            zIndex: 1,
             textAlign: 'center',
             width: '100%',
           }}
@@ -78,7 +75,7 @@ export default function Sponsors() {
             fontSize: 'clamp(30px, 5vw, 45px)',
             margin: 0,
             marginTop: '100px',
-            zIndex: 3,
+            zIndex: 1,
             textAlign: 'center',
             width: '100%',
           }}
@@ -88,13 +85,32 @@ export default function Sponsors() {
 
       <img src={Separator} alt="Separator" className="w-full h-auto" style={{ width: '90vw', margin: '0 auto', marginTop: 30, display: 'block', marginBottom: 50}}/>
 
-      
-      <div className="w-fit mx-auto grid sm:grid-cols-2 md:grid-cols-3 gap-x-2 gap-y-2 mt-2 place-items-center">
-        <img src={thescarycanary} alt="The Scary Canary" className="w-[140px] sm:w-[180px] md:w-[225px]"/>
-        <img src={capgemini} alt="Capgemini" className="w-[240px] sm:w-[350px] md:w-[496px]"/>
-        <img src={macquarie} alt="Macquarie" className="w-[200px] sm:w-[320px] md:w-[423px]"/>
-        <img src={redbull} alt="Red Bull" className="w-[200px] sm:w-[320px] md:w-[372px]"/>
-        <img src={bearish} alt="Bearish" className="w-[200px] sm:w-[320px] md:w-[405px]"/>
+      <div
+        style={{
+          display: 'flex',
+          justifyContent: 'center',
+          alignItems: 'center',
+          marginBottom: '20px',
+          flexWrap: 'wrap',
+          gap: 'clamp(20px, 5vw, 77px)'
+        }}
+      >
+        <img src={thescarycanary} alt="The Scary Canary" style={{ width: 'min(40vw,225px)', minWidth: '100px', marginLeft: 'clamp(10px, 5vw, 100px)', marginRight: 'clamp(10px, 5vw, 77px)' }} className="w-auto h-auto"/>
+        <img src={capgemini} alt="Capgemini" style={{ width: 'min(50vw,496px)', minWidth: '120px', marginRight: 'clamp(10px, 3vw, 12px)' }} className="w-auto h-auto"/>
+        <img src={macquarie} alt="Macquarie" style={{ width: 'min(40vw,423px)', minWidth: '100px' }} className="w-auto h-auto"/>
+      </div>
+
+      <div
+        style={{
+          display: 'flex',
+          justifyContent: 'center',
+          alignItems: 'center',
+          flexWrap: 'wrap',
+          gap: 'clamp(20px, 8vw, 106px)'
+        }}
+      >
+        <img src={redbull} alt="Red Bull" style={{ width: 'min(40vw,372px)', minWidth: '100px' }} className="w-auto h-auto"/>
+        <img src={bearish} alt="Bearish" style={{ width: 'min(40vw,405px)', minWidth: '100px' }} className="w-auto h-auto"/>
       </div>
     </div>
   );
