@@ -4,26 +4,26 @@ import { ArrowBackRounded, ArrowForwardRounded } from "@mui/icons-material";
 import { Link } from "react-router-dom";
 
 // Images of the event cover pictures
-import launchWeekImage from "../images/eventsCoverPic/launchWeek.jpg";
-import pitchForImpact from "../images/eventsCoverPic/pitchForImpact.jpg";
-import projectWeekAndShowcase from "../images/eventsCoverPic/projectWeekAndShowcase.jpg";
+import wingsForLifeImage from "../images/eventsCoverPic/wingsForLife.jpg";
+import startupNetworkingNightImage from "../images/eventsCoverPic/startupNetworkingNight.jpg";
+import projectShowcaseImage from "../images/eventsCoverPic/projectShowcase.jpg";
 
 const events = [
   {
-    title: "Pitch for Impact Case Challenge",
-    link: "https://www.facebook.com/share/18GECyQyGp/",
-    image: pitchForImpact,
+    title: "Wings for Life",
+    link: "https://www.facebook.com/events/1200241964922272",
+    image: wingsForLifeImage,
   },
   {
-    title: "Project Week & Showcase 2025",
-    link: "https://fb.me/e/aZwJn0xIK",
-    image: projectWeekAndShowcase,
+    title: "Start-Up Networking Night",
+    link: "https://www.facebook.com/events/519442017819568",
+    image: startupNetworkingNightImage,
   },
   {
-    title: "Launch Week",
-    link: "https://www.facebook.com/events/1091196176028342",
-    image: launchWeekImage,
-  }
+    title: "Project Showcase",
+    link: "https://www.facebook.com/events/2729108283942901",
+    image: projectShowcaseImage,
+  },
 ];
 
 export default function HomeEventsCarousel() {

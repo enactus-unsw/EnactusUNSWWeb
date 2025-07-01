@@ -10,6 +10,9 @@ import { Link } from "react-router-dom";
 import launchWeekImage from "../images/eventsCoverPic/launchWeek.jpg";
 import pitchForImpact from "../images/eventsCoverPic/pitchForImpact.jpg";
 import projectWeekAndShowcase from "../images/eventsCoverPic/projectWeekAndShowcase.jpg";
+import wingsForLifeImage from "../images/eventsCoverPic/wingsForLife.jpg";
+import startupNetworkingNightImage from "../images/eventsCoverPic/startupNetworkingNight.jpg";
+import projectShowcaseImage from "../images/eventsCoverPic/projectShowcase.jpg";
 
 const events = [
   {
@@ -29,7 +32,25 @@ const events = [
     title: "Launch Week",
     link: "https://www.facebook.com/events/1091196176028342",
     image: launchWeekImage,
-  }
+  },
+  {
+    id: 4,
+    title: "Wings for Life",
+    link: "https://www.facebook.com/events/1200241964922272",
+    image: wingsForLifeImage,
+  },
+  {
+    id: 5,
+    title: "Start-Up Networking Night",
+    link: "https://www.facebook.com/events/519442017819568",
+    image: startupNetworkingNightImage,
+  },
+  {
+    id: 6,
+    title: "Project Showcase",
+    link: "https://www.facebook.com/events/2729108283942901",
+    image: projectShowcaseImage,
+  },
 ];
 
 export default function PastEventCards() {
