@@ -61,6 +61,7 @@ export default function PastEventCards() {
         width: '100%',
         display: 'flex',
         justifyContent: 'center',
+        alignItems: 'center',
         flexWrap: 'wrap',
         gap: 5,
       }}
@@ -69,8 +70,11 @@ export default function PastEventCards() {
         <Link key={card.id} to={card.link} target="_blank" rel="noopener noreferrer">
           <Card
             sx={{
-              width: 400,
-              height: 222,
+              width: {
+                xs: '70vw',
+                sm: '80vw',
+                md: 400,
+              },
               borderRadius: 5,
               boxShadow: "0 4px 20px 0 rgba(0, 0, 0, 0.12)",
               position: "relative",

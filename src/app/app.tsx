@@ -1,4 +1,4 @@
-import { BrowserRouter, Routes, Route } from "react-router";
+import {  Routes, Route, HashRouter } from "react-router";
 
 import Home from "../pages/Home";
 import AboutUs from "../pages/AboutUs";
@@ -23,7 +23,7 @@ const theme = createTheme({
 function App() {
   return (
     <ThemeProvider theme={theme}>
-      <BrowserRouter>
+      <HashRouter>
         <>
         <Header/>
           <Routes>
@@ -37,7 +37,7 @@ function App() {
           </Routes>
           <Footer/>
         </>
-      </BrowserRouter>
+      </HashRouter>
     </ThemeProvider>
   );
 }

@@ -48,7 +48,7 @@ export default function HomeEventsCarousel() {
   };
 
   return (
-    <Box display="flex" flexDirection="row" alignItems="center">
+    <Box display="flex" flexDirection="row" justifyContent="space-around" alignItems="center">
       <ArrowBackRounded 
         onClick={handlePrev} 
         sx={{
@@ -63,12 +63,16 @@ export default function HomeEventsCarousel() {
       <Link to={events[currIndex].link} target="_blank" rel="noopener noreferrer">
         <Card
           sx={{
-            width: 500,
-            height: 277,
+            width: {
+              xs: '70vw', 
+              sm: '80vw',
+              md: 500,
+            },
+            overflow: "hidden",
             borderRadius: 5,
             boxShadow: "0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19)",
             position: "relative",
-            margin: "0 50px",
+            margin: "0 2vw",
             transition: "opacity 0.3s ease-in-out, transform 0.4s cubic-bezier(0.5, 1.6, 0.4, 0.8)",
             opacity: isFade ? 0.3 : 1,
             "&:hover": {

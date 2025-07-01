@@ -21,7 +21,7 @@ import tiktokLogo from "../images/Logos/Tiktok.png";
 
 // Website Links
 const enactusSparcWebsite = "https://www.arc.unsw.edu.au/get-involved/opportunity?name=Enactus%20UNSW";
-const instagramLink = "https://www.instagram.com/enactus_unsw/";
+const instagramLink = "https://www.instagram.com/enactusunsw/?hl=en";
 const facebookLink = "https://www.facebook.com/profile.php?id=61568234819798";
 const linkedInLink = "https://www.linkedin.com/school/enactus-unsw/posts/?feedView=all";
 const tiktokLink = "https://www.tiktok.com/@enactusunsw";
@@ -103,7 +103,7 @@ useEffect(() => {
         <img src={triangle} alt="Triangle Shape" className="w-full"/>
       </div>
       {/* Projects */}
-      <section className="text-center pt-14 pb-20">
+      <section className="text-center pt-14 pb-20 pl-2 pr-2">
         <h1 className="font-bold text-3xl mb-12">
           Our Projects
         </h1>
@@ -112,7 +112,7 @@ useEffect(() => {
         </Link>
       </section>
       {/* Events */}
-      <section className="bg-[#FFEBB6] pt-16 pb-10 text-center">
+      <section className="bg-[#FFEBB6] pt-16 pb-10 text-center pl-2 pr-2">
         <h1 className="font-bold text-3xl mb-12">
           Our Events
         </h1>

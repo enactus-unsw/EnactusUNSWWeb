@@ -14,34 +14,34 @@ export default function Sponsors() {
   return (
     <div>
       <header style={{ position: 'relative', width: '100%', display: 'flex', justifyContent: 'center', alignItems: 'center'}}>
-        <img src={Banner} alt="Banner" className="w-full h-auto" style={{ marginTop: '59px' }} />
+        <img src={Banner} alt="Banner" className="w-full h-auto" style={{ marginTop: '3rem' }} />
         <h1
-          style={{
-            position: 'absolute',
-            color: '#2A2D32',
-            fontWeight: 'bold',
-            fontSize: 'clamp(24px, 5vw, 60px)',
-            margin: 0,
-            marginTop: 0,
-            zIndex: 1,
-            textAlign: 'center',
-            width: '100%',
-          }}
+            className="
+            absolute 
+            text-[#2A2D32] 
+            font-bold 
+            text-[clamp(10px,3vw,60px)]
+            md:mb-60 
+            md:mt-[120px]
+            z-[1] 
+            text-center 
+            w-full
+          "
         >
           Sponsors and Partners
         </h1>
         <h3
-          style={{
-            position: 'absolute',
-            color: '#2A2D32',
-            fontWeight: 400,
-            fontSize: 'clamp(16px, 2vw, 34px)',
-            margin: 0,
-            marginTop: 'clamp(100px, 15vw, 190px)',
-            zIndex: 2,
-            textAlign: 'center',
-            width: '100%',
-          }}
+         className="
+            absolute 
+            text-[#2A2D32] 
+            font-normal 
+            text-[clamp(6px,1.7vw,34px)]
+            md:leading-[clamp(18px,5vw,44px)]
+            mt-[100px]
+            z-[1] 
+            text-center 
+            w-full
+          "
         >
           Enactus UNSW is grateful for all our wonderful <br></br> sponsors and partners!
         </h3>
@@ -54,8 +54,8 @@ export default function Sponsors() {
             fontWeight: 'bold',
             fontSize: 'clamp(30px, 5vw, 45px)',
             margin: 0,
-            marginTop: '100px',
-            zIndex: 3,
+            marginTop: "10vh",
+            zIndex: 1,
             textAlign: 'center',
             width: '100%',
           }}
@@ -63,7 +63,7 @@ export default function Sponsors() {
         Sponsors
       </h2>
 
-      <img src={Separator} alt="Separator" className="w-full h-auto" style={{ width: '1200px', margin: '0 auto', display: 'block', marginTop: '28px'}}/>
+      <img src={Separator} alt="Separator" className="w-full h-auto" style={{ width: '90vw', margin: '0 auto', display: 'block', marginTop: '28px'}}/>
       
       <img src={commonwealthbank} alt="Commonwealth Bank" className="w-auto h-auto" style={{width: '600px', margin: '0 auto', display: 'block', marginTop: '49px'}}/>
       
@@ -75,7 +75,7 @@ export default function Sponsors() {
             fontSize: 'clamp(30px, 5vw, 45px)',
             margin: 0,
             marginTop: '100px',
-            zIndex: 3,
+            zIndex: 1,
             textAlign: 'center',
             width: '100%',
           }}
@@ -83,17 +83,34 @@ export default function Sponsors() {
         Partners
       </h2>
 
-      <img src={Separator} alt="Separator" className="w-full h-auto" style={{ width: '1200px', margin: '0 auto', display: 'block', marginTop: '28px', marginBottom: '95px'}}/>
+      <img src={Separator} alt="Separator" className="w-full h-auto" style={{ width: '90vw', margin: '0 auto', marginTop: 30, display: 'block', marginBottom: 50}}/>
 
-      <div style={{ display: 'flex', justifyContent: 'center', alignItems: 'center', marginBottom: '20px' }}>
-        <img src={thescarycanary} alt="The Scary Canary" className="w-auto h-auto" style={{ width: '225px', marginLeft: '100px', marginRight: '77px' }}/>
-        <img src={capgemini} alt="Capgemini" className="w-auto h-auto" style={{ width: '496px', marginRight: '12px' }}/>
-        <img src={macquarie} alt="Macquarie" className="w-auto h-auto" style={{ width: '423px' }}/>
+      <div
+        style={{
+          display: 'flex',
+          justifyContent: 'center',
+          alignItems: 'center',
+          marginBottom: '20px',
+          flexWrap: 'wrap',
+          gap: 'clamp(20px, 5vw, 77px)'
+        }}
+      >
+        <img src={thescarycanary} alt="The Scary Canary" style={{ width: 'min(40vw,225px)', minWidth: '100px', marginLeft: 'clamp(10px, 5vw, 100px)', marginRight: 'clamp(10px, 5vw, 77px)' }} className="w-auto h-auto"/>
+        <img src={capgemini} alt="Capgemini" style={{ width: 'min(50vw,496px)', minWidth: '120px', marginRight: 'clamp(10px, 3vw, 12px)' }} className="w-auto h-auto"/>
+        <img src={macquarie} alt="Macquarie" style={{ width: 'min(40vw,423px)', minWidth: '100px' }} className="w-auto h-auto"/>
       </div>
 
-      <div style={{ display: 'flex', justifyContent: 'center', alignItems: 'center', gap: '106px' }}>
-        <img src={redbull} alt="Red Bull" className="w-auto h-auto" style={{ width: '372px' }}/>
-        <img src={bearish} alt="Bearish" className="w-auto h-auto" style={{ width: '405px' }}/>
+      <div
+        style={{
+          display: 'flex',
+          justifyContent: 'center',
+          alignItems: 'center',
+          flexWrap: 'wrap',
+          gap: 'clamp(20px, 8vw, 106px)'
+        }}
+      >
+        <img src={redbull} alt="Red Bull" style={{ width: 'min(40vw,372px)', minWidth: '100px' }} className="w-auto h-auto"/>
+        <img src={bearish} alt="Bearish" style={{ width: 'min(40vw,405px)', minWidth: '100px' }} className="w-auto h-auto"/>
       </div>
     </div>
   );
