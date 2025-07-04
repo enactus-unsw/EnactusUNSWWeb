@@ -4,16 +4,11 @@ import { ArrowBackRounded, ArrowForwardRounded } from "@mui/icons-material";
 import { Link } from "react-router-dom";
 
 // Images of the event cover pictures
-import wingsForLifeImage from "../images/eventsCoverPic/wingsForLife.jpg";
 import startupNetworkingNightImage from "../images/eventsCoverPic/startupNetworkingNight.jpg";
 import projectShowcaseImage from "../images/eventsCoverPic/projectShowcase.jpg";
+import medsciXcaliXEnactusPubcrawl from "../images/eventsCoverPic/Medsci_Cali_Enactus_Pubcrawl.jpg";
 
 const events = [
-  {
-    title: "Wings for Life",
-    link: "https://www.facebook.com/events/1200241964922272",
-    image: wingsForLifeImage,
-  },
   {
     title: "Start-Up Networking Night",
     link: "https://www.facebook.com/events/519442017819568",
@@ -23,6 +18,11 @@ const events = [
     title: "Project Showcase",
     link: "https://www.facebook.com/events/2729108283942901",
     image: projectShowcaseImage,
+  },
+  {
+    title: "MEDSCISOC X ENACTUS X CALISOC Pubcrawl",
+    link: "https://fb.me/e/7JDXk8Tju",
+    image: medsciXcaliXEnactusPubcrawl,
   },
 ];
 
