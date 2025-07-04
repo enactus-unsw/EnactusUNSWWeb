@@ -76,22 +76,26 @@ useEffect(() => {
     <>
       <header className="text-center">
         <img className="h-20 block ml-auto mr-auto m-4" src={enactusUNSWLogo} alt="Enactus UNSW Logo" />
-        <h1 className="font-bold text-4xl mb-10">
+        <h1 className="font-bold text-2xl sm:text-4xl mb-8 sm:mb-10 leading-snug sm:leading-normal">
           The Student Hub of Social Impact <br /> and Entrepreneurship
         </h1>
-        <img className="w-3/5 rounded-xl block ml-auto mr-auto saturate-[1.15] mb-20 transition-transform duration-300 ease-in-out hover:scale-105" src={enactusTeamPhoto} alt="Enactus Team Photo" />
+        <img 
+          className="w-5/6 max-w-md sm:max-w-3xl rounded-xl mx-auto saturate-[1.15] mb-12 sm:mb-20 transition-transform duration-300 ease-in-out hover:scale-105" 
+          src={enactusTeamPhoto} 
+          alt="Enactus Team Photo" 
+        />
       </header>
       {/* About Us */}
       <div>
-        <section className="bg-[#FFEBB6] text-center pt-16 pb-2">
-          <h1 className="font-bold text-3xl">
+        <section className="bg-[#FFEBB6] text-center pt-16 pb-12 sm:pb-2 px-4 sm:px-0">
+          <h1 className="font-bold text-2xl sm:text-3xl">
             Our Mission
           </h1>
-          <p className="my-10 text-[18px]">
-            Our mission is to inspire and empower students to build <br />
-            communities for sustainable, scalable, and measurable social <br />
-            impact by using entrepreneurial action. As an incubator, we <br />
-            strive to foster project growth from the initial stages onward, <br />
+        <p className="my-6 sm:my-10 text-base sm:text-[18px] leading-relaxed sm:leading-7 max-w-3xl mx-auto whitespace-pre-line">
+            Our mission is to inspire and empower students to build 
+            communities for sustainable, scalable, and measurable social 
+            impact by using entrepreneurial action. As an incubator, we 
+            strive to foster project growth from the initial stages onward, 
             until they can function independently.
           </p>
           <EnactusButton to="/about-us" className="text-white">
@@ -102,7 +106,7 @@ useEffect(() => {
       </div>
       {/* Projects */}
       <section className="text-center pt-14 pb-20 pl-2 pr-2">
-        <h1 className="font-bold text-3xl mb-12">
+        <h1 className="font-bold text-2xl sm:text-3xl mb-12">
           Our Projects
         </h1>
         <Link to={'/projects'}>
@@ -111,7 +115,7 @@ useEffect(() => {
       </section>
       {/* Events */}
       <section className="bg-[#FFEBB6] pt-16 pb-10 text-center pl-2 pr-2">
-        <h1 className="font-bold text-3xl mb-12">
+        <h1 className="font-bold text-2xl sm:text-3xl mb-12">
           Our Events
         </h1>
         <div className="flex justify-center items-center mb-12">
@@ -124,7 +128,7 @@ useEffect(() => {
       <img src={tiltedShape} alt="Tilted Shape" className="w-full"/>
       {/* Join Us */}
       <section id="join-us" className="text-center pt-12 pb-20">
-        <h1 className="font-bold text-3xl">
+        <h1 className="font-bold text-2xl sm:text-3xl">
           How to get involved?
         </h1>
         <h3 className="font-bold text-lg pt-10 pb-4">
