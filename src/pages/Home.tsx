@@ -79,7 +79,7 @@ useEffect(() => {
         <h1 className="font-bold text-4xl mb-10">
           The Student Hub of Social Impact <br /> and Entrepreneurship
         </h1>
-        <img className="w-3/5 rounded-xl block ml-auto mr-auto saturate-[1.15] mb-20" src={enactusTeamPhoto} alt="Enactus Team Photo" />
+        <img className="w-3/5 rounded-xl block ml-auto mr-auto saturate-[1.15] mb-20 transition-transform duration-300 ease-in-out hover:scale-105" src={enactusTeamPhoto} alt="Enactus Team Photo" />
       </header>
       {/* About Us */}
       <div>
