@@ -11,7 +11,6 @@ import ContactUs from "../pages/ContactUs";
 
 import Header from "../components/header"; 
 import Footer from "../components/footer"; 
-import ScrollToTop from "../components/scroll-to-top";
 import PageWrapper from "../components/page-wrapper";
 
 import { createTheme, ThemeProvider } from "@mui/material/styles";
@@ -25,9 +24,20 @@ const theme = createTheme({
 function AnimatedRoutes() {
   const location = useLocation();
 
+  function handleExitComplete() {
+  if(location.hash) {
+    const element = document.querySelector(location.hash);
+    if (element) {
+      element.scrollIntoView({ behavior: "smooth" });
+      return;
+    }
+  } 
+  window.scrollTo(0, 0);
+}
+
   return (
-    <AnimatePresence mode="wait">
-      <Routes location={location} key={location.pathname}>
+    <AnimatePresence mode="wait" onExitComplete={handleExitComplete}>
+      <Routes location={location} key={location.pathname + location.hash}>
         <Route path="/" element={<PageWrapper><Home /></PageWrapper>} />
         <Route path="/about-us" element={<PageWrapper><AboutUs /></PageWrapper>} />
         <Route path="/our-team" element={<PageWrapper><OurTeam /></PageWrapper>} />
@@ -44,7 +54,6 @@ function App() {
   return (
     <ThemeProvider theme={theme}>
       <HashRouter>
-        <ScrollToTop />
         <Header />
         <AnimatedRoutes />
         <Footer />
