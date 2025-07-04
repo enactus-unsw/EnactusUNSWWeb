@@ -2,19 +2,27 @@ import tech4impactlogo from "../images/tech4impact_logo.png";
 import shareplatelogo from "../images/Shareplate_Logo_Grey.png";
 import procketslogo from "../images/prockets_logo.png";
 import instagramlogo from "../images/Logos/Instagram.png";
+import titleBackground from "../images/ProjectsPage/titleBackground.png"
 
 export default function Projects() {
   return ( 
     <div className="text-[#2A2D32] w-full flex-grow">
       {/* title container */}
-      <div className="bg-[url(src/images/ProjectsPage/titleBackground.png)] bg-cover mx-auto flex justify-center items-center font-[800] text-4xl md:text-8xl tracking-wide w-full h-[10rem] md:h-[26rem]">
+      <div
+        className="mx-auto flex justify-center items-center font-[800] text-4xl md:text-8xl tracking-wide w-full h-[10rem] md:h-[26rem]"
+        style={{
+          backgroundImage: `url(${titleBackground})`,
+          backgroundSize: 'cover',
+          backgroundPosition: 'center',
+        }}
+      >
         Our Projects
       </div>
 
       {/* Prockets conatiner */}
       <div className="flex flex-col md:flex-row justify-evenly p-5 md:px-20 mx-auto md:min-h-[25vh]">
         {/* Prockets Image */}
-        <div className="flex justify-center items-center w-full md:w-1/2 md:mt-8">
+        <div className="flex justify-center items-center w-full md:w-1/2 md:mt-8 mb-20 transition-transform duration-300 ease-in-out hover:scale-105">
           <img className="object-contain h-[10rem] md:h-[30rem]" src={procketslogo} alt="Prockets Logo" />
         </div>
         {/* Prockets description */}
@@ -31,7 +39,7 @@ export default function Projects() {
               LEARN MORE
             </button> */}
             <a href="https://www.instagram.com/prockets.au/" target="_blank" rel="noopener noreferrer">
-              <img className="h-15 block ml-4" src={instagramlogo} alt="Instagram" />
+              <img className="h-15 block ml-4 rounded-full" src={instagramlogo} alt="Instagram" />
             </a>
           </div> 
         </div>
@@ -54,13 +62,13 @@ export default function Projects() {
               LEARN MORE
             </button> */}
             <a href="https://www.instagram.com/shareplate.au/" target="_blank" rel="noopener noreferrer">
-              <img className="h-15 block" src={instagramlogo} alt="Instagram" />
+              <img className="h-15 block rounded-full" src={instagramlogo} alt="Instagram" />
             </a>
           </div>
         </div>
         {/* SharePlate Image */}
-        <div className="flex md:w-1/2 justify-center items-center h-1/4 md:mt-10 md:pr-20">
-          <img className="object-contain h-[10rem] md:h-[30rem]" src={shareplatelogo} alt="SharePlate Logo" />
+        <div className="flex md:w-1/2 justify-center items-center h-1/4 md:mt-10 md:pr-20 mb-20 transition-transform duration-300 ease-in-out hover:scale-105">
+          <img className="object-contain h-[10rem] md:h-[30rem] " src={shareplatelogo} alt="SharePlate Logo" />
         </div>
       </div>
 
@@ -68,7 +76,7 @@ export default function Projects() {
       <div className="bg-[#F6F6F6] w-full">
         <div className="flex flex-col md:flex-row justify-evenly bg-white rounded-t-[5vw] p-5 pt-9 md:pl-20 md:pr-20 md:pb-20 md:min-h-[25vh]">
           {/* Tech4Impact Image */}
-          <div className="flex w-full md:w-1/2 justify-center items-center h-1/4 md:mt-[12rem] md:ml-[4rem]">
+          <div className="flex w-full md:w-1/2 justify-center items-center h-1/4 md:mt-[12rem] md:ml-[4rem] mb-20 transition-transform duration-300 ease-in-out hover:scale-105">
             <img className="object-contain h-[6rem] md:h-[12rem]" src={tech4impactlogo} alt="Tech4Impact Logo" />
           </div>
           {/* Tech4Impact description */}
@@ -80,12 +88,12 @@ export default function Projects() {
               Tech4Impact is a project focused on helping those with limited access to technology overcome the digital divide. We refurbish old devices, giving them new life and donating them to those in need. Our goal is to increase technology access; creating equal opportunities for education, employment, and connectivity.
             </p>
 
-            <div className="flex flex-row justify-center md:justify-start items-center mt-[3rem]">
+            <div className="flex flex-row justify-center md:justify-start items-center mt-[3rem] ">
               {/* <button className="bg-[#FFC222] hover:bg-yellow-700 text-2xl font-bold py-2 px-4 rounded-2xl h-[3.5rem] w-[15rem]">
                 LEARN MORE
               </button> */}
               <a href="https://www.instagram.com/tech4impact.au/" target="_blank" rel="noopener noreferrer">
-              <img className="h-15 block" src={instagramlogo} alt="Instagram" />
+              <img className="h-15 block rounded-full" src={instagramlogo} alt="Instagram" />
             </a>
             </div>
           </div>

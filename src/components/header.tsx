@@ -1,4 +1,3 @@
-import EnactusButton from "./atoms/button/enactusButton";
 import enactusLogo from "../images/Enactus Logo.png";
 import { Link } from "react-router-dom";
 
@@ -18,9 +17,13 @@ const Header = () => {
           <Link to="/events" className="font-Montserrat text-[#2A2D32] text-xl hover:underline font-bold py-2 ">EVENTS</Link>
           <Link to="/sponsors-partners" className="font-Montserrat text-[#2A2D32] text-xl hover:underline font-bold py-2 ">SPONSORS</Link>
           <Link to="/contact-us" className="font-Montserrat text-[#2A2D32] text-xl hover:underline font-bold py-2 ">CONTACT</Link>
-          <EnactusButton to="/#join-us"  rel="noopener noreferrer" className="bg-[#FFC222] text-black hover:scale-100 py-2 ">
+          <Link
+            to={{ pathname: "/", hash: "#join-us" }}
+            rel="noopener noreferrer"
+            className="inline-block bg-[#FFC222] text-black font-bold text-center py-3 px-5 rounded-xl hover:bg-[#FFDA55]"
+          >
             JOIN US
-          </EnactusButton>
+          </Link>
         </div>
       </nav>
     </header>

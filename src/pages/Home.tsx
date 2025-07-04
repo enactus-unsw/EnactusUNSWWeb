@@ -64,15 +64,13 @@ export default function Home() {
   const location = useLocation();
 
 useEffect(() => {
-  // Wait until the page is loaded and then scroll to the section
-  const hash = location.hash;
-  if (hash) {
-    const element = document.querySelector(hash);
-    if (element) {
-      element.scrollIntoView({ behavior: 'smooth' });
+    if (location.hash) {
+      const element = document.querySelector(location.hash);
+      if (element) {
+        element.scrollIntoView({ behavior: 'smooth' });
+      }
     }
-  }
-}, [location]);
+  }, [location.hash]);
 
   return (
     <>
@@ -81,7 +79,7 @@ useEffect(() => {
         <h1 className="font-bold text-4xl mb-10">
           The Student Hub of Social Impact <br /> and Entrepreneurship
         </h1>
-        <img className="w-3/5 rounded-xl block ml-auto mr-auto saturate-[1.15] mb-20" src={enactusTeamPhoto} alt="Enactus Team Photo" />
+        <img className="w-3/5 rounded-xl block ml-auto mr-auto saturate-[1.15] mb-20 transition-transform duration-300 ease-in-out hover:scale-105" src={enactusTeamPhoto} alt="Enactus Team Photo" />
       </header>
       {/* About Us */}
       <div>
@@ -123,9 +121,9 @@ useEffect(() => {
           MORE EVENTS
         </EnactusButton>
       </section>
-      <img src={tiltedShape} alt="Tilted Shape" className="w-full" id="join-us"/>
+      <img src={tiltedShape} alt="Tilted Shape" className="w-full"/>
       {/* Join Us */}
-      <section className="text-center pt-12 pb-20">
+      <section id="join-us" className="text-center pt-12 pb-20">
         <h1 className="font-bold text-3xl">
           How to get involved?
         </h1>
