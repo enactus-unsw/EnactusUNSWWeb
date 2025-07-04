@@ -13,6 +13,8 @@ import projectWeekAndShowcase from "../images/eventsCoverPic/projectWeekAndShowc
 import wingsForLifeImage from "../images/eventsCoverPic/wingsForLife.jpg";
 import startupNetworkingNightImage from "../images/eventsCoverPic/startupNetworkingNight.jpg";
 import projectShowcaseImage from "../images/eventsCoverPic/projectShowcase.jpg";
+import medsciXcaliXEnactusPubcrawl from "../images/eventsCoverPic/Medsci_Cali_Enactus_Pubcrawl.jpg";
+import boulderingNight from "../images/eventsCoverPic/boulderingNight.jpg";
 
 const events = [
   {
@@ -35,22 +37,34 @@ const events = [
   },
   {
     id: 4,
-    title: "Wings for Life",
-    link: "https://www.facebook.com/events/1200241964922272",
-    image: wingsForLifeImage,
-  },
-  {
-    id: 5,
     title: "Start-Up Networking Night",
     link: "https://www.facebook.com/events/519442017819568",
     image: startupNetworkingNightImage,
   },
   {
-    id: 6,
+    id: 5,
     title: "Project Showcase",
     link: "https://www.facebook.com/events/2729108283942901",
     image: projectShowcaseImage,
   },
+  {
+    id: 6,
+    title: "MEDSCISOC X ENACTUS X CALISOC Pubcrawl",
+    link: "https://fb.me/e/7JDXk8Tju",
+    image: medsciXcaliXEnactusPubcrawl,
+  },
+  {
+    id: 7,
+    title: "Wings for Life",
+    link: "https://www.facebook.com/events/1200241964922272",
+    image: wingsForLifeImage,
+  },
+  {
+    id: 8,
+    title: "ADA x Enactus x BoulderSoc Bouldering Night",
+    link: "https://www.instagram.com/p/DLCVLxGRPNh/?utm_source=ig_web_copy_link&igsh=MzRlODBiNWFlZA==",
+    image: boulderingNight,
+  }
 ];
 
 export default function PastEventCards() {

@@ -19,6 +19,7 @@ import noyal from "../images/teamPhotos/noyal.jpg";
 import karen from "../images/teamPhotos/karen.jpg";
 import jennifer from "../images/teamPhotos/jennifer.jpg";
 
+import jayden from "../images/teamPhotos/jayden.jpg";
 import emily from "../images/teamPhotos/emily.jpg";
 
 import sarah from "../images/teamPhotos/sarah.jpg";
@@ -27,7 +28,7 @@ import meenal from "../images/teamPhotos/meenal.jpg";
 import fleur from "../images/teamPhotos/fleur.jpg";
 //import justin from "../images/teamPhotos/justin.jpg";
 
-//import amy from "../images/teamPhotos/amy.jpg";
+import amy from "../images/teamPhotos/amy.jpg";
 import iris from "../images/teamPhotos/iris.jpg";
 
 import henry from "../images/teamPhotos/henry.jpg";
@@ -83,7 +84,7 @@ export default function OurTeam() {
   return (
     <div style={{ textAlign: 'center', padding: '2rem' }}>
       <h2 style={{ fontSize: '3rem', fontWeight: 'bold' }}>Meet the Team</h2>
-      <p style={{ fontSize: '1.2rem', marginTop: '0.5rem' }}>
+      <p style={{ fontSize: '1rem', marginTop: '0.5rem' }}>
         The team making the magic happen.
       </p>
       <div style={{
@@ -99,7 +100,7 @@ export default function OurTeam() {
             borderRadius: '1rem',
             maxWidth: '100%',
             height: 'auto',
-            width: '600px'
+            width: '700px'
           }}
         />
       </div>
@@ -197,7 +198,7 @@ export default function OurTeam() {
 
     {/* careers row */} 
     <div className="grid grid-cols-1 sm:grid-cols-2 gap-10 sm:gap-30 md:gap-60 mt-8 w-fit mx-auto">
-      <TeamMember imageSrc={dummy} name="Jayden Truong" role="Careers Director" />
+      <TeamMember imageSrc={jayden} name="Jayden Truong" role="Careers Director" />
       <TeamMember imageSrc={emily} name="Emily Goh" role="Careers Director" />
     </div>
   
@@ -215,7 +216,7 @@ export default function OurTeam() {
 
     {/* it row */}
     <div className="grid grid-cols-1 sm:grid-cols-2 gap-10 sm:gap-30 md:gap-60 mt-8 w-fit mx-auto">
-      <TeamMember imageSrc={dummy} name="Amy Wang" role="IT Director" />
+      <TeamMember imageSrc={amy} name="Amy Wang" role="IT Director" />
       <TeamMember imageSrc={iris} name="Iris Dautriat" role="IT Director" />
     </div>
 

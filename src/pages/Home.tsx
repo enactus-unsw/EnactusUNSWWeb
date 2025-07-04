@@ -119,7 +119,7 @@ useEffect(() => {
         <div className="flex justify-center items-center mb-12">
           <HomeEventsCarousel />
         </div>
-        <EnactusButton to="/events" className="bg-[#fff] text-black border-[#2A2D32] border-solid border-4 hover:bg-[#D9D9D9]">
+        <EnactusButton to="/events" className="text-white">
           MORE EVENTS
         </EnactusButton>
       </section>
