@@ -2,12 +2,20 @@ import tech4impactlogo from "../images/tech4impact_logo.png";
 import shareplatelogo from "../images/Shareplate_Logo_Grey.png";
 import procketslogo from "../images/prockets_logo.png";
 import instagramlogo from "../images/Logos/Instagram.png";
+import titleBackground from "../images/ProjectsPage/titleBackground.png"
 
 export default function Projects() {
   return ( 
     <div className="text-[#2A2D32] w-full flex-grow">
       {/* title container */}
-      <div className="bg-[url(src/images/ProjectsPage/titleBackground.png)] bg-cover mx-auto flex justify-center items-center font-[800] text-4xl md:text-8xl tracking-wide w-full h-[10rem] md:h-[26rem]">
+      <div
+        className="mx-auto flex justify-center items-center font-[800] text-4xl md:text-8xl tracking-wide w-full h-[10rem] md:h-[26rem]"
+        style={{
+          backgroundImage: `url(${titleBackground})`,
+          backgroundSize: 'cover',
+          backgroundPosition: 'center',
+        }}
+      >
         Our Projects
       </div>
 
