@@ -11,8 +11,8 @@ import ContactUs from "../pages/ContactUs";
 import Header from "../components/header"; 
 import Footer from "../components/footer"; 
 
-
 import { createTheme, ThemeProvider } from "@mui/material/styles";
+import ScrollToTop from "../components/scroll-to-top";
 
 const theme = createTheme({
   typography: {
@@ -24,7 +24,7 @@ function App() {
   return (
     <ThemeProvider theme={theme}>
       <HashRouter>
-        <>
+        <ScrollToTop /> 
         <Header/>
           <Routes>
             <Route path="/" element={<Home />} />
@@ -36,7 +36,6 @@ function App() {
             <Route path="/contact-us" element={<ContactUs />} />
           </Routes>
           <Footer/>
-        </>
       </HashRouter>
     </ThemeProvider>
   );
