@@ -1,5 +1,5 @@
 // Decoratives
-import Banner from "../images/sponsors/Banner.png";
+import Banner from "../images/sponsors/SponsorsPartnersRectangle.png";
 import Separator from "../images/sponsors/Separator.png";
 
 // Sponsor/Partner Logos
@@ -13,39 +13,27 @@ import bearish from "../images/sponsors/bearish.png";
 export default function Sponsors() {
   return (
     <div>
-      <header style={{ position: 'relative', width: '100%', display: 'flex', justifyContent: 'center', alignItems: 'center'}}>
-        <img src={Banner} alt="Banner" className="w-full h-auto" style={{ marginTop: '3rem' }} />
-        <h1
-            className="
-            absolute 
-            text-[#2A2D32] 
-            font-bold 
-            text-[clamp(10px,3vw,60px)]
-            md:mb-60 
-            md:mt-[120px]
-            z-[1] 
-            text-center 
-            w-full
-          "
-        >
-          Sponsors and Partners
-        </h1>
-        <h3
-         className="
-            absolute 
-            text-[#2A2D32] 
-            font-normal 
-            text-[clamp(6px,1.7vw,34px)]
-            md:leading-[clamp(18px,5vw,44px)]
-            mt-[100px]
-            z-[1] 
-            text-center 
-            w-full
-          "
-        >
-          Enactus UNSW is grateful for all our wonderful <br></br> sponsors and partners!
-        </h3>
-      </header>
+      <div className="w-full flex justify-center items-center mt-12">
+        <div className="relative w-5/6">
+          {/* Banner background */}
+          <div className="relative w-full">
+            <img
+              src={Banner}
+              alt="Banner"
+              className="w-full h-full object-cover absolute top-0 left-0 z-0 rounded-3xl"
+              style={{ objectPosition: 'center' }}
+            />
+            <div className="relative z-10 flex flex-col items-center justify-center text-center px-4 py-[12vw]">
+              <h1 className="text-[#2A2D32] font-bold text-[clamp(24px,6vw,60px)] leading-tight">
+                Sponsors and Partners
+              </h1>
+              <h3 className="text-[#2A2D32] font-normal text-[clamp(14px,3vw,25px)] leading-[clamp(18px,5vw,44px)] mt-4">
+                Enactus UNSW is grateful for all our wonderful <br /> sponsors and partners!
+              </h3>
+            </div>
+          </div>
+        </div>
+      </div>
       
       <h2
         style={{
@@ -97,7 +85,7 @@ export default function Sponsors() {
       >
         <img src={thescarycanary} alt="The Scary Canary" style={{ width: 'min(40vw,225px)', minWidth: '100px', marginLeft: 'clamp(10px, 5vw, 100px)', marginRight: 'clamp(10px, 5vw, 77px)' }} className="w-auto h-auto"/>
         <img src={capgemini} alt="Capgemini" style={{ width: 'min(50vw,496px)', minWidth: '120px', marginRight: 'clamp(10px, 3vw, 12px)' }} className="w-auto h-auto"/>
-        <img src={macquarie} alt="Macquarie" style={{ width: 'min(40vw,423px)', minWidth: '100px' }} className="w-auto h-auto"/>
+        <img src={macquarie} alt="Macquarie" style={{ width: 'min(40vw,400px)', minWidth: '100px' }} className="w-auto h-auto"/>
       </div>
 
       <div
@@ -110,7 +98,7 @@ export default function Sponsors() {
         }}
       >
         <img src={redbull} alt="Red Bull" style={{ width: 'min(40vw,372px)', minWidth: '100px' }} className="w-auto h-auto"/>
-        <img src={bearish} alt="Bearish" style={{ width: 'min(40vw,405px)', minWidth: '100px' }} className="w-auto h-auto"/>
+        <img src={bearish} alt="Bearish" style={{ width: 'min(40vw,400px)', minWidth: '100px' }} className="w-auto h-auto"/>
       </div>
     </div>
   );
