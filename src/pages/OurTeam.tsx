@@ -88,7 +88,7 @@ export default function OurTeam() {
         The team making the magic happen.
       </p>
       <div style={{
-        marginTop: '2rem',
+        marginTop: '3rem',
         display: 'flex',
         justifyContent: 'center'
       }}>
@@ -96,12 +96,7 @@ export default function OurTeam() {
         <img
           src={teamPhoto}
           alt="team-photo"
-          style={{
-            borderRadius: '1rem',
-            maxWidth: '100%',
-            height: 'auto',
-            width: '700px'
-          }}
+          className="rounded-xl max-w-full h-auto w-[700px] mb-10 transition-transform duration-300 ease-in-out hover:scale-105"
         />
       </div>
 
