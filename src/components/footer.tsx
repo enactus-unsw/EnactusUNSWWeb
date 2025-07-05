@@ -8,18 +8,17 @@ import Youtube from "../images/Logos/Black & White/Youtube_Black&White.png";
 const Footer = () => {
   return (
 <footer className="bg-white py-10 mt-10 shadow-md">
-  <div className="mx-auto px-4 flex flex-nowrap items-center justify-between overflow-x-auto">
+  <div className="mx-auto px-4 flex  items-center justify-between max-sm:flex-wrap max-sm:justify-center">
 
     {/* Logo - aligned left */}
-    <div className="flex-shrink-0 align-self: flex-start ml-4">
+    <div className="flex-shrink-0  ml-4 max-sm:py-8">
       <img src={enactusUNSWLogo} alt="Enactus UNSW Logo" className="h-20" />
     </div>
 
-    {/* Center text */}
 
 
     {/* Social icons - aligned right */}
-    <div className="flex space-x-6 flex-shrink-0 align-self: flex-end">
+    <div className="flex space-x-6 flex-shrink-0 max-sm:pb-8">
       <a href="https://www.facebook.com/share/g/1BDWn237rq/" target="_blank" rel="noopener noreferrer">
         <img className="h-14" src={Facebook} alt="Facebook" />
       </a>
