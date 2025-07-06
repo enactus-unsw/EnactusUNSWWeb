@@ -23,7 +23,7 @@ export default function Sponsors() {
               className="w-full h-full object-cover absolute top-0 left-0 z-0 rounded-3xl"
               style={{ objectPosition: 'center' }}
             />
-            <div className="relative z-10 flex flex-col items-center justify-center text-center px-4 py-[12vw]">
+            <div className="relative z-1 flex flex-col items-center justify-center text-center px-4 py-[12vw]">
               <h1 className="text-[#2A2D32] font-bold text-[clamp(24px,6vw,60px)] leading-tight">
                 Sponsors and Partners
               </h1>
