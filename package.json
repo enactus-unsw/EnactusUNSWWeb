@@ -38,7 +38,7 @@
     "lint": "eslint .",
     "preview": "vite preview",
     "predeploy": "npm run build",
-    "deploy": "gh-pages -d dist"
+    "deploy": "gh-pages -d dist --cname enactusunsw.org"
   },
   "dependencies": {
     "@emotion/react": "^11.14.0",

@@ -38,12 +38,12 @@ const Dropdown: React.FC = () => {
         ...styles.content,
         ...(isOpen ? styles.contentVisible : {})
       }}>
-                 <Link to="/about-us" className="font-Montserrat text-[#2A2D32] text-xl hover:underline font-bold py-2  px-2  block text-right">ABOUT US</Link>
-          <Link to="/our-team" className="font-Montserrat text-[#2A2D32] text-xl hover:underline font-bold py-2 px-2 block text-right" text-right>OUR TEAM</Link>
-          <Link to="/projects" className="font-Montserrat text-[#2A2D32] text-xl hover:underline font-bold py-2 px-2 block text-right">PROJECTS</Link>
-          <Link to="/events" className="font-Montserrat text-[#2A2D32] text-xl hover:underline font-bold py-2 px-2 block text-right">EVENTS</Link>
-          <Link to="/sponsors-partners" className="font-Montserrat text-[#2A2D32] text-xl hover:underline font-bold py-2 px-2  block text-right">SPONSORS</Link>
-          <Link to="/contact-us" className="font-Montserrat text-[#2A2D32] text-xl hover:underline font-bold py-2 px-2 block text-right ">CONTACT</Link>
+                 <Link to="/about-us" onClick={toggleDropdown} className="font-Montserrat text-[#2A2D32] text-xl hover:underline font-bold py-2  px-2  block text-right">ABOUT US</Link>
+          <Link to="/our-team"  onClick={toggleDropdown} className="font-Montserrat text-[#2A2D32] text-xl hover:underline font-bold py-2 px-2 block text-right" text-right>OUR TEAM</Link>
+          <Link to="/projects"  onClick={toggleDropdown} className="font-Montserrat text-[#2A2D32] text-xl hover:underline font-bold py-2 px-2 block text-right">PROJECTS</Link>
+          <Link to="/events"  onClick={toggleDropdown} className="font-Montserrat text-[#2A2D32] text-xl hover:underline font-bold py-2 px-2 block text-right">EVENTS</Link>
+          <Link to="/sponsors-partners" onClick={toggleDropdown} className="font-Montserrat text-[#2A2D32] text-xl hover:underline font-bold py-2 px-2  block text-right">SPONSORS</Link>
+          <Link to="/contact-us" onClick={toggleDropdown} className="font-Montserrat text-[#2A2D32] text-xl hover:underline font-bold py-2 px-2 block text-right ">CONTACT</Link>
           <Link
             to={{ pathname: "/", hash: "#join-us" }}
             rel="noopener noreferrer"
