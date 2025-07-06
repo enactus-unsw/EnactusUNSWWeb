@@ -3,6 +3,11 @@ import shareplatelogo from "../images/Shareplate_Logo_Grey.png";
 import procketslogo from "../images/prockets_logo.png";
 import instagramlogo from "../images/Logos/Instagram.png";
 import titleBackground from "../images/ProjectsPage/titleBackground.png"
+import { Link } from "react-router-dom";
+import EnactusButton from "../components/atoms/button/enactusButton";
+
+// TODO: change website once deployed using actual domain
+const procketsWebsite = "https://enactus-unsw.github.io/enactus-prockets/";
 
 export default function Projects() {
   return ( 
@@ -33,14 +38,14 @@ export default function Projects() {
           <p className="items-center justify-center text-sm md:text-xl md:leading-10 font-[400] mt-5 md:mt-12">
             Creating prosthetics more accessible to amputees - financially by developing a cost-effective component of the prosthetic and socially through a support network platform.
           </p>
-          {/* Prockets website  and if*/}
+          {/* Prockets website & instagram*/}
           <div className="flex flex-row justify-center md:justify-start items-center mt-10">
-            {/* <button className="bg-[#FFC222] hover:bg-yellow-700 text-xl font-bold py-2 px-4 rounded-2xl h-[3.5rem] w-[15rem]">
-              LEARN MORE
-            </button> */}
             <a href="https://www.instagram.com/prockets.au/" target="_blank" rel="noopener noreferrer">
-              <img className="h-15 block ml-4 rounded-full" src={instagramlogo} alt="Instagram" />
+              <img className="h-15 block rounded-full" src={instagramlogo} alt="Instagram" />
             </a>
+            <EnactusButton to ={procketsWebsite} target="_blank" rel="noopener noreferrer" className="ml-4 bg-[#FFC222] text-black hover:bg-[#FFDD83]">
+              Visit the Website
+            </EnactusButton>
           </div> 
         </div>
       </div>
