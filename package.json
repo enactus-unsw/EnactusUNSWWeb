@@ -3,7 +3,7 @@
   "type": "module",
   "version": "1.0.0",
   "description": "Starter template for Vite with React (TypeScript). Supports Tailwind. Vitest and @react/testing-library configured and ready to go. Also ESLint, Prettier, Husky, Commit-lint and Atomic Design for components.",
-  "homepage": "https://enactus-unsw.github.io/EnactusUNSWWeb/",
+  "homepage": "https://enactusunsw.org",
   "repository": {
     "type": "git",
     "url": "git+https://github.com/jvidalv/vital.git"
