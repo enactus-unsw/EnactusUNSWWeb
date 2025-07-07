@@ -6,7 +6,7 @@ import Dropdown from "./organisms/card/Nav_Dropdown";
 const Header = () => {
 
   return (
-    <header className="bg-white shadow-md ">
+    <header className="bg-white shadow-md sticky top-0 z-50">
       <nav className="max-w-full mx-auto flex flex-nowrap sm:overflow-x-auto  items-center sm:justify-between  justify-around px-6 md:px-10 lg:px-20 ">
         <div className="flex align-self: flex-start shrink-0 min-w-2">
         <Link to="/">
