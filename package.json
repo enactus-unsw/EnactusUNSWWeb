@@ -41,6 +41,7 @@
     "deploy": "gh-pages -d dist --cname enactusunsw.org"
   },
   "dependencies": {
+    "@emailjs/browser": "^4.4.1",
     "@emotion/react": "^11.14.0",
     "@emotion/styled": "^11.14.0",
     "@heroicons/react": "2.1.5",
