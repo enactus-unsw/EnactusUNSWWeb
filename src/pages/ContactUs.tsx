@@ -32,10 +32,10 @@ export default function ContactUs() {
         SERVICE_ID,
         TEMPLATE_ID,
         {
-          first_name: firstName,
-          last_name: lastName,
+          name: `${firstName} ${lastName}`,
           email: email,
           message: message,
+          time: new Date().toLocaleString()
         },
         PUBLIC_KEY
       );
