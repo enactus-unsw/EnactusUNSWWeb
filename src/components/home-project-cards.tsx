@@ -5,16 +5,16 @@ import Typography from '@mui/material/Typography';
 import CardActionArea from '@mui/material/CardActionArea';
 import { CardMedia } from '@mui/material';
 
-import shareplateLogo from "../images/Shareplate_Logo_Grey.png";
+import plate2plateLogo from "../images/plate2plate_logo.png";
 import tech4ImpactLogo from "../images/tech4impact_logo.png";
 import procketsLogo from "../images/prockets_logo.png";
 
 const projects = [
   {
     id: 1,
-    title: 'Shareplate',
-    description: "A not-for-profit initiative dedicated to bridging the gap between households experiencing food insecurity and those who have the capacity to provide resources through a digital platform known as 'Shareplate'.",
-    logo: shareplateLogo,
+    title: 'plate2plate',
+    description: "A not-for-profit initiative dedicated to bridging the gap between households experiencing food insecurity and those who have the capacity to provide resources through a digital platform known as 'plate2plate'.",
+    logo: plate2plateLogo,
   },
   {
     id: 2,
