@@ -185,10 +185,10 @@ export default function OurTeam() {
       <TeamMember imageSrc={noyal} name="Noyal Shaji" role="Tech4Impact Director" />
     </div>
 
-    {/* shareplate row */}
+    {/* plate2plate row */}
     <div className="grid grid-cols-1 sm:grid-cols-2 gap-10 sm:gap-30 md:gap-60 mt-8 w-fit mx-auto">
-      <TeamMember imageSrc={karen} name="Karen Huo" role="SharePlate Director" />
-      <TeamMember imageSrc={jennifer} name="Jennifer Yu" role="SharePlate Director" />
+      <TeamMember imageSrc={karen} name="Karen Huo" role="plate2plate Director" />
+      <TeamMember imageSrc={jennifer} name="Jennifer Yu" role="plate2plate Director" />
     </div>
 
     {/* careers row */} 
@@ -288,9 +288,9 @@ export default function OurTeam() {
           </div>
         </div>
 
-        {/* shareplate team */}
+        {/* plate2plate team */}
         <div>
-          <h4 style={{ fontSize: '1.6rem', fontWeight: 'bold', marginTop: '2rem'  }}>SharePlate Team</h4>
+          <h4 style={{ fontSize: '1.6rem', fontWeight: 'bold', marginTop: '2rem'  }}>plate2plate Team</h4>
           <div className="flex justify-center gap-[2rem] sm:gap-[5rem] mt-4">
             <div>
               <div>Andrew Tan</div>

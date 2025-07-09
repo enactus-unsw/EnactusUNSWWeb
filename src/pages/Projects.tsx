@@ -1,5 +1,5 @@
 import tech4impactlogo from "../images/tech4impact_logo.png";
-import shareplatelogo from "../images/Shareplate_Logo_Grey.png";
+import plate2platelogo from "../images/plate2plate_logo.png";
 import procketslogo from "../images/prockets_logo.png";
 import instagramlogo from "../images/Logos/Instagram.png";
 import titleBackground from "../images/ProjectsPage/titleBackground.png"
@@ -51,29 +51,29 @@ export default function Projects() {
       </div>
 
 
-      {/* SharePlate conatiner */}
+      {/* plate2plate conatiner */}
       <div className="flex flex-col-reverse md:flex-row justify-center bg-[#F6F6F6] rounded-t-[5vw] p-5 md:pl-20 md:pr-20 md:min-h-[25vh]">
-        {/* SharePlate description */}
+        {/* plate2plate description */}
         <div className="flex flex-col w-full md:w-1/2 p-2 md:ml-[12rem]">
           <div className="font-[700] md:mt-20 text-xl md:text-4xl tracking-tight">
-            Shareplate
+            plate2plate
           </div>
           <p className="items-center justify-center text-sm md:text-xl md:leading-10 font-[400] mt-5 md:mt-12">
-            A not for profit initiative dedicated to bridging the gap between households experiencing food insecurity and those who have the capacity to provide resources through a digital platform known as 'Shareplate'.           
+            A not for profit initiative dedicated to bridging the gap between households experiencing food insecurity and those who have the capacity to provide resources through a digital platform known as 'plate2plate'.           
           </p>
 
           <div className="flex flex-row justify-center md:justify-start items-center mt-10 pl-0">
             {/* <button className="bg-[#FFC222] hover:bg-yellow-700 text-2xl font-bold py-2 px-4 rounded-2xl h-[3.5rem] w-[15rem]">
               LEARN MORE
             </button> */}
-            <a href="https://www.instagram.com/shareplate.au/" target="_blank" rel="noopener noreferrer">
+            <a href="https://www.instagram.com/plate2plate.au/" target="_blank" rel="noopener noreferrer">
               <img className="h-15 block rounded-full" src={instagramlogo} alt="Instagram" />
             </a>
           </div>
         </div>
-        {/* SharePlate Image */}
+        {/* plate2plate Image */}
         <div className="flex md:w-1/2 justify-center items-center h-1/4 md:mt-10 md:pr-20 mb-2 md:mb-20 transition-transform duration-300 ease-in-out hover:scale-105">
-          <img className="object-contain h-[10rem] md:h-[30rem] " src={shareplatelogo} alt="SharePlate Logo" />
+          <img className="object-contain h-[10rem] md:h-[30rem] " src={plate2platelogo} alt="plate2plate Logo" />
         </div>
       </div>
 
