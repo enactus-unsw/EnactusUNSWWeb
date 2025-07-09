@@ -1,4 +1,4 @@
-import { BrowserRouter, Routes, Route, useLocation } from "react-router-dom";
+import { Routes, Route, useLocation, HashRouter } from "react-router-dom";
 import { AnimatePresence } from "framer-motion";
 
 import Home from "../pages/Home";
@@ -23,7 +23,7 @@ const theme = createTheme({
 
 function AnimatedRoutes() {
   const location = useLocation();
-
+  //Iris - Allows us to have them links that go somwerhe on a page
   function handleExitComplete() {
   if(location.hash) {
     const element = document.querySelector(location.hash);
@@ -53,11 +53,11 @@ function AnimatedRoutes() {
 function App() {
   return (
     <ThemeProvider theme={theme}>
-      <BrowserRouter>
+      <HashRouter>
         <Header />
         <AnimatedRoutes />
         <Footer />
-      </BrowserRouter>
+      </HashRouter>
     </ThemeProvider>
   );
 }
