@@ -9,7 +9,15 @@ interface EventsData {
   image: any
 }
 
+import ENACTUS_pubcrawl_market_July_2025 from "../images/eventsCoverPic/ENACTUS_pubcrawl_market_Jully_2025.jpg";
+
+
 const events: EventsData[] = [
+    {
+    title: "Cops N’ Robbers Pubcrawl 2025",
+    link: "https://www.facebook.com/share/1Z19f5osvq/",
+    image: ENACTUS_pubcrawl_market_July_2025 
+  }
 ];
 
 export default function EventsEventsCarousel() {
