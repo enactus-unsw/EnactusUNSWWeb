@@ -7,8 +7,20 @@ import { Link } from "react-router-dom";
 import startupNetworkingNightImage from "../images/eventsCoverPic/startupNetworkingNight.jpg";
 import projectShowcaseImage from "../images/eventsCoverPic/projectShowcase.jpg";
 import medsciXcaliXEnactusPubcrawl from "../images/eventsCoverPic/Medsci_Cali_Enactus_Pubcrawl.jpg";
+import social_impact_mentoring from "../images/eventsCoverPic/Enactus_Social_Impact_Mentoring.jpg";
+import pubcrawl_market_July_2025 from "../images/eventsCoverPic/ENACTUS_pubcrawl_market_Jully_2025.jpg";
 
 const events = [
+  { 
+    title: "Social Impact Mentoring",
+    link: "https://www.facebook.com/events/1500237394292332/",
+    image: social_impact_mentoring
+  },
+  {
+    title: "Cops N’ Robbers Pubcrawl 2025",
+    link: "https://www.facebook.com/share/1Z19f5osvq/",
+    image: pubcrawl_market_July_2025 
+  },
   {
     title: "Start-Up Networking Night",
     link: "https://www.facebook.com/events/519442017819568",
@@ -23,7 +35,7 @@ const events = [
     title: "MEDSCISOC X ENACTUS X CALISOC Pubcrawl",
     link: "https://fb.me/e/7JDXk8Tju",
     image: medsciXcaliXEnactusPubcrawl,
-  },
+  }
 ];
 
 export default function HomeEventsCarousel() {
