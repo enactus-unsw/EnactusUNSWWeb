@@ -10,13 +10,18 @@ interface EventsData {
 }
 
 import ENACTUS_pubcrawl_market_July_2025 from "../images/eventsCoverPic/ENACTUS_pubcrawl_market_Jully_2025.jpg";
-
+import enactus_social_impact_mentoring from "../images/eventsCoverPic/Enactus_Social_Impact_Mentoring.jpg";
 
 const events: EventsData[] = [
     {
     title: "Cops N’ Robbers Pubcrawl 2025",
     link: "https://www.facebook.com/share/1Z19f5osvq/",
     image: ENACTUS_pubcrawl_market_July_2025 
+  },
+    { 
+      title: "Enactus Social Impact Mentoring",
+      link: "https://www.facebook.com/events/1500237394292332/",
+      image: enactus_social_impact_mentoring
   }
 ];
 
