@@ -22,7 +22,6 @@ import jennifer from "../images/teamPhotos/jennifer.jpg";
 import jayden from "../images/teamPhotos/jayden.jpg";
 import emily from "../images/teamPhotos/emily.jpg";
 
-import sarah from "../images/teamPhotos/sarah.jpg";
 import meenal from "../images/teamPhotos/meenal.jpg";
 
 import fleur from "../images/teamPhotos/fleur.jpg";
@@ -197,10 +196,10 @@ export default function OurTeam() {
       <TeamMember imageSrc={emily} name="Emily Goh" role="Careers Director" />
     </div>
   
-    {/* sponsorships row */}
+    {/* sponsorships and multimedia row */}
     <div className="grid grid-cols-1 sm:grid-cols-2 gap-10 sm:gap-30 md:gap-60 mt-8 w-fit mx-auto">
-      <TeamMember imageSrc={sarah} name="Sarah Zhong" role="Sponsorships Director" />
       <TeamMember imageSrc={meenal} name="Meenal Janjua" role="Sponsorships Director" />
+      <TeamMember imageSrc={zainab} name="Zainab Atif" role="Multimedia Director" />
     </div>
 
     {/* hr row */}
@@ -219,11 +218,6 @@ export default function OurTeam() {
     <div className="grid grid-cols-1 sm:grid-cols-2 gap-10 sm:gap-30 md:gap-60 mt-8 w-fit mx-auto">
       <TeamMember imageSrc={henry} name="Henry Tat" role="Marketing Director" />
       <TeamMember imageSrc={jessica} name="Jessica Tran" role="Marketing Director" />
-    </div>
-
-    {/* multimedia row */}
-    <div className="grid grid-cols-1 gap-x-8 gap-y-8 mt-8">
-      <TeamMember imageSrc={zainab} name="Zainab Atif" role="Multimedia Director" />
     </div>
 
     {/* socials row */}
