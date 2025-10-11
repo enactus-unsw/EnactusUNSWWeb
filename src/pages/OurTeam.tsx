@@ -5,7 +5,7 @@ import amrutha from "../images/teamPhotos/amrutha.jpg";
 import benjamin from "../images/teamPhotos/benjamin.jpg";
 import sehej from "../images/teamPhotos/sehej.jpg";
 import iqtidar from "../images/teamPhotos/iqtidar.jpg";
-
+import brendan from "../images/teamPhotos/brendan.jpg";
 import alice from "../images/teamPhotos/alice.jpg";
 import rifah from "../images/teamPhotos/rifah.jpg";
 import akanksha from "../images/teamPhotos/akanksha.jpg";
@@ -144,7 +144,7 @@ export default function OurTeam() {
     <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 gap-10 mt-8">
       <TeamMember imageSrc={sehej} name="Sehej Panesar" role="Secretary" />
       <TeamMember imageSrc={iqtidar} name="Iqtidar Rahman" role="Treasurer" />
-      <TeamMember imageSrc={dummy} name="Brendan Huynh" role="Vice President of Internals" />
+      <TeamMember imageSrc={brendan} name="Brendan Huynh" role="Vice President of Internals" />
       <TeamMember imageSrc={alice} name="Alice Khau" role="Vice President of Externals" />
       <TeamMember imageSrc={rifah} name="Rifah Riyadh" role="Vice President of Projects" />
       <TeamMember imageSrc={akanksha} name="Akanksha Sood" role="Vice President of Projects" />
