@@ -6,23 +6,18 @@ import { Link } from "react-router-dom";
 interface EventsData {
   title: string,
   link: string,
-  image: any
+  image: string,
 }
 
-import ENACTUS_pubcrawl_market_July_2025 from "../images/eventsCoverPic/ENACTUS_pubcrawl_market_Jully_2025.jpg";
-import enactus_social_impact_mentoring from "../images/eventsCoverPic/Enactus_Social_Impact_Mentoring.jpg";
+import director_recruitment_2026 from "../images/eventsCoverPic/Enactus_event_director_recruimtent_2026.jpg"
+
 
 const events: EventsData[] = [
-    {
-    title: "Cops N’ Robbers Pubcrawl 2025",
-    link: "https://www.facebook.com/share/1Z19f5osvq/",
-    image: ENACTUS_pubcrawl_market_July_2025 
-  },
     { 
-      title: "Enactus Social Impact Mentoring",
-      link: "https://www.facebook.com/events/1500237394292332/",
-      image: enactus_social_impact_mentoring
-  }
+    title: "Director Recruitment",
+    link: "https://www.facebook.com/share/1F6cCpDtHn/",
+    image: director_recruitment_2026,
+    },
 ];
 
 export default function EventsEventsCarousel() {

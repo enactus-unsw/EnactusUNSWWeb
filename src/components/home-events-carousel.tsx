@@ -9,8 +9,14 @@ import projectShowcaseImage from "../images/eventsCoverPic/projectShowcase.jpg";
 import medsciXcaliXEnactusPubcrawl from "../images/eventsCoverPic/Medsci_Cali_Enactus_Pubcrawl.jpg";
 import social_impact_mentoring from "../images/eventsCoverPic/Enactus_Social_Impact_Mentoring.jpg";
 import pubcrawl_market_July_2025 from "../images/eventsCoverPic/ENACTUS_pubcrawl_market_Jully_2025.jpg";
+import director_recruitment_2026 from "../images/eventsCoverPic/Enactus_event_director_recruimtent_2026.jpg"
 
 const events = [
+    { 
+    title: "Director Recruitment",
+    link: "https://www.facebook.com/share/1F6cCpDtHn/",
+    image: director_recruitment_2026
+  },
   { 
     title: "Social Impact Mentoring",
     link: "https://www.facebook.com/events/1500237394292332/",
