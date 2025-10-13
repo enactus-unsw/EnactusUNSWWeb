@@ -15,6 +15,8 @@ import startupNetworkingNightImage from "../images/eventsCoverPic/startupNetwork
 import projectShowcaseImage from "../images/eventsCoverPic/projectShowcase.jpg";
 import medsciXcaliXEnactusPubcrawl from "../images/eventsCoverPic/Medsci_Cali_Enactus_Pubcrawl.jpg";
 import boulderingNight from "../images/eventsCoverPic/boulderingNight.jpg";
+import ENACTUS_pubcrawl_market_July_2025 from "../images/eventsCoverPic/ENACTUS_pubcrawl_market_Jully_2025.jpg";
+import enactus_social_impact_mentoring from "../images/eventsCoverPic/Enactus_Social_Impact_Mentoring.jpg";
 
 const events = [
   {
@@ -64,6 +66,18 @@ const events = [
     title: "ADA x Enactus x BoulderSoc Bouldering Night",
     link: "https://www.instagram.com/p/DLCVLxGRPNh/?utm_source=ig_web_copy_link&igsh=MzRlODBiNWFlZA==",
     image: boulderingNight,
+  },
+    {
+    id:9,
+    title: "Cops N’ Robbers Pubcrawl 2025",
+    link: "https://www.facebook.com/share/1Z19f5osvq/",
+    image: ENACTUS_pubcrawl_market_July_2025 
+  },
+    { 
+    id:10,
+    title: "Enactus Social Impact Mentoring",
+    link: "https://www.facebook.com/events/1500237394292332/",
+    image: enactus_social_impact_mentoring
   }
 ];
 
