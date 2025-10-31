@@ -52,8 +52,9 @@ export default function Sponsors() {
       </h2>
 
       <img src={Separator} alt="Separator" className="w-full h-auto" style={{ width: '90vw', margin: '0 auto', display: 'block', marginTop: '28px'}}/>
-      
-      <img src={commonwealthbank} alt="Commonwealth Bank" className="w-auto h-auto" style={{width: '600px', margin: '0 auto', display: 'block', marginTop: '49px'}}/>
+      <a href="https://www.commbank.com.au/about-us/our-company.html" target="_blank" rel="noopener noreferrer">
+        <img src={commonwealthbank} alt="Commonwealth Bank" className="w-auto h-auto" style={{width: '600px', margin: '0 auto', display: 'block', marginTop: '49px'}}/>
+      </a>
       
       <h2
         style={{
@@ -83,9 +84,15 @@ export default function Sponsors() {
           gap: 'clamp(20px, 5vw, 77px)'
         }}
       >
-        <img src={thescarycanary} alt="The Scary Canary" style={{ width: 'min(40vw,225px)', minWidth: '100px', marginLeft: 'clamp(10px, 5vw, 100px)', marginRight: 'clamp(10px, 5vw, 77px)' }} className="w-auto h-auto"/>
-        <img src={capgemini} alt="Capgemini" style={{ width: 'min(50vw,496px)', minWidth: '120px', marginRight: 'clamp(10px, 3vw, 12px)' }} className="w-auto h-auto"/>
-        <img src={macquarie} alt="Macquarie" style={{ width: 'min(40vw,400px)', minWidth: '100px' }} className="w-auto h-auto"/>
+        <a href="https://www.facebook.com/scarycanarysydney/" target="_blank" rel="noopener noreferrer">
+          <img src={thescarycanary} alt="The Scary Canary" style={{ width: 'min(40vw,225px)', minWidth: '100px', marginLeft: 'clamp(10px, 5vw, 100px)', marginRight: 'clamp(10px, 5vw, 77px)' }} className="w-auto h-auto"/>
+        </a>
+        <a href="https://www.macquarie.com.au/" target="_blank" rel="noopener noreferrer">
+          <img src={macquarie} alt="Macquarie" style={{ width: 'min(40vw,400px)', minWidth: '100px' }} className="w-auto h-auto"/>
+        </a>
+        <a href="https://www.capgemini.com/au-en/" target="_blank" rel="noopener noreferrer">
+          <img src={capgemini} alt="Capgemini" style={{ width: 'min(50vw,496px)', minWidth: '120px', marginRight: 'clamp(10px, 3vw, 12px)' }} className="w-auto h-auto"/>
+        </a>
       </div>
 
       <div
@@ -97,8 +104,12 @@ export default function Sponsors() {
           gap: 'clamp(20px, 8vw, 106px)'
         }}
       >
-        <img src={redbull} alt="Red Bull" style={{ width: 'min(40vw,372px)', minWidth: '100px' }} className="w-auto h-auto"/>
-        <img src={bearish} alt="Bearish" style={{ width: 'min(40vw,400px)', minWidth: '100px' }} className="w-auto h-auto"/>
+        <a href="https://www.redbull.com/au-en" target="_blank" rel="noopener noreferrer">
+          <img src={redbull} alt="Red Bull" style={{ width: 'min(40vw,372px)', minWidth: '100px' }} className="w-auto h-auto"/>
+        </a>
+        <a href="https://bearishsydney.com/?srsltid=AfmBOorvpbPDYN_ljH_ofFYpEdJDzg2sFXI8ZMUDbZWf14OAuKrH-nb4" target="_blank" rel="noopener noreferrer">
+          <img src={bearish} alt="Bearish" style={{ width: 'min(40vw,400px)', minWidth: '100px' }} className="w-auto h-auto"/>
+        </a>
       </div>
     </div>
   );

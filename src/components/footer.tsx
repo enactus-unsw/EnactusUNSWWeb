@@ -7,7 +7,10 @@ import Youtube from "../images/Logos/Black & White/Youtube_Black&White.png";
 
 const Footer = () => {
   return (
-<footer className="bg-white py-10 mt-10 shadow-md">
+<footer className="bg-whit border  py-3 mt-10 shadow-md"
+      style={{
+        boxShadow: "0 -4px 6px -1px rgba(0, 0, 0, 0.1), 0 -2px 4px -2px rgba(0, 0, 0, 0.05)",
+      }}>
   <div className="mx-auto px-4 flex  items-center justify-between max-sm:flex-wrap max-sm:justify-center">
 
     {/* Logo - aligned left */}
