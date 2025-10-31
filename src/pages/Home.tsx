@@ -20,7 +20,7 @@ import tiktokLogo from "../images/Logos/Tiktok.png";
 // import youtubeLogo from "../images/Logos/Youtube.png";
 
 // Website Links
-const enactusSparcWebsite = "https://www.arc.unsw.edu.au/get-involved/opportunity?name=Enactus%20UNSW";
+const enactusRubricWebsite = "https://campus.hellorubric.com/?s=12656";
 const instagramLink = "https://www.instagram.com/enactusunsw/?hl=en";
 const facebookLink = "https://www.facebook.com/profile.php?id=61568234819798";
 const linkedInLink = "https://www.linkedin.com/school/enactus-unsw/posts/?feedView=all";
@@ -132,9 +132,9 @@ useEffect(() => {
           How to get involved?
         </h1>
         <h3 className="font-bold text-lg pt-10 pb-4">
-          Join Us on SpArc
+          Join Us on Rubric
         </h3>
-        <EnactusButton to={enactusSparcWebsite} target="_blank" rel="noopener noreferrer" className="bg-[#FFC222] text-black hover:bg-[#FFDD83]">
+        <EnactusButton to={enactusRubricWebsite} target="_blank" rel="noopener noreferrer" className="bg-[#FFC222] text-black hover:bg-[#FFDD83]">
           JOIN US
         </EnactusButton>
         <h3 className="font-bold text-lg pt-10 pb-4">
