@@ -18,7 +18,7 @@ const CopyButton = forwardRef<HTMLDivElement, Props>(
 
     const Icon = useMemo(
       () => (copied ? CheckCircleIcon : DocumentDuplicateIcon),
-      [copied]
+      [copied],
     );
     const title = copied ? "Copied" : "Click to copy to clipboard";
 
@@ -43,7 +43,7 @@ const CopyButton = forwardRef<HTMLDivElement, Props>(
         </div>
       </div>
     );
-  }
+  },
 );
 
 export default CopyButton;

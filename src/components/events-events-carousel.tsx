@@ -4,20 +4,19 @@ import { ArrowBackRounded, ArrowForwardRounded } from "@mui/icons-material";
 import { Link } from "react-router-dom";
 
 interface EventsData {
-  title: string,
-  link: string,
-  image: string,
+  title: string;
+  link: string;
+  image: string;
 }
 
-import director_recruitment_2026 from "../images/eventsCoverPic/Enactus_event_director_recruimtent_2026.jpg"
-
+import director_recruitment_2026 from "../images/eventsCoverPic/Enactus_event_director_recruimtent_2026.jpg";
 
 const events: EventsData[] = [
-    { 
+  {
     title: "Director Recruitment",
     link: "https://www.facebook.com/share/1F6cCpDtHn/",
     image: director_recruitment_2026,
-    },
+  },
 ];
 
 export default function EventsEventsCarousel() {
@@ -35,7 +34,9 @@ export default function EventsEventsCarousel() {
   const handlePrev = () => {
     setFade(true);
     setTimeout(() => {
-      setCurrIndex((prevIndex) => (prevIndex - 1 + events.length) % events.length);
+      setCurrIndex(
+        (prevIndex) => (prevIndex - 1 + events.length) % events.length,
+      );
       setFade(false);
     }, 250);
   };
@@ -46,19 +47,17 @@ export default function EventsEventsCarousel() {
       setCurrIndex(position);
       setFade(false);
     }, 250);
-  }
+  };
 
   return (
     <>
       {events.length === 0 ? (
-        <h3 className="text-xl mb-6">
-          No upcoming events
-        </h3>
+        <h3 className="text-xl mb-6">No upcoming events</h3>
       ) : (
         <>
           <Box display="flex" flexDirection="row" alignItems="center">
-            <ArrowBackRounded 
-              onClick={handlePrev} 
+            <ArrowBackRounded
+              onClick={handlePrev}
               sx={{
                 fontSize: 50,
                 cursor: "pointer",
@@ -68,35 +67,41 @@ export default function EventsEventsCarousel() {
                 },
               }}
             />
-            <Link to={events[currIndex].link} target="_blank" rel="noopener noreferrer">
+            <Link
+              to={events[currIndex].link}
+              target="_blank"
+              rel="noopener noreferrer"
+            >
               <Card
                 sx={{
                   width: {
-                    xs: '70vw',
-                    sm: '80vw',
+                    xs: "70vw",
+                    sm: "80vw",
                     md: 500,
                   },
                   borderRadius: 5,
-                  boxShadow: "0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19)",
+                  boxShadow:
+                    "0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19)",
                   position: "relative",
                   margin: "0 50px",
-                  transition: "opacity 0.3s ease-in-out, transform 0.4s cubic-bezier(0.5, 1.6, 0.4, 0.8)",
+                  transition:
+                    "opacity 0.3s ease-in-out, transform 0.4s cubic-bezier(0.5, 1.6, 0.4, 0.8)",
                   opacity: isFade ? 0.3 : 1,
                   "&:hover": {
                     transform: "scale(1.06)",
                   },
                 }}
               >
-                <CardMedia 
-                  component="img" 
-                  alt={events[currIndex].title} 
-                  image={events[currIndex].image} 
-                  sx={{ objectFit: "contain" }} 
+                <CardMedia
+                  component="img"
+                  alt={events[currIndex].title}
+                  image={events[currIndex].image}
+                  sx={{ objectFit: "contain" }}
                 />
               </Card>
             </Link>
-            <ArrowForwardRounded 
-              onClick={handleNext} 
+            <ArrowForwardRounded
+              onClick={handleNext}
               sx={{
                 fontSize: 50,
                 cursor: "pointer",
@@ -109,7 +114,11 @@ export default function EventsEventsCarousel() {
           </Box>
           <div className="mt-6 flex gap-x-3">
             {events.map((_, i) => (
-              <span key={i} className={`w-3 h-3 rounded-full ${i === currIndex ? 'bg-[#A8A8A8]' : 'bg-[#E8E8E8]'}`} onClick={() => handleJump(i)}></span>
+              <span
+                key={i}
+                className={`w-3 h-3 rounded-full ${i === currIndex ? "bg-[#A8A8A8]" : "bg-[#E8E8E8]"}`}
+                onClick={() => handleJump(i)}
+              ></span>
             ))}
           </div>
         </>

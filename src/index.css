@@ -32,10 +32,11 @@
 
 @font-face {
   font-family: "Montserrat";
-  src: local("Montserrat"),
+  src:
+    local("Montserrat"),
     url("./fonts/Montserrat-VariableFont_wght.ttf") format("truetype");
-} 
+}
 
 body {
-  font-family: "Montserrat"
+  font-family: "Montserrat";
 }

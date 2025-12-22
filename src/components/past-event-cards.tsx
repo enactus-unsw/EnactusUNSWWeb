@@ -1,9 +1,9 @@
-import Box from '@mui/material/Box';
-import Card from '@mui/material/Card';
-import CardContent from '@mui/material/CardContent';
-import Typography from '@mui/material/Typography';
-import CardActionArea from '@mui/material/CardActionArea';
-import { CardMedia } from '@mui/material';
+import Box from "@mui/material/Box";
+import Card from "@mui/material/Card";
+import CardContent from "@mui/material/CardContent";
+import Typography from "@mui/material/Typography";
+import CardActionArea from "@mui/material/CardActionArea";
+import { CardMedia } from "@mui/material";
 import { Link } from "react-router-dom";
 
 // Images of the event cover pictures
@@ -67,40 +67,45 @@ const events = [
     link: "https://www.instagram.com/p/DLCVLxGRPNh/?utm_source=ig_web_copy_link&igsh=MzRlODBiNWFlZA==",
     image: boulderingNight,
   },
-    {
-    id:9,
+  {
+    id: 9,
     title: "Cops N’ Robbers Pubcrawl 2025",
     link: "https://www.facebook.com/share/1Z19f5osvq/",
-    image: ENACTUS_pubcrawl_market_July_2025 
+    image: ENACTUS_pubcrawl_market_July_2025,
   },
-    { 
-    id:10,
+  {
+    id: 10,
     title: "Enactus Social Impact Mentoring",
     link: "https://www.facebook.com/events/1500237394292332/",
-    image: enactus_social_impact_mentoring
-  }
+    image: enactus_social_impact_mentoring,
+  },
 ];
 
 export default function PastEventCards() {
   return (
     <Box
       sx={{
-        maxWidth: '1220px',
-        width: '100%',
-        display: 'flex',
-        justifyContent: 'center',
-        alignItems: 'center',
-        flexWrap: 'wrap',
+        maxWidth: "1220px",
+        width: "100%",
+        display: "flex",
+        justifyContent: "center",
+        alignItems: "center",
+        flexWrap: "wrap",
         gap: 5,
       }}
     >
       {events.map((card) => (
-        <Link key={card.id} to={card.link} target="_blank" rel="noopener noreferrer">
+        <Link
+          key={card.id}
+          to={card.link}
+          target="_blank"
+          rel="noopener noreferrer"
+        >
           <Card
             sx={{
               width: {
-                xs: '70vw',
-                sm: '80vw',
+                xs: "70vw",
+                sm: "80vw",
                 md: 400,
               },
               borderRadius: 5,
@@ -109,29 +114,30 @@ export default function PastEventCards() {
               overflow: "hidden",
               transition: "0.4s cubic-bezier(0.5, 1.6, 0.4, 0.8)",
               "&:hover": {
-                boxShadow: "0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19)",
+                boxShadow:
+                  "0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19)",
                 transform: "scale(1.06)",
               },
               "&:hover .descriptionBox": {
-              opacity: 1,
-              transform: "translateY(0%)",
-            },
+                opacity: 1,
+                transform: "translateY(0%)",
+              },
             }}
           >
-            <CardActionArea sx={{ height: '100%' }}>
-              <CardContent 
-                sx={{ 
-                  height: '100%', 
-                  display: 'flex', 
-                  flexDirection: 'column', 
-                  alignItems: 'center',
-                  textAlign: 'center',
-                  justifyContent: 'center', 
+            <CardActionArea sx={{ height: "100%" }}>
+              <CardContent
+                sx={{
+                  height: "100%",
+                  display: "flex",
+                  flexDirection: "column",
+                  alignItems: "center",
+                  textAlign: "center",
+                  justifyContent: "center",
                   gap: 2,
-                  padding: 0
+                  padding: 0,
                 }}
               >
-                <CardMedia 
+                <CardMedia
                   component="img"
                   alt={card.title}
                   image={card.image}
@@ -139,15 +145,15 @@ export default function PastEventCards() {
                     width: "100%",
                     height: "100%",
                     objectFit: "cover",
-                    borderRadius: 3
+                    borderRadius: 3,
                   }}
                 />
               </CardContent>
             </CardActionArea>
             {/* Title overlay */}
             <Box
-                className="descriptionBox"
-                sx={{
+              className="descriptionBox"
+              sx={{
                 position: "absolute",
                 bottom: 0,
                 left: 0,
@@ -157,10 +163,11 @@ export default function PastEventCards() {
                 padding: "30px",
                 opacity: 0,
                 transform: "translateY(100%)",
-                transition: "opacity 0.4s ease-in-out, transform 0.4s ease-in-out",
-                }}
+                transition:
+                  "opacity 0.4s ease-in-out, transform 0.4s ease-in-out",
+              }}
             >
-                <Typography variant="body2">{card.title}</Typography>
+              <Typography variant="body2">{card.title}</Typography>
             </Box>
           </Card>
         </Link>

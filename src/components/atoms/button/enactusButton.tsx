@@ -1,14 +1,20 @@
-import { Link } from 'react-router-dom';
+import { Link } from "react-router-dom";
 
 interface EnactusButtonProps {
-  to: string; 
-  children: React.ReactNode; 
-  className?: string; 
-  target?: string,
-  rel?: string,
+  to: string;
+  children: React.ReactNode;
+  className?: string;
+  target?: string;
+  rel?: string;
 }
 
-const EnactusButton: React.FC<EnactusButtonProps> = ({ to, children, target = '', rel = '', className = '' }) => {
+const EnactusButton: React.FC<EnactusButtonProps> = ({
+  to,
+  children,
+  target = "",
+  rel = "",
+  className = "",
+}) => {
   return (
     <Link to={to} target={target} rel={rel}>
       <button
