@@ -39,6 +39,7 @@ import maanya from "../images/teamPhotos/maanya.jpg";
 //import saarthak from "../images/teamPhotos/saarthak.jpg";
 
 import dummy from "../images/teamPhotos/dummy.jpg";
+import { useState } from "react";
 
 type TeamMemberProps = {
   imageSrc: string;
@@ -79,6 +80,8 @@ function TeamMember({ imageSrc, name, role }: TeamMemberProps) {
 }
 
 export default function OurTeam() {
+  const [selectedTeamYear, setSelectedTeamYear] = useState("2026");
+
   return (
     <div style={{ textAlign: "center", padding: "2rem" }}>
       <h2 style={{ fontSize: "3rem", fontWeight: "bold" }}>Meet the Team</h2>
@@ -100,19 +103,45 @@ export default function OurTeam() {
         />
       </div>
 
-      {/* 2025 button */}
-      <div style={{ marginTop: "2rem" }}>
+      <div
+        style={{
+          marginTop: "2rem",
+          gap: "2rem",
+          display: "flex",
+          justifyContent: "center",
+        }}
+      >
         <button
+          onClick={() => setSelectedTeamYear("2026")}
           style={{
-            backgroundColor: "#FFC107",
+            backgroundColor:
+              selectedTeamYear === "2026" ? "#FFC107" : "transparent",
             color: "#000",
-            border: "none",
+            border: "2px solid #FFC107",
             borderRadius: "9999px",
             padding: "0.6rem 2rem",
             fontWeight: "bold",
             fontSize: "1rem",
             cursor: "pointer",
-            // boxShadow: '0 4px 8px rgba(0, 0, 0, 0.1)'
+            boxShadow: '0 4px 8px rgba(0, 0, 0, 0.1)'
+          }}
+        >
+          2026
+        </button>
+
+        <button
+          onClick={() => setSelectedTeamYear("2025")}
+          style={{
+            backgroundColor:
+              selectedTeamYear === "2025" ? "#FFC107" : "transparent",
+            color: "#000",
+            border: "2px solid #FFC107",
+            borderRadius: "9999px",
+            padding: "0.6rem 2rem",
+            fontWeight: "bold",
+            fontSize: "1rem",
+            cursor: "pointer",
+            boxShadow: '0 4px 8px rgba(0, 0, 0, 0.1)'
           }}
         >
           2025
@@ -131,6 +160,9 @@ export default function OurTeam() {
           marginRight: "auto",
         }}
       />
+
+      {selectedTeamYear === "2026" ? (
+        <>
 
       {/* STEER profiles */}
       <h3 style={{ fontSize: "2.4rem", fontWeight: "bold", marginTop: "3rem" }}>
@@ -558,6 +590,12 @@ export default function OurTeam() {
           </div>
         </div>
       </div>
+        </>
+      ) : (
+        <div style={{ marginTop: "3rem", fontSize: "1.1rem" }}>
+          2025 team view coming soon.
+        </div>
+      )}
     </div>
   );
 }
