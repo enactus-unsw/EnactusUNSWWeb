@@ -1,5 +1,6 @@
 //Importing this way so vite bundle it up for deployment
 import { Team2025 } from "../components/team/TeamYear2025";
+import useDocumentTitle from "@src/hooks/use-document-title";
 
 const teamPhoto = "/images/enactus_board_cropped.jpg";
 
@@ -7,6 +8,8 @@ import { useState } from "react";
 
 export default function OurTeam() {
   const [selectedTeamYear, setSelectedTeamYear] = useState("2026");
+
+  useDocumentTitle("Team | Enactus UNSW")
 
   return (
     <div style={{ textAlign: "center", padding: "2rem" }}>

@@ -1,5 +1,6 @@
 import { useState } from "react";
 import Button from "../components/atoms/button/button";
+import useDocumentTitle from "@src/hooks/use-document-title";
 import emailjs from "@emailjs/browser";
 
 export default function ContactUs() {
@@ -14,6 +15,8 @@ export default function ContactUs() {
   const SERVICE_ID = "service_3uf4pjf";
   const TEMPLATE_ID = "template_1wa0pcu";
   const PUBLIC_KEY = "11lPnglnBN8FXElMe";
+
+  useDocumentTitle("Contact | Enactus UNSW");
 
   const handleSubmit = async (e: React.FormEvent) => {
     e.preventDefault();

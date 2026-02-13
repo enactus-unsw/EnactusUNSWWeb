@@ -1,4 +1,5 @@
 import EnactusButton from "../components/atoms/button/enactusButton";
+import useDocumentTitle from "@src/hooks/use-document-title";
 
 // links
 const sdgGoals = "https://www.globalgoals.org/goals/";
@@ -10,6 +11,8 @@ const sdgImage = "/images/aboutUsPage/SDGImage.png";
 const aboutUsRectangle = "/images/aboutUsPage/aboutUs_rectangle.png";
 
 export default function AboutUs() {
+  useDocumentTitle("About Us | Enactus UNSW");
+
   return (
     <div>
       <header className="text-center pt-20 md:pb-14">

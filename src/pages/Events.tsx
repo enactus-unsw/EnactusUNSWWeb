@@ -1,10 +1,13 @@
 import EnactusButton from "../components/atoms/button/enactusButton";
 import EventsEventsCarousel from "../components/events-events-carousel";
 import PastEventCards from "../components/past-event-cards";
+import useDocumentTitle from "@src/hooks/use-document-title";
 
 const groupPhoto = "/images/eventsCoverPic/eventsHeaderImage.png";
 
 export default function Events() {
+  useDocumentTitle("Events | Enactus UNSW")
+
   return (
     <>
       <header className="relative w-5/6 mx-auto rounded-3xl overflow-hidden text-center mt-10">

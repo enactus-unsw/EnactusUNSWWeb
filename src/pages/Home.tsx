@@ -1,6 +1,7 @@
 import { Link } from "react-router-dom";
 import { useEffect } from "react";
 import { useLocation } from "react-router-dom";
+import useDocumentTitle from "@src/hooks/use-document-title";
 
 import HomeProjectCards from "../components/home-project-cards";
 import EnactusButton from "../components/atoms/button/enactusButton";
@@ -71,6 +72,8 @@ export default function Home() {
       }
     }
   }, [location.hash]);
+
+  useDocumentTitle("Home | Enactus UNSW")
 
   return (
     <>

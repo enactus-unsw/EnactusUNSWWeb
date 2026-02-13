@@ -1,15 +1,18 @@
+import EnactusButton from "../components/atoms/button/enactusButton";
+import useDocumentTitle from "@src/hooks/use-document-title";
+
 const tech4impactlogo = "/images/tech4impact_logo.png";
 const plate2platelogo = "/images/plate2plate_logo.png";
 const procketslogo = "/images/prockets_logo.png";
 const instagramlogo = "/images/Logos/Instagram.png";
 const titleBackground = "/images/ProjectsPage/titleBackground.png";
-import { Link } from "react-router-dom";
-import EnactusButton from "../components/atoms/button/enactusButton";
 
 // TODO: change website once deployed using actual domain
 const procketsWebsite = "https://enactus-unsw.github.io/enactus-prockets/";
 
 export default function Projects() {
+  useDocumentTitle("Projects | Enactus UNSW");
+
   return (
     <div className="text-[#2A2D32] w-full flex-grow">
       {/* title container */}

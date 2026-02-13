@@ -1,3 +1,5 @@
+import useDocumentTitle from "@src/hooks/use-document-title";
+
 // Decoratives
 const Banner = "/images/sponsors/SponsorsPartnersRectangle.png";
 const Separator = "/images/sponsors/Separator.png";
@@ -11,6 +13,8 @@ const redbull = "/images/sponsors/redbull.png";
 const bearish = "/images/sponsors/bearish.png";
 
 export default function Sponsors() {
+  useDocumentTitle("Sponsors | Enactus UNSW")
+
   return (
     <div>
       <div className="w-full flex justify-center items-center mt-12">
