@@ -5,9 +5,9 @@ const sdgGoals = "https://www.globalgoals.org/goals/";
 const enactusAusWebsite = "https://www.enactusaustralia.org.au/";
 
 // images
-import enactusSDGLogo from "../images/aboutUsPage/enactusSDGLogo.png";
-import sdgImage from "../images/aboutUsPage/SDGImage.png";
-import aboutUsRectangle from "../images/aboutUsPage/aboutUs_rectangle.png";
+const enactusSDGLogo = "/images/aboutUsPage/enactusSDGLogo.png";
+const sdgImage = "/images/aboutUsPage/SDGImage.png";
+const aboutUsRectangle = "/images/aboutUsPage/aboutUs_rectangle.png";
 
 export default function AboutUs() {
   return (

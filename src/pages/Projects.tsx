@@ -1,8 +1,8 @@
-import tech4impactlogo from "../images/tech4impact_logo.png";
-import plate2platelogo from "../images/plate2plate_logo.png";
-import procketslogo from "../images/prockets_logo.png";
-import instagramlogo from "../images/Logos/Instagram.png";
-import titleBackground from "../images/ProjectsPage/titleBackground.png";
+const tech4impactlogo = "/images/tech4impact_logo.png";
+const plate2platelogo = "/images/plate2plate_logo.png";
+const procketslogo = "/images/prockets_logo.png";
+const instagramlogo = "/images/Logos/Instagram.png";
+const titleBackground = "/images/ProjectsPage/titleBackground.png";
 import { Link } from "react-router-dom";
 import EnactusButton from "../components/atoms/button/enactusButton";
 

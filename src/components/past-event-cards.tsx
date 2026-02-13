@@ -7,16 +7,21 @@ import { CardMedia } from "@mui/material";
 import { Link } from "react-router-dom";
 
 // Images of the event cover pictures
-import launchWeekImage from "../images/eventsCoverPic/launchWeek.jpg";
-import pitchForImpact from "../images/eventsCoverPic/pitchForImpact.jpg";
-import projectWeekAndShowcase from "../images/eventsCoverPic/projectWeekAndShowcase.jpg";
-import wingsForLifeImage from "../images/eventsCoverPic/wingsForLife.jpg";
-import startupNetworkingNightImage from "../images/eventsCoverPic/startupNetworkingNight.jpg";
-import projectShowcaseImage from "../images/eventsCoverPic/projectShowcase.jpg";
-import medsciXcaliXEnactusPubcrawl from "../images/eventsCoverPic/Medsci_Cali_Enactus_Pubcrawl.jpg";
-import boulderingNight from "../images/eventsCoverPic/boulderingNight.jpg";
-import ENACTUS_pubcrawl_market_July_2025 from "../images/eventsCoverPic/ENACTUS_pubcrawl_market_Jully_2025.jpg";
-import enactus_social_impact_mentoring from "../images/eventsCoverPic/Enactus_Social_Impact_Mentoring.jpg";
+const launchWeekImage = "/images/eventsCoverPic/launchWeek.jpg";
+const pitchForImpact = "/images/eventsCoverPic/pitchForImpact.jpg";
+const projectWeekAndShowcase =
+  "/images/eventsCoverPic/projectWeekAndShowcase.jpg";
+const wingsForLifeImage = "/images/eventsCoverPic/wingsForLife.jpg";
+const startupNetworkingNightImage =
+  "/images/eventsCoverPic/startupNetworkingNight.jpg";
+const projectShowcaseImage = "/images/eventsCoverPic/projectShowcase.jpg";
+const medsciXcaliXEnactusPubcrawl =
+  "/images/eventsCoverPic/Medsci_Cali_Enactus_Pubcrawl.jpg";
+const boulderingNight = "/images/eventsCoverPic/boulderingNight.jpg";
+const ENACTUS_pubcrawl_market_July_2025 =
+  "/images/eventsCoverPic/ENACTUS_pubcrawl_market_Jully_2025.jpg";
+const enactus_social_impact_mentoring =
+  "/images/eventsCoverPic/enactus_social_impact_mentoring.jpg";
 
 const events = [
   {

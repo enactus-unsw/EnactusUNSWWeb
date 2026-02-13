@@ -9,7 +9,8 @@ interface EventsData {
   image: string;
 }
 
-import director_recruitment_2026 from "../images/eventsCoverPic/Enactus_event_director_recruimtent_2026.jpg";
+const director_recruitment_2026 =
+  "/images/eventsCoverPic/Enactus_event_director_recruimtent_2026.jpg";
 
 const events: EventsData[] = [
   {

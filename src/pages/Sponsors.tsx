@@ -1,14 +1,14 @@
 // Decoratives
-import Banner from "../images/sponsors/SponsorsPartnersRectangle.png";
-import Separator from "../images/sponsors/Separator.png";
+const Banner = "/images/sponsors/SponsorsPartnersRectangle.png";
+const Separator = "/images/sponsors/Separator.png";
 
 // Sponsor/Partner Logos
-import commonwealthbank from "../images/sponsors/commonwealthbank.png";
-import thescarycanary from "../images/sponsors/thescarycanary.png";
-import capgemini from "../images/sponsors/capgemini.png";
-import macquarie from "../images/sponsors/macquarie.png";
-import redbull from "../images/sponsors/redbull.png";
-import bearish from "../images/sponsors/bearish.png";
+const commonwealthbank = "/images/sponsors/commonwealthbank.png";
+const thescarycanary = "/images/sponsors/thescarycanary.png";
+const capgemini = "/images/sponsors/capgemini.png";
+const macquarie = "/images/sponsors/macquarie.png";
+const redbull = "/images/sponsors/redbull.png";
+const bearish = "/images/sponsors/bearish.png";
 
 export default function Sponsors() {
   return (

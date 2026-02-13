@@ -4,12 +4,17 @@ import { ArrowBackRounded, ArrowForwardRounded } from "@mui/icons-material";
 import { Link } from "react-router-dom";
 
 // Images of the event cover pictures
-import startupNetworkingNightImage from "../images/eventsCoverPic/startupNetworkingNight.jpg";
-import projectShowcaseImage from "../images/eventsCoverPic/projectShowcase.jpg";
-import medsciXcaliXEnactusPubcrawl from "../images/eventsCoverPic/Medsci_Cali_Enactus_Pubcrawl.jpg";
-import social_impact_mentoring from "../images/eventsCoverPic/Enactus_Social_Impact_Mentoring.jpg";
-import pubcrawl_market_July_2025 from "../images/eventsCoverPic/ENACTUS_pubcrawl_market_Jully_2025.jpg";
-import director_recruitment_2026 from "../images/eventsCoverPic/Enactus_event_director_recruimtent_2026.jpg";
+const startupNetworkingNightImage =
+  "/images/eventsCoverPic/startupNetworkingNight.jpg";
+const projectShowcaseImage = "/images/eventsCoverPic/projectShowcase.jpg";
+const medsciXcaliXEnactusPubcrawl =
+  "/images/eventsCoverPic/Medsci_Cali_Enactus_Pubcrawl.jpg";
+const social_impact_mentoring =
+  "/images/eventsCoverPic/enactus_social_impact_mentoring.jpg";
+const pubcrawl_market_July_2025 =
+  "/images/eventsCoverPic/ENACTUS_pubcrawl_market_Jully_2025.jpg";
+const director_recruitment_2026 =
+  "/images/eventsCoverPic/Enactus_event_director_recruimtent_2026.jpg";
 
 const events = [
   {

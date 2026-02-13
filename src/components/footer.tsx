@@ -1,9 +1,9 @@
-import enactusUNSWLogo from "../images/Enactus UNSW Logo (Grey).jpg";
-import Instagram from "../images/Logos/Black & White/Instagram_Black&White.png";
-import Facebook from "../images/Logos/Black & White/Facebook_Black&White.png";
-import Linkedin from "../images/Logos/Black & White/Linkedin_Black&White.png";
-import TikTok from "../images/Logos/Black & White/TikTok_Black&White.png";
-import Youtube from "../images/Logos/Black & White/Youtube_Black&White.png";
+const enactusUNSWLogo = "/images/Enactus UNSW Logo (Grey).jpg";
+const Instagram = "/images/Logos/Black & White/Instagram_Black&White.png";
+const Facebook = "/images/Logos/Black & White/Facebook_Black&White.png";
+const Linkedin = "/images/Logos/Black & White/Linkedin_Black&White.png";
+const TikTok = "/images/Logos/Black & White/TikTok_Black&White.png";
+const Youtube = "/images/Logos/Black & White/Youtube_Black&White.png";
 
 const Footer = () => {
   return (

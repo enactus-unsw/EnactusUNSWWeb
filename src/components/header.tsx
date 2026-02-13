@@ -1,4 +1,4 @@
-import enactusLogo from "../images/Enactus Logo.png";
+const enactusLogo = "/images/Enactus Logo.png";
 import { Link } from "react-router-dom";
 import Dropdown from "./organisms/card/Nav_Dropdown";
 

@@ -1,6 +1,7 @@
 //Importing this way so vite bundle it up for deployment
-import teamPhoto from "../images/enactus_board_cropped.jpg";
 import { Team2025 } from "../components/team/TeamYear2025";
+
+const teamPhoto = "/images/enactus_board_cropped.jpg";
 
 import { useState } from "react";
 

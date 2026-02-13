@@ -5,9 +5,9 @@ import Typography from "@mui/material/Typography";
 import CardActionArea from "@mui/material/CardActionArea";
 import { CardMedia } from "@mui/material";
 
-import plate2plateLogo from "../images/plate2plate_logo.png";
-import tech4ImpactLogo from "../images/tech4impact_logo.png";
-import procketsLogo from "../images/prockets_logo.png";
+const plate2plateLogo = "/images/plate2plate_logo.png";
+const tech4ImpactLogo = "/images/tech4impact_logo.png";
+const procketsLogo = "/images/prockets_logo.png";
 
 const projects = [
   {

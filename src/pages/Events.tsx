@@ -2,7 +2,7 @@ import EnactusButton from "../components/atoms/button/enactusButton";
 import EventsEventsCarousel from "../components/events-events-carousel";
 import PastEventCards from "../components/past-event-cards";
 
-import groupPhoto from "../images/eventsCoverPic/eventsHeaderImage.png";
+const groupPhoto = "/images/eventsCoverPic/eventsHeaderImage.png";
 
 export default function Events() {
   return (

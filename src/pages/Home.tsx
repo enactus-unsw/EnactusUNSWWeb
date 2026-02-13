@@ -7,17 +7,16 @@ import EnactusButton from "../components/atoms/button/enactusButton";
 import HomeEventsCarousel from "../components/home-events-carousel";
 
 // Images
-import enactusUNSWLogo from "../images/Enactus UNSW Logo (Grey).jpg";
-import enactusTeamPhoto from "../images/enactus team 2025.jpeg";
-import triangle from "../images/Triangle shape.png";
-import tiltedShape from "../images/tilted shape.png";
+const enactusUNSWLogo = "/images/Enactus UNSW Logo (Grey).jpg";
+const enactusTeamPhoto = "/images/enactus team 2025.jpeg";
+const triangle = "/images/Triangle shape.png";
+const tiltedShape = "/images/tilted shape.png";
 
 // Social Media Logos
-import instagramLogo from "../images/Logos/Instagram.png";
-import facebookLogo from "../images/Logos/Facebook.png";
-import linkedInLogo from "../images/Logos/LinkedIn.png";
-import tiktokLogo from "../images/Logos/Tiktok.png";
-// import youtubeLogo from "../images/Logos/Youtube.png";
+const instagramLogo = "/images/Logos/Instagram.png";
+const facebookLogo = "/images/Logos/Facebook.png";
+const linkedInLogo = "/images/Logos/LinkedIn.png";
+const tiktokLogo = "/images/Logos/Tiktok.png";
 
 // Website Links
 const enactusRubricWebsite = "https://campus.hellorubric.com/?s=12656";
