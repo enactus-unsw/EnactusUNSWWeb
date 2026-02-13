@@ -162,6 +162,10 @@ export default function OurTeam() {
       />
 
       {selectedTeamYear === "2026" ? (
+        <div style={{ marginTop: "3rem", fontSize: "1.1rem" }}>
+          2026 team view coming soon.
+        </div>
+      ) : (
         <>
           {/* STEER profiles */}
           <h3
@@ -658,10 +662,6 @@ export default function OurTeam() {
             </div>
           </div>
         </>
-      ) : (
-        <div style={{ marginTop: "3rem", fontSize: "1.1rem" }}>
-          2025 team view coming soon.
-        </div>
       )}
     </div>
   );
