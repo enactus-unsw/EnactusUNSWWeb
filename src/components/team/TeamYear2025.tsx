@@ -1,6 +1,6 @@
-import { TeamMember } from "./TeamMember";
+import { TeamMember } from './TeamMember';
 
-const tp = "/images/teamPhotos";
+const tp = '/images/teamPhotos';
 const amrutha = `${tp}/amrutha.jpg`;
 const benjamin = `${tp}/benjamin.jpg`;
 const sehej = `${tp}/sehej.jpg`;
@@ -33,16 +33,16 @@ export function Team2025() {
       {/* STEER profiles */}
       <h3
         style={{
-          fontSize: "2.4rem",
-          fontWeight: "bold",
-          marginTop: "3rem",
+          fontSize: '2.4rem',
+          fontWeight: 'bold',
+          marginTop: '3rem',
         }}
       >
         STEER
       </h3>
 
       {/* top row */}
-      <div className="grid grid-cols-1 sm:grid-cols-2 gap-10 sm:gap-30 md:gap-60 mt-8 w-fit mx-auto">
+      <div className="sm:gap-30 mx-auto mt-8 grid w-fit grid-cols-1 gap-10 sm:grid-cols-2 md:gap-60">
         <TeamMember
           imageSrc={amrutha}
           name="Amrutha Sivaranjan"
@@ -56,7 +56,7 @@ export function Team2025() {
       </div>
 
       {/* second row */}
-      <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 gap-10 mt-8">
+      <div className="mt-8 grid grid-cols-1 gap-10 sm:grid-cols-2 md:grid-cols-3">
         <TeamMember imageSrc={sehej} name="Sehej Panesar" role="Secretary" />
         <TeamMember imageSrc={iqtidar} name="Iqtidar Rahman" role="Treasurer" />
         <TeamMember
@@ -90,29 +90,29 @@ export function Team2025() {
       {/* dashed section seperator line */}
       <div
         style={{
-          marginTop: "2.5rem",
-          height: "5px",
+          marginTop: '2.5rem',
+          height: '5px',
           backgroundImage:
-            "repeating-linear-gradient(to right, #FFD700, #FFD700 40px, transparent 40px, transparent 80px)",
-          width: "92%",
-          marginLeft: "auto",
-          marginRight: "auto",
+            'repeating-linear-gradient(to right, #FFD700, #FFD700 40px, transparent 40px, transparent 80px)',
+          width: '92%',
+          marginLeft: 'auto',
+          marginRight: 'auto',
         }}
       />
 
       {/* director profiles */}
       <h3
         style={{
-          fontSize: "2.4rem",
-          fontWeight: "bold",
-          marginTop: "3rem",
+          fontSize: '2.4rem',
+          fontWeight: 'bold',
+          marginTop: '3rem',
         }}
       >
         DIRECTORS
       </h3>
 
       {/* prockets row */}
-      <div className="grid grid-cols-1 sm:grid-cols-2 gap-10 sm:gap-30 md:gap-60 mt-8 w-fit mx-auto">
+      <div className="sm:gap-30 mx-auto mt-8 grid w-fit grid-cols-1 gap-10 sm:grid-cols-2 md:gap-60">
         <TeamMember
           imageSrc={olivia}
           name="Olivia Vu"
@@ -126,7 +126,7 @@ export function Team2025() {
       </div>
 
       {/* tech4impact row */}
-      <div className="grid grid-cols-1 sm:grid-cols-2 gap-10 sm:gap-30 md:gap-60 mt-8 w-fit mx-auto">
+      <div className="sm:gap-30 mx-auto mt-8 grid w-fit grid-cols-1 gap-10 sm:grid-cols-2 md:gap-60">
         <TeamMember
           imageSrc={aryan}
           name="Aryan Thukral"
@@ -140,7 +140,7 @@ export function Team2025() {
       </div>
 
       {/* plate2plate row */}
-      <div className="grid grid-cols-1 sm:grid-cols-2 gap-10 sm:gap-30 md:gap-60 mt-8 w-fit mx-auto">
+      <div className="sm:gap-30 mx-auto mt-8 grid w-fit grid-cols-1 gap-10 sm:grid-cols-2 md:gap-60">
         <TeamMember
           imageSrc={karen}
           name="Karen Huo"
@@ -154,7 +154,7 @@ export function Team2025() {
       </div>
 
       {/* careers row */}
-      <div className="grid grid-cols-1 sm:grid-cols-2 gap-10 sm:gap-30 md:gap-60 mt-8 w-fit mx-auto">
+      <div className="sm:gap-30 mx-auto mt-8 grid w-fit grid-cols-1 gap-10 sm:grid-cols-2 md:gap-60">
         <TeamMember
           imageSrc={jayden}
           name="Jayden Truong"
@@ -164,7 +164,7 @@ export function Team2025() {
       </div>
 
       {/* sponsorships and multimedia row */}
-      <div className="grid grid-cols-1 sm:grid-cols-2 gap-10 sm:gap-30 md:gap-60 mt-8 w-fit mx-auto">
+      <div className="sm:gap-30 mx-auto mt-8 grid w-fit grid-cols-1 gap-10 sm:grid-cols-2 md:gap-60">
         <TeamMember
           imageSrc={meenal}
           name="Meenal Janjua"
@@ -178,7 +178,7 @@ export function Team2025() {
       </div>
 
       {/* hr row */}
-      <div className="grid grid-cols-1 sm:grid-cols-2 gap-10 sm:gap-30 md:gap-60 mt-8 w-fit mx-auto">
+      <div className="sm:gap-30 mx-auto mt-8 grid w-fit grid-cols-1 gap-10 sm:grid-cols-2 md:gap-60">
         <TeamMember
           imageSrc={fleur}
           name="Fleur Randerath"
@@ -188,13 +188,13 @@ export function Team2025() {
       </div>
 
       {/* it row */}
-      <div className="grid grid-cols-1 sm:grid-cols-2 gap-10 sm:gap-30 md:gap-60 mt-8 w-fit mx-auto">
+      <div className="sm:gap-30 mx-auto mt-8 grid w-fit grid-cols-1 gap-10 sm:grid-cols-2 md:gap-60">
         <TeamMember imageSrc={amy} name="Amy Wang" role="IT Director" />
         <TeamMember imageSrc={iris} name="Iris Dautriat" role="IT Director" />
       </div>
 
       {/* marketing row */}
-      <div className="grid grid-cols-1 sm:grid-cols-2 gap-10 sm:gap-30 md:gap-60 mt-8 w-fit mx-auto">
+      <div className="sm:gap-30 mx-auto mt-8 grid w-fit grid-cols-1 gap-10 sm:grid-cols-2 md:gap-60">
         <TeamMember
           imageSrc={henry}
           name="Henry Tat"
@@ -208,7 +208,7 @@ export function Team2025() {
       </div>
 
       {/* socials row */}
-      <div className="grid grid-cols-1 sm:grid-cols-2 gap-10 sm:gap-30 md:gap-60 mt-8 w-fit mx-auto">
+      <div className="sm:gap-30 mx-auto mt-8 grid w-fit grid-cols-1 gap-10 sm:grid-cols-2 md:gap-60">
         <TeamMember
           imageSrc={maanya}
           name="Maanya Gawande"
@@ -224,20 +224,20 @@ export function Team2025() {
       {/* dashed section seperator line */}
       <div
         style={{
-          marginTop: "2.5rem",
-          height: "5px",
+          marginTop: '2.5rem',
+          height: '5px',
           backgroundImage:
-            "repeating-linear-gradient(to right, #FFD700, #FFD700 40px, transparent 40px, transparent 80px)",
-          width: "92%",
-          marginLeft: "auto",
-          marginRight: "auto",
+            'repeating-linear-gradient(to right, #FFD700, #FFD700 40px, transparent 40px, transparent 80px)',
+          width: '92%',
+          marginLeft: 'auto',
+          marginRight: 'auto',
         }}
       />
 
       {/* subcomittee  profile heading */}
-      <h3 className="text-[2rem] md:text-[2.4rem] font-bold mt-12">
-        {" "}
-        SUBCOMMITTEES{" "}
+      <h3 className="mt-12 text-[2rem] font-bold md:text-[2.4rem]">
+        {' '}
+        SUBCOMMITTEES{' '}
       </h3>
 
       {/* subcom team list*/}
@@ -245,14 +245,14 @@ export function Team2025() {
       <div>
         <h4
           style={{
-            fontSize: "1.6rem",
-            fontWeight: "bold",
-            marginTop: "2rem",
+            fontSize: '1.6rem',
+            fontWeight: 'bold',
+            marginTop: '2rem',
           }}
         >
           Prockets Team
         </h4>
-        <div className="flex justify-center gap-[2rem] sm:gap-[5rem] mt-4">
+        <div className="mt-4 flex justify-center gap-[2rem] sm:gap-[5rem]">
           <div>
             <div>Diana So</div>
             <div>Guntas Sandhu</div>
@@ -272,14 +272,14 @@ export function Team2025() {
       <div>
         <h4
           style={{
-            fontSize: "1.6rem",
-            fontWeight: "bold",
-            marginTop: "2rem",
+            fontSize: '1.6rem',
+            fontWeight: 'bold',
+            marginTop: '2rem',
           }}
         >
           Tech4Impact Team
         </h4>
-        <div className="flex justify-center gap-[2rem] sm:gap-[5rem] mt-4">
+        <div className="mt-4 flex justify-center gap-[2rem] sm:gap-[5rem]">
           <div>
             <div>Anna Vu</div>
             <div>Emmy Luu</div>
@@ -299,14 +299,14 @@ export function Team2025() {
       <div>
         <h4
           style={{
-            fontSize: "1.6rem",
-            fontWeight: "bold",
-            marginTop: "2rem",
+            fontSize: '1.6rem',
+            fontWeight: 'bold',
+            marginTop: '2rem',
           }}
         >
           plate2plate Team
         </h4>
-        <div className="flex justify-center gap-[2rem] sm:gap-[5rem] mt-4">
+        <div className="mt-4 flex justify-center gap-[2rem] sm:gap-[5rem]">
           <div>
             <div>Andrew Tan</div>
             <div>Eric Yang</div>
@@ -326,14 +326,14 @@ export function Team2025() {
       <div>
         <h4
           style={{
-            fontSize: "1.6rem",
-            fontWeight: "bold",
-            marginTop: "2rem",
+            fontSize: '1.6rem',
+            fontWeight: 'bold',
+            marginTop: '2rem',
           }}
         >
           Careers Team
         </h4>
-        <div className="flex justify-center gap-[2rem] sm:gap-[5rem] mt-4">
+        <div className="mt-4 flex justify-center gap-[2rem] sm:gap-[5rem]">
           <div>
             <div>Adarsh Wijesinghe</div>
             <div>Henry Huang</div>
@@ -353,14 +353,14 @@ export function Team2025() {
       <div>
         <h4
           style={{
-            fontSize: "1.6rem",
-            fontWeight: "bold",
-            marginTop: "2rem",
+            fontSize: '1.6rem',
+            fontWeight: 'bold',
+            marginTop: '2rem',
           }}
         >
           Sponsorships Team
         </h4>
-        <div className="flex justify-center gap-[2rem] sm:gap-[5rem] mt-4">
+        <div className="mt-4 flex justify-center gap-[2rem] sm:gap-[5rem]">
           <div>
             <div>Arthi Kathiravelupillai</div>
             <div>Nikhil Sawant</div>
@@ -380,14 +380,14 @@ export function Team2025() {
       <div>
         <h4
           style={{
-            fontSize: "1.6rem",
-            fontWeight: "bold",
-            marginTop: "2rem",
+            fontSize: '1.6rem',
+            fontWeight: 'bold',
+            marginTop: '2rem',
           }}
         >
           Human Resources Team
         </h4>
-        <div className="flex justify-center gap-[2rem] sm:gap-[5rem] mt-4">
+        <div className="mt-4 flex justify-center gap-[2rem] sm:gap-[5rem]">
           <div>
             <div>Aaryan Khan</div>
             <div>Heidi Ho</div>
@@ -406,14 +406,14 @@ export function Team2025() {
       <div>
         <h4
           style={{
-            fontSize: "1.6rem",
-            fontWeight: "bold",
-            marginTop: "2rem",
+            fontSize: '1.6rem',
+            fontWeight: 'bold',
+            marginTop: '2rem',
           }}
         >
           Information Technology Team
         </h4>
-        <div className="flex justify-center gap-[2rem] sm:gap-[5rem] mt-4">
+        <div className="mt-4 flex justify-center gap-[2rem] sm:gap-[5rem]">
           <div>
             <div>Jasmine Nguyen</div>
             <div>Jason Chen</div>
@@ -433,14 +433,14 @@ export function Team2025() {
       <div>
         <h4
           style={{
-            fontSize: "1.6rem",
-            fontWeight: "bold",
-            marginTop: "2rem",
+            fontSize: '1.6rem',
+            fontWeight: 'bold',
+            marginTop: '2rem',
           }}
         >
           Marketing Team
         </h4>
-        <div className="flex justify-center gap-[2rem] sm:gap-[5rem] mt-4">
+        <div className="mt-4 flex justify-center gap-[2rem] sm:gap-[5rem]">
           <div>
             <div>Aaron Tran</div>
           </div>
@@ -459,14 +459,14 @@ export function Team2025() {
       <div>
         <h4
           style={{
-            fontSize: "1.6rem",
-            fontWeight: "bold",
-            marginTop: "2rem",
+            fontSize: '1.6rem',
+            fontWeight: 'bold',
+            marginTop: '2rem',
           }}
         >
           Multimedia Team
         </h4>
-        <div className="flex justify-center gap-[2rem] sm:gap-[5rem] mt-4">
+        <div className="mt-4 flex justify-center gap-[2rem] sm:gap-[5rem]">
           <div>
             <div>Calvin Bae</div>
             <div>Maxwell Su</div>
@@ -486,14 +486,14 @@ export function Team2025() {
       <div>
         <h4
           style={{
-            fontSize: "1.6rem",
-            fontWeight: "bold",
-            marginTop: "2rem",
+            fontSize: '1.6rem',
+            fontWeight: 'bold',
+            marginTop: '2rem',
           }}
         >
           Socials Team
         </h4>
-        <div className="flex justify-center gap-[2rem] sm:gap-[5rem] mt-4">
+        <div className="mt-4 flex justify-center gap-[2rem] sm:gap-[5rem]">
           <div>
             <div>Anonna Das</div>
             <div>Chyna Probert</div>

@@ -1,34 +1,36 @@
-import { useState } from "react";
-import Button from "../components/atoms/button/button";
-import useDocumentTitle from "@src/hooks/use-document-title";
-import emailjs from "@emailjs/browser";
+import emailjs from '@emailjs/browser';
+import useDocumentTitle from '@src/hooks/use-document-title';
+
+import { useState } from 'react';
+
+import Button from '../components/atoms/button/button';
 
 export default function ContactUs() {
-  const [firstName, setFirstName] = useState("");
-  const [lastName, setLastName] = useState("");
-  const [email, setEmail] = useState("");
-  const [message, setMessage] = useState("");
+  const [firstName, setFirstName] = useState('');
+  const [lastName, setLastName] = useState('');
+  const [email, setEmail] = useState('');
+  const [message, setMessage] = useState('');
   const [submitted, setSubmitted] = useState(false);
-  const [error, setError] = useState("");
+  const [error, setError] = useState('');
   const [loading, setLoading] = useState(false);
 
-  const SERVICE_ID = "service_3uf4pjf";
-  const TEMPLATE_ID = "template_1wa0pcu";
-  const PUBLIC_KEY = "11lPnglnBN8FXElMe";
+  const SERVICE_ID = 'service_3uf4pjf';
+  const TEMPLATE_ID = 'template_1wa0pcu';
+  const PUBLIC_KEY = '11lPnglnBN8FXElMe';
 
-  useDocumentTitle("Contact | Enactus UNSW");
+  useDocumentTitle('Contact | Enactus UNSW');
 
   const handleSubmit = async (e: React.FormEvent) => {
     e.preventDefault();
     if (!firstName || !lastName || !email || !message) {
-      setError("Please fill in all fields.");
+      setError('Please fill in all fields.');
       return;
     }
     if (!/^[^@\s]+@[^@\s]+\.[^@\s]+$/.test(email)) {
-      setError("Please enter a valid email address.");
+      setError('Please enter a valid email address.');
       return;
     }
-    setError("");
+    setError('');
     setLoading(true);
     try {
       await emailjs.send(
@@ -40,15 +42,15 @@ export default function ContactUs() {
           message: message,
           time: new Date().toLocaleString(),
         },
-        PUBLIC_KEY,
+        PUBLIC_KEY
       );
       setSubmitted(true);
-      setFirstName("");
-      setLastName("");
-      setEmail("");
-      setMessage("");
+      setFirstName('');
+      setLastName('');
+      setEmail('');
+      setMessage('');
     } catch (err) {
-      setError("Failed to send message. Please try again later.");
+      setError('Failed to send message. Please try again later.');
     } finally {
       setLoading(false);
     }
@@ -56,8 +58,8 @@ export default function ContactUs() {
 
   return (
     <div className="text-center">
-      <header className="pt-20 pb-10">
-        <h1 className="font-bold text-5xl mb-8">Contact Us</h1>
+      <header className="pb-10 pt-20">
+        <h1 className="mb-8 text-5xl font-bold">Contact Us</h1>
         <h3 className="text-2xl font-semibold">
           Email:
           <span className="font-normal"> it@enactusunsw.org</span>
@@ -65,13 +67,13 @@ export default function ContactUs() {
       </header>
       <div className="flex justify-center">
         <form
-          className="w-full max-w-lg bg-white bg-opacity-10 rounded-xl p-8 shadow-md"
+          className="w-full max-w-lg rounded-xl bg-white bg-opacity-10 p-8 shadow-md"
           onSubmit={handleSubmit}
         >
           <div className="mb-6 flex gap-4">
             <div className="flex-1">
               <label
-                className="block text-left text-lg font-semibold mb-2"
+                className="mb-2 block text-left text-lg font-semibold"
                 htmlFor="firstName"
               >
                 First Name
@@ -79,7 +81,7 @@ export default function ContactUs() {
               <input
                 id="firstName"
                 type="text"
-                className="w-full px-4 py-2 rounded-lg border border-gray-300 focus:outline-none focus:ring-2 focus:ring-blue-400"
+                className="w-full rounded-lg border border-gray-300 px-4 py-2 focus:outline-none focus:ring-2 focus:ring-blue-400"
                 value={firstName}
                 onChange={(e) => setFirstName(e.target.value)}
                 autoComplete="given-name"
@@ -88,7 +90,7 @@ export default function ContactUs() {
             </div>
             <div className="flex-1">
               <label
-                className="block text-left text-lg font-semibold mb-2"
+                className="mb-2 block text-left text-lg font-semibold"
                 htmlFor="lastName"
               >
                 Last Name
@@ -96,7 +98,7 @@ export default function ContactUs() {
               <input
                 id="lastName"
                 type="text"
-                className="w-full px-4 py-2 rounded-lg border border-gray-300 focus:outline-none focus:ring-2 focus:ring-blue-400"
+                className="w-full rounded-lg border border-gray-300 px-4 py-2 focus:outline-none focus:ring-2 focus:ring-blue-400"
                 value={lastName}
                 onChange={(e) => setLastName(e.target.value)}
                 autoComplete="family-name"
@@ -106,7 +108,7 @@ export default function ContactUs() {
           </div>
           <div className="mb-6">
             <label
-              className="block text-left text-lg font-semibold mb-2"
+              className="mb-2 block text-left text-lg font-semibold"
               htmlFor="email"
             >
               Email
@@ -114,7 +116,7 @@ export default function ContactUs() {
             <input
               id="email"
               type="email"
-              className="w-full px-4 py-2 rounded-lg border border-gray-300 focus:outline-none focus:ring-2 focus:ring-blue-400"
+              className="w-full rounded-lg border border-gray-300 px-4 py-2 focus:outline-none focus:ring-2 focus:ring-blue-400"
               value={email}
               onChange={(e) => setEmail(e.target.value)}
               autoComplete="email"
@@ -123,27 +125,27 @@ export default function ContactUs() {
           </div>
           <div className="mb-6">
             <label
-              className="block text-left text-lg font-semibold mb-2"
+              className="mb-2 block text-left text-lg font-semibold"
               htmlFor="message"
             >
               Message
             </label>
             <textarea
               id="message"
-              className="w-full px-4 py-2 rounded-lg border border-gray-300 focus:outline-none focus:ring-2 focus:ring-blue-400 min-h-[120px]"
+              className="min-h-[120px] w-full rounded-lg border border-gray-300 px-4 py-2 focus:outline-none focus:ring-2 focus:ring-blue-400"
               value={message}
               onChange={(e) => setMessage(e.target.value)}
               disabled={loading}
             />
           </div>
-          {error && <div className="text-red-500 mb-4">{error}</div>}
+          {error && <div className="mb-4 text-red-500">{error}</div>}
           {submitted ? (
-            <div className="text-green-600 text-xl font-semibold mb-4">
+            <div className="mb-4 text-xl font-semibold text-green-600">
               Thank you for contacting us! We'll get back to you soon.
             </div>
           ) : (
             <Button type="submit" disabled={loading}>
-              {loading ? "Sending..." : "Send Message"}
+              {loading ? 'Sending...' : 'Send Message'}
             </Button>
           )}
         </form>

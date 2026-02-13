@@ -1,50 +1,51 @@
-import { useState } from "react";
-import { Card, CardMedia, Box } from "@mui/material";
-import { ArrowBackRounded, ArrowForwardRounded } from "@mui/icons-material";
-import { Link } from "react-router-dom";
+import { ArrowBackRounded, ArrowForwardRounded } from '@mui/icons-material';
+import { Box, Card, CardMedia } from '@mui/material';
+
+import { useState } from 'react';
+import { Link } from 'react-router-dom';
 
 // Images of the event cover pictures
 const startupNetworkingNightImage =
-  "/images/eventsCoverPic/startupNetworkingNight.jpg";
-const projectShowcaseImage = "/images/eventsCoverPic/projectShowcase.jpg";
+  '/images/eventsCoverPic/startupNetworkingNight.jpg';
+const projectShowcaseImage = '/images/eventsCoverPic/projectShowcase.jpg';
 const medsciXcaliXEnactusPubcrawl =
-  "/images/eventsCoverPic/Medsci_Cali_Enactus_Pubcrawl.jpg";
+  '/images/eventsCoverPic/Medsci_Cali_Enactus_Pubcrawl.jpg';
 const social_impact_mentoring =
-  "/images/eventsCoverPic/enactus_social_impact_mentoring.jpg";
+  '/images/eventsCoverPic/enactus_social_impact_mentoring.jpg';
 const pubcrawl_market_July_2025 =
-  "/images/eventsCoverPic/ENACTUS_pubcrawl_market_Jully_2025.jpg";
+  '/images/eventsCoverPic/ENACTUS_pubcrawl_market_Jully_2025.jpg';
 const director_recruitment_2026 =
-  "/images/eventsCoverPic/Enactus_event_director_recruimtent_2026.jpg";
+  '/images/eventsCoverPic/Enactus_event_director_recruimtent_2026.jpg';
 
 const events = [
   {
-    title: "Director Recruitment",
-    link: "https://www.facebook.com/share/1F6cCpDtHn/",
+    title: 'Director Recruitment',
+    link: 'https://www.facebook.com/share/1F6cCpDtHn/',
     image: director_recruitment_2026,
   },
   {
-    title: "Social Impact Mentoring",
-    link: "https://www.facebook.com/events/1500237394292332/",
+    title: 'Social Impact Mentoring',
+    link: 'https://www.facebook.com/events/1500237394292332/',
     image: social_impact_mentoring,
   },
   {
-    title: "Cops N’ Robbers Pubcrawl 2025",
-    link: "https://www.facebook.com/share/1Z19f5osvq/",
+    title: 'Cops N’ Robbers Pubcrawl 2025',
+    link: 'https://www.facebook.com/share/1Z19f5osvq/',
     image: pubcrawl_market_July_2025,
   },
   {
-    title: "Start-Up Networking Night",
-    link: "https://www.facebook.com/events/519442017819568",
+    title: 'Start-Up Networking Night',
+    link: 'https://www.facebook.com/events/519442017819568',
     image: startupNetworkingNightImage,
   },
   {
-    title: "Project Showcase",
-    link: "https://www.facebook.com/events/2729108283942901",
+    title: 'Project Showcase',
+    link: 'https://www.facebook.com/events/2729108283942901',
     image: projectShowcaseImage,
   },
   {
-    title: "MEDSCISOC X ENACTUS X CALISOC Pubcrawl",
-    link: "https://fb.me/e/7JDXk8Tju",
+    title: 'MEDSCISOC X ENACTUS X CALISOC Pubcrawl',
+    link: 'https://fb.me/e/7JDXk8Tju',
     image: medsciXcaliXEnactusPubcrawl,
   },
 ];
@@ -65,7 +66,7 @@ export default function HomeEventsCarousel() {
     setFade(true);
     setTimeout(() => {
       setCurrIndex(
-        (prevIndex) => (prevIndex - 1 + events.length) % events.length,
+        (prevIndex) => (prevIndex - 1 + events.length) % events.length
       );
       setFade(false);
     }, 250);
@@ -82,10 +83,10 @@ export default function HomeEventsCarousel() {
         onClick={handlePrev}
         sx={{
           fontSize: 50,
-          cursor: "pointer",
-          transition: "0.2s",
-          "&:hover": {
-            transform: "scale(1.3)",
+          cursor: 'pointer',
+          transition: '0.2s',
+          '&:hover': {
+            transform: 'scale(1.3)',
           },
         }}
       />
@@ -97,21 +98,21 @@ export default function HomeEventsCarousel() {
         <Card
           sx={{
             width: {
-              xs: "70vw",
-              sm: "80vw",
+              xs: '70vw',
+              sm: '80vw',
               md: 500,
             },
-            overflow: "hidden",
+            overflow: 'hidden',
             borderRadius: 5,
             boxShadow:
-              "0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19)",
-            position: "relative",
-            margin: "0 2vw",
+              '0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19)',
+            position: 'relative',
+            margin: '0 2vw',
             transition:
-              "opacity 0.3s ease-in-out, transform 0.4s cubic-bezier(0.5, 1.6, 0.4, 0.8)",
+              'opacity 0.3s ease-in-out, transform 0.4s cubic-bezier(0.5, 1.6, 0.4, 0.8)',
             opacity: isFade ? 0.3 : 1,
-            "&:hover": {
-              transform: "scale(1.06)",
+            '&:hover': {
+              transform: 'scale(1.06)',
             },
           }}
         >
@@ -119,7 +120,7 @@ export default function HomeEventsCarousel() {
             component="img"
             alt={events[currIndex].title}
             image={events[currIndex].image}
-            sx={{ objectFit: "contain" }}
+            sx={{ objectFit: 'contain' }}
           />
         </Card>
       </Link>
@@ -127,10 +128,10 @@ export default function HomeEventsCarousel() {
         onClick={handleNext}
         sx={{
           fontSize: 50,
-          cursor: "pointer",
-          transition: "0.2s",
-          "&:hover": {
-            transform: "scale(1.3)",
+          cursor: 'pointer',
+          transition: '0.2s',
+          '&:hover': {
+            transform: 'scale(1.3)',
           },
         }}
       />

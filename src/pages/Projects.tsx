@@ -1,54 +1,55 @@
-import EnactusButton from "../components/atoms/button/enactusButton";
-import useDocumentTitle from "@src/hooks/use-document-title";
+import useDocumentTitle from '@src/hooks/use-document-title';
 
-const tech4impactlogo = "/images/tech4impact_logo.png";
-const plate2platelogo = "/images/plate2plate_logo.png";
-const procketslogo = "/images/prockets_logo.png";
-const instagramlogo = "/images/Logos/Instagram.png";
-const titleBackground = "/images/ProjectsPage/titleBackground.png";
+import EnactusButton from '../components/atoms/button/enactusButton';
+
+const tech4impactlogo = '/images/tech4impact_logo.png';
+const plate2platelogo = '/images/plate2plate_logo.png';
+const procketslogo = '/images/prockets_logo.png';
+const instagramlogo = '/images/Logos/Instagram.png';
+const titleBackground = '/images/ProjectsPage/titleBackground.png';
 
 // TODO: change website once deployed using actual domain
-const procketsWebsite = "https://enactus-unsw.github.io/enactus-prockets/";
+const procketsWebsite = 'https://enactus-unsw.github.io/enactus-prockets/';
 
 export default function Projects() {
-  useDocumentTitle("Projects | Enactus UNSW");
+  useDocumentTitle('Projects | Enactus UNSW');
 
   return (
-    <div className="text-[#2A2D32] w-full flex-grow">
+    <div className="w-full flex-grow text-[#2A2D32]">
       {/* title container */}
       <div
-        className="mx-auto flex justify-center items-center font-[800] text-4xl md:text-8xl tracking-wide w-full h-[10rem] md:h-[26rem]"
+        className="mx-auto flex h-[10rem] w-full items-center justify-center text-4xl font-[800] tracking-wide md:h-[26rem] md:text-8xl"
         style={{
           backgroundImage: `url(${titleBackground})`,
-          backgroundSize: "cover",
-          backgroundPosition: "center",
+          backgroundSize: 'cover',
+          backgroundPosition: 'center',
         }}
       >
         Our Projects
       </div>
 
       {/* Prockets conatiner */}
-      <div className="flex flex-col md:flex-row justify-evenly p-5 md:px-20 mx-auto md:min-h-[25vh]">
+      <div className="mx-auto flex flex-col justify-evenly p-5 md:min-h-[25vh] md:flex-row md:px-20">
         {/* Prockets Image */}
-        <div className="flex justify-center items-center w-full md:w-1/2 md:mt-8 mb-2 md:mb-20 transition-transform duration-300 ease-in-out hover:scale-105">
+        <div className="mb-2 flex w-full items-center justify-center transition-transform duration-300 ease-in-out hover:scale-105 md:mb-20 md:mt-8 md:w-1/2">
           <img
-            className="object-contain h-[10rem] md:h-[30rem]"
+            className="h-[10rem] object-contain md:h-[30rem]"
             src={procketslogo}
             alt="Prockets Logo"
           />
         </div>
         {/* Prockets description */}
-        <div className="flex flex-col w-full md:w-1/2 p-2 md:pr-20 md:ml-[4.5rem]">
-          <div className="font-[700] md:mt-20 text-xl md:text-4xl">
+        <div className="flex w-full flex-col p-2 md:ml-[4.5rem] md:w-1/2 md:pr-20">
+          <div className="text-xl font-[700] md:mt-20 md:text-4xl">
             Prockets
           </div>
-          <p className="items-center justify-center text-sm md:text-xl md:leading-10 font-[400] mt-5 md:mt-12">
+          <p className="mt-5 items-center justify-center text-sm font-[400] md:mt-12 md:text-xl md:leading-10">
             Creating prosthetics more accessible to amputees - financially by
             developing a cost-effective component of the prosthetic and socially
             through a support network platform.
           </p>
           {/* Prockets website & instagram*/}
-          <div className="flex flex-row justify-center md:justify-start items-center mt-10">
+          <div className="mt-10 flex flex-row items-center justify-center md:justify-start">
             <a
               href="https://www.instagram.com/prockets.au/"
               target="_blank"
@@ -73,20 +74,20 @@ export default function Projects() {
       </div>
 
       {/* plate2plate conatiner */}
-      <div className="flex flex-col-reverse md:flex-row justify-center bg-[#F6F6F6] rounded-t-[5vw] p-5 md:pl-20 md:pr-20 md:min-h-[25vh]">
+      <div className="flex flex-col-reverse justify-center rounded-t-[5vw] bg-[#F6F6F6] p-5 md:min-h-[25vh] md:flex-row md:pl-20 md:pr-20">
         {/* plate2plate description */}
-        <div className="flex flex-col w-full md:w-1/2 p-2 md:ml-[12rem]">
-          <div className="font-[700] md:mt-20 text-xl md:text-4xl tracking-tight">
+        <div className="flex w-full flex-col p-2 md:ml-[12rem] md:w-1/2">
+          <div className="text-xl font-[700] tracking-tight md:mt-20 md:text-4xl">
             plate2plate
           </div>
-          <p className="items-center justify-center text-sm md:text-xl md:leading-10 font-[400] mt-5 md:mt-12">
+          <p className="mt-5 items-center justify-center text-sm font-[400] md:mt-12 md:text-xl md:leading-10">
             A not for profit initiative dedicated to bridging the gap between
             households experiencing food insecurity and those who have the
             capacity to provide resources through a digital platform known as
             'plate2plate'.
           </p>
 
-          <div className="flex flex-row justify-center md:justify-start items-center mt-10 pl-0">
+          <div className="mt-10 flex flex-row items-center justify-center pl-0 md:justify-start">
             {/* <button className="bg-[#FFC222] hover:bg-yellow-700 text-2xl font-bold py-2 px-4 rounded-2xl h-[3.5rem] w-[15rem]">
               LEARN MORE
             </button> */}
@@ -104,9 +105,9 @@ export default function Projects() {
           </div>
         </div>
         {/* plate2plate Image */}
-        <div className="flex md:w-1/2 justify-center items-center h-1/4 md:mt-10 md:pr-20 mb-2 md:mb-20 transition-transform duration-300 ease-in-out hover:scale-105">
+        <div className="mb-2 flex h-1/4 items-center justify-center transition-transform duration-300 ease-in-out hover:scale-105 md:mb-20 md:mt-10 md:w-1/2 md:pr-20">
           <img
-            className="object-contain h-[10rem] md:h-[30rem] "
+            className="h-[10rem] object-contain md:h-[30rem]"
             src={plate2platelogo}
             alt="plate2plate Logo"
           />
@@ -114,22 +115,22 @@ export default function Projects() {
       </div>
 
       {/* Tech4Impact conatiner */}
-      <div className="bg-[#F6F6F6] w-full">
-        <div className="flex flex-col md:flex-row justify-evenly bg-white rounded-t-[5vw] p-5 pt-9 md:pl-20 md:pr-20 md:pb-20 md:min-h-[25vh]">
+      <div className="w-full bg-[#F6F6F6]">
+        <div className="flex flex-col justify-evenly rounded-t-[5vw] bg-white p-5 pt-9 md:min-h-[25vh] md:flex-row md:pb-20 md:pl-20 md:pr-20">
           {/* Tech4Impact Image */}
-          <div className="flex w-full md:w-1/2 justify-center items-center h-1/4 md:mt-[12rem] md:ml-[4rem] mb-2 md:mb-20 transition-transform duration-300 ease-in-out hover:scale-105">
+          <div className="mb-2 flex h-1/4 w-full items-center justify-center transition-transform duration-300 ease-in-out hover:scale-105 md:mb-20 md:ml-[4rem] md:mt-[12rem] md:w-1/2">
             <img
-              className="object-contain h-[6rem] md:h-[12rem]"
+              className="h-[6rem] object-contain md:h-[12rem]"
               src={tech4impactlogo}
               alt="Tech4Impact Logo"
             />
           </div>
           {/* Tech4Impact description */}
-          <div className="flex flex-col md:w-1/2 p-2">
-            <div className="font-[700] mt-5 md:mt-20 text-xl md:text-4xl tracking-tight">
+          <div className="flex flex-col p-2 md:w-1/2">
+            <div className="mt-5 text-xl font-[700] tracking-tight md:mt-20 md:text-4xl">
               Tech4Impact
             </div>
-            <p className="items-center justify-center text-sm md:text-xl md:leading-10 font-[400] mt-5 md:mt-12 md:mr-[6rem]">
+            <p className="mt-5 items-center justify-center text-sm font-[400] md:mr-[6rem] md:mt-12 md:text-xl md:leading-10">
               Tech4Impact is a project focused on helping those with limited
               access to technology overcome the digital divide. We refurbish old
               devices, giving them new life and donating them to those in need.
@@ -137,7 +138,7 @@ export default function Projects() {
               opportunities for education, employment, and connectivity.
             </p>
 
-            <div className="flex flex-row justify-center md:justify-start items-center mt-[3rem] ">
+            <div className="mt-[3rem] flex flex-row items-center justify-center md:justify-start">
               {/* <button className="bg-[#FFC222] hover:bg-yellow-700 text-2xl font-bold py-2 px-4 rounded-2xl h-[3.5rem] w-[15rem]">
                 LEARN MORE
               </button> */}

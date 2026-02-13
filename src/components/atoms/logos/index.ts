@@ -1,4 +1,4 @@
-import Vite from "./vite";
+import Vite from './vite';
 
 export interface LogosProps {
   width?: number | string;

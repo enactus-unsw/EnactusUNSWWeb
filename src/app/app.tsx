@@ -1,23 +1,22 @@
-import { Routes, Route, useLocation, HashRouter } from "react-router-dom";
-import { AnimatePresence } from "framer-motion";
+import { ThemeProvider, createTheme } from '@mui/material/styles';
 
-import Home from "../pages/Home";
-import AboutUs from "../pages/AboutUs";
-import OurTeam from "../pages/OurTeam";
-import Projects from "../pages/Projects";
-import Events from "../pages/Events";
-import Sponsors from "../pages/Sponsors";
-import ContactUs from "../pages/ContactUs";
+import { AnimatePresence } from 'framer-motion';
+import { HashRouter, Route, Routes, useLocation } from 'react-router-dom';
 
-import Header from "../components/header";
-import Footer from "../components/footer";
-import PageWrapper from "../components/page-wrapper";
-
-import { createTheme, ThemeProvider } from "@mui/material/styles";
+import Footer from '../components/footer';
+import Header from '../components/header';
+import PageWrapper from '../components/page-wrapper';
+import AboutUs from '../pages/AboutUs';
+import ContactUs from '../pages/ContactUs';
+import Events from '../pages/Events';
+import Home from '../pages/Home';
+import OurTeam from '../pages/OurTeam';
+import Projects from '../pages/Projects';
+import Sponsors from '../pages/Sponsors';
 
 const theme = createTheme({
   typography: {
-    fontFamily: "Montserrat",
+    fontFamily: 'Montserrat',
   },
 });
 
@@ -28,7 +27,7 @@ function AnimatedRoutes() {
     if (location.hash) {
       const element = document.querySelector(location.hash);
       if (element) {
-        element.scrollIntoView({ behavior: "smooth" });
+        element.scrollIntoView({ behavior: 'smooth' });
         return;
       }
     }

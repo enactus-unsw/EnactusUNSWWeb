@@ -1,5 +1,5 @@
-import React, { useState, useEffect, useRef } from "react";
-import { Link } from "react-router-dom";
+import React, { useEffect, useRef, useState } from 'react';
+import { Link } from 'react-router-dom';
 
 //There is definitely a way to make this usable other places by passing the style in instead of having it hard coded here but I gave up -Iris
 export type DropdownItem = {
@@ -23,12 +23,12 @@ const Dropdown: React.FC = () => {
   };
 
   useEffect(() => {
-    window.addEventListener("click", handleClickOutside);
-    return () => window.removeEventListener("click", handleClickOutside);
+    window.addEventListener('click', handleClickOutside);
+    return () => window.removeEventListener('click', handleClickOutside);
   }, []);
 
   return (
-    <div className="sm:hidden " style={styles.dropdown} ref={dropdownRef}>
+    <div className="sm:hidden" style={styles.dropdown} ref={dropdownRef}>
       <button onClick={toggleDropdown} style={styles.button}>
         <svg
           xmlns="http://www.w3.org/2000/svg"
@@ -54,14 +54,14 @@ const Dropdown: React.FC = () => {
         <Link
           to="/about-us"
           onClick={toggleDropdown}
-          className="font-Montserrat text-[#2A2D32] text-xl hover:underline font-bold py-2  px-2  block text-right"
+          className="font-Montserrat block px-2 py-2 text-right text-xl font-bold text-[#2A2D32] hover:underline"
         >
           ABOUT US
         </Link>
         <Link
           to="/our-team"
           onClick={toggleDropdown}
-          className="font-Montserrat text-[#2A2D32] text-xl hover:underline font-bold py-2 px-2 block text-right"
+          className="font-Montserrat block px-2 py-2 text-right text-xl font-bold text-[#2A2D32] hover:underline"
           text-right
         >
           OUR TEAM
@@ -69,35 +69,35 @@ const Dropdown: React.FC = () => {
         <Link
           to="/projects"
           onClick={toggleDropdown}
-          className="font-Montserrat text-[#2A2D32] text-xl hover:underline font-bold py-2 px-2 block text-right"
+          className="font-Montserrat block px-2 py-2 text-right text-xl font-bold text-[#2A2D32] hover:underline"
         >
           PROJECTS
         </Link>
         <Link
           to="/events"
           onClick={toggleDropdown}
-          className="font-Montserrat text-[#2A2D32] text-xl hover:underline font-bold py-2 px-2 block text-right"
+          className="font-Montserrat block px-2 py-2 text-right text-xl font-bold text-[#2A2D32] hover:underline"
         >
           EVENTS
         </Link>
         <Link
           to="/sponsors-partners"
           onClick={toggleDropdown}
-          className="font-Montserrat text-[#2A2D32] text-xl hover:underline font-bold py-2 px-2  block text-right"
+          className="font-Montserrat block px-2 py-2 text-right text-xl font-bold text-[#2A2D32] hover:underline"
         >
           SPONSORS
         </Link>
         <Link
           to="/contact-us"
           onClick={toggleDropdown}
-          className="font-Montserrat text-[#2A2D32] text-xl hover:underline font-bold py-2 px-2 block text-right "
+          className="font-Montserrat block px-2 py-2 text-right text-xl font-bold text-[#2A2D32] hover:underline"
         >
           CONTACT
         </Link>
         <Link
-          to={{ pathname: "/", hash: "#join-us" }}
+          to={{ pathname: '/', hash: '#join-us' }}
           rel="noopener noreferrer"
-          className="font-Montserrat text-[#2A2D32] text-xl hover:underline font-bold py-2 px-2 block text-right"
+          className="font-Montserrat block px-2 py-2 text-right text-xl font-bold text-[#2A2D32] hover:underline"
         >
           JOIN US
         </Link>
@@ -108,32 +108,32 @@ const Dropdown: React.FC = () => {
 
 const styles = {
   dropdown: {
-    position: "relative" as const,
+    position: 'relative' as const,
   },
   button: {
-    cursor: "pointer",
+    cursor: 'pointer',
   },
   content: {
-    display: "none",
-    position: "absolute" as const, //I do not know why it wants position as a const -Iris
-    backgroundColor: "white",
-    minWidth: "160px",
-    minHeight: "100px",
-    border: "1px solid #ddd",
-    borderRadius: "4px",
-    boxShadow: "0px 8px 16px rgba(0,0,0,0.1)",
+    display: 'none',
+    position: 'absolute' as const, //I do not know why it wants position as a const -Iris
+    backgroundColor: 'white',
+    minWidth: '160px',
+    minHeight: '100px',
+    border: '1px solid #ddd',
+    borderRadius: '4px',
+    boxShadow: '0px 8px 16px rgba(0,0,0,0.1)',
     zIndex: 1,
-    marginTop: "5px",
-    right: "10px",
+    marginTop: '5px',
+    right: '10px',
   },
   contentVisible: {
-    display: "block",
+    display: 'block',
   },
   link: {
-    color: "black",
-    padding: "10px 14px",
-    textDecoration: "none",
-    display: "block",
+    color: 'black',
+    padding: '10px 14px',
+    textDecoration: 'none',
+    display: 'block',
   },
 };
 

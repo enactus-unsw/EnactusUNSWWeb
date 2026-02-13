@@ -1,17 +1,17 @@
 import {
-  forwardRef,
   ComponentProps,
-  RefAttributes,
   ForwardRefExoticComponent,
+  RefAttributes,
   SVGProps,
-} from "react";
+  forwardRef,
+} from 'react';
 
 export interface CardProps
-  extends Omit<ComponentProps<"div">, "className" | "children"> {
+  extends Omit<ComponentProps<'div'>, 'className' | 'children'> {
   title: string;
   description: string;
   Icon: ForwardRefExoticComponent<
-    Omit<SVGProps<SVGSVGElement>, "ref"> & {
+    Omit<SVGProps<SVGSVGElement>, 'ref'> & {
       title?: string | undefined;
       titleId?: string | undefined;
     } & RefAttributes<SVGSVGElement>
@@ -24,23 +24,23 @@ const Card = forwardRef<HTMLDivElement, CardProps>(
     return (
       <div
         ref={ref}
-        className="bg-white bg-opacity-5 rounded-md shadow p-4 relative overflow-hidden h-full"
+        className="relative h-full overflow-hidden rounded-md bg-white bg-opacity-5 p-4 shadow"
         {...rest}
       >
         <div>
-          <span className="absolute right-3 bottom-3 flex items-center justify-center rounded-md opacity-10">
+          <span className="absolute bottom-3 right-3 flex items-center justify-center rounded-md opacity-10">
             <Icon className="h-12 w-12 text-white" aria-hidden="true" />
           </span>
         </div>
-        <div className="flex flex-col h-full">
+        <div className="flex h-full flex-col">
           <h3 className="text-2xl font-bold text-blue-500">{title}</h3>
-          <p className="mt-2 text-base text-gray-300 flex-1">{description}</p>
+          <p className="mt-2 flex-1 text-base text-gray-300">{description}</p>
           <div className="pt-6">
             <a
               href={href}
               target="_blank"
               rel="noreferrer"
-              className="text-white font-bold transition tracking-wide hover:text-blue-400"
+              className="font-bold tracking-wide text-white transition hover:text-blue-400"
             >
               Visit documentation →
             </a>
@@ -48,7 +48,7 @@ const Card = forwardRef<HTMLDivElement, CardProps>(
         </div>
       </div>
     );
-  },
+  }
 );
 
 export default Card;

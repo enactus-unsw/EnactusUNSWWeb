@@ -1,22 +1,23 @@
-import EnactusButton from "../components/atoms/button/enactusButton";
-import useDocumentTitle from "@src/hooks/use-document-title";
+import useDocumentTitle from '@src/hooks/use-document-title';
+
+import EnactusButton from '../components/atoms/button/enactusButton';
 
 // links
-const sdgGoals = "https://www.globalgoals.org/goals/";
-const enactusAusWebsite = "https://www.enactusaustralia.org.au/";
+const sdgGoals = 'https://www.globalgoals.org/goals/';
+const enactusAusWebsite = 'https://www.enactusaustralia.org.au/';
 
 // images
-const enactusSDGLogo = "/images/aboutUsPage/enactusSDGLogo.png";
-const sdgImage = "/images/aboutUsPage/SDGImage.png";
-const aboutUsRectangle = "/images/aboutUsPage/aboutUs_rectangle.png";
+const enactusSDGLogo = '/images/aboutUsPage/enactusSDGLogo.png';
+const sdgImage = '/images/aboutUsPage/SDGImage.png';
+const aboutUsRectangle = '/images/aboutUsPage/aboutUs_rectangle.png';
 
 export default function AboutUs() {
-  useDocumentTitle("About Us | Enactus UNSW");
+  useDocumentTitle('About Us | Enactus UNSW');
 
   return (
     <div>
-      <header className="text-center pt-20 md:pb-14">
-        <h1 className="font-bold text-4xl sm:text-5xl mb-8">
+      <header className="pt-20 text-center md:pb-14">
+        <h1 className="mb-8 text-4xl font-bold sm:text-5xl">
           Welcome to Enactus UNSW!
         </h1>
         <h4 className="text-xl sm:text-2xl">
@@ -25,25 +26,25 @@ export default function AboutUs() {
       </header>
       {/* Our story section */}
       <section>
-        <div className="w-full flex justify-center items-center my-10">
+        <div className="my-10 flex w-full items-center justify-center">
           <div
             className="relative w-11/12 max-w-5xl overflow-hidden"
             style={{
-              borderTopLeftRadius: "30px",
-              borderTopRightRadius: "170px",
-              borderBottomLeftRadius: "170px",
-              borderBottomRightRadius: "30px",
+              borderTopLeftRadius: '30px',
+              borderTopRightRadius: '170px',
+              borderBottomLeftRadius: '170px',
+              borderBottomRightRadius: '30px',
             }}
           >
             {/* Background image */}
             <img
               src={aboutUsRectangle}
               alt="About Us Background"
-              className="w-full h-full object-cover absolute top-0 left-0 z-0"
-              style={{ objectPosition: "center" }}
+              className="absolute left-0 top-0 z-0 h-full w-full object-cover"
+              style={{ objectPosition: 'center' }}
             />
-            <div className="relative z-10 flex flex-col items-center justify-center text-center px-4 py-[13vw] md:py-[3vw]">
-              <h2 className="font-bold text-3xl pt-10 pb-6">Our Story</h2>
+            <div className="relative z-10 flex flex-col items-center justify-center px-4 py-[13vw] text-center md:py-[3vw]">
+              <h2 className="pb-6 pt-10 text-3xl font-bold">Our Story</h2>
               <div className="w-4/5 md:my-4 md:w-3/5">
                 <p className="pb-8 text-sm md:text-lg">
                   Enactus (formerly known as Students in Free Enterprise, or
@@ -78,15 +79,15 @@ export default function AboutUs() {
         </div>
       </section>
       {/* the world needs us section */}
-      <section className="text-center flex flex-col justify-center items-center md:mt-16">
+      <section className="flex flex-col items-center justify-center text-center md:mt-16">
         <img
           src={enactusSDGLogo}
           alt="Enactus SDG Logo"
-          className="mb-14 w-1/3 sm:w-1/2 max-w-xs"
+          className="mb-14 w-1/3 max-w-xs sm:w-1/2"
         />
-        <h2 className="font-bold text-3xl">The World Needs Us</h2>
+        <h2 className="text-3xl font-bold">The World Needs Us</h2>
         <img src={sdgImage} alt="SDGs Image" />
-        <h3 className="font-semibold text-lg sm:text-xl mb-6">
+        <h3 className="mb-6 text-lg font-semibold sm:text-xl">
           What are Sustainable Development Goals (SDGs)?
         </h3>
         <div className="mb-8">

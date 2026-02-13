@@ -1,7 +1,8 @@
-import { useState } from "react";
-import { Card, CardMedia, Box } from "@mui/material";
-import { ArrowBackRounded, ArrowForwardRounded } from "@mui/icons-material";
-import { Link } from "react-router-dom";
+import { ArrowBackRounded, ArrowForwardRounded } from '@mui/icons-material';
+import { Box, Card, CardMedia } from '@mui/material';
+
+import { useState } from 'react';
+import { Link } from 'react-router-dom';
 
 interface EventsData {
   title: string;
@@ -10,12 +11,12 @@ interface EventsData {
 }
 
 const director_recruitment_2026 =
-  "/images/eventsCoverPic/Enactus_event_director_recruimtent_2026.jpg";
+  '/images/eventsCoverPic/Enactus_event_director_recruimtent_2026.jpg';
 
 const events: EventsData[] = [
   {
-    title: "Director Recruitment",
-    link: "https://www.facebook.com/share/1F6cCpDtHn/",
+    title: 'Director Recruitment',
+    link: 'https://www.facebook.com/share/1F6cCpDtHn/',
     image: director_recruitment_2026,
   },
 ];
@@ -36,7 +37,7 @@ export default function EventsEventsCarousel() {
     setFade(true);
     setTimeout(() => {
       setCurrIndex(
-        (prevIndex) => (prevIndex - 1 + events.length) % events.length,
+        (prevIndex) => (prevIndex - 1 + events.length) % events.length
       );
       setFade(false);
     }, 250);
@@ -53,7 +54,7 @@ export default function EventsEventsCarousel() {
   return (
     <>
       {events.length === 0 ? (
-        <h3 className="text-xl mb-6">No upcoming events</h3>
+        <h3 className="mb-6 text-xl">No upcoming events</h3>
       ) : (
         <>
           <Box display="flex" flexDirection="row" alignItems="center">
@@ -61,10 +62,10 @@ export default function EventsEventsCarousel() {
               onClick={handlePrev}
               sx={{
                 fontSize: 50,
-                cursor: "pointer",
-                transition: "0.2s",
-                "&:hover": {
-                  transform: "scale(1.3)",
+                cursor: 'pointer',
+                transition: '0.2s',
+                '&:hover': {
+                  transform: 'scale(1.3)',
                 },
               }}
             />
@@ -76,20 +77,20 @@ export default function EventsEventsCarousel() {
               <Card
                 sx={{
                   width: {
-                    xs: "70vw",
-                    sm: "80vw",
+                    xs: '70vw',
+                    sm: '80vw',
                     md: 500,
                   },
                   borderRadius: 5,
                   boxShadow:
-                    "0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19)",
-                  position: "relative",
-                  margin: "0 50px",
+                    '0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19)',
+                  position: 'relative',
+                  margin: '0 50px',
                   transition:
-                    "opacity 0.3s ease-in-out, transform 0.4s cubic-bezier(0.5, 1.6, 0.4, 0.8)",
+                    'opacity 0.3s ease-in-out, transform 0.4s cubic-bezier(0.5, 1.6, 0.4, 0.8)',
                   opacity: isFade ? 0.3 : 1,
-                  "&:hover": {
-                    transform: "scale(1.06)",
+                  '&:hover': {
+                    transform: 'scale(1.06)',
                   },
                 }}
               >
@@ -97,7 +98,7 @@ export default function EventsEventsCarousel() {
                   component="img"
                   alt={events[currIndex].title}
                   image={events[currIndex].image}
-                  sx={{ objectFit: "contain" }}
+                  sx={{ objectFit: 'contain' }}
                 />
               </Card>
             </Link>
@@ -105,10 +106,10 @@ export default function EventsEventsCarousel() {
               onClick={handleNext}
               sx={{
                 fontSize: 50,
-                cursor: "pointer",
-                transition: "0.2s",
-                "&:hover": {
-                  transform: "scale(1.3)",
+                cursor: 'pointer',
+                transition: '0.2s',
+                '&:hover': {
+                  transform: 'scale(1.3)',
                 },
               }}
             />
@@ -117,7 +118,7 @@ export default function EventsEventsCarousel() {
             {events.map((_, i) => (
               <span
                 key={i}
-                className={`w-3 h-3 rounded-full ${i === currIndex ? "bg-[#A8A8A8]" : "bg-[#E8E8E8]"}`}
+                className={`h-3 w-3 rounded-full ${i === currIndex ? 'bg-[#A8A8A8]' : 'bg-[#E8E8E8]'}`}
                 onClick={() => handleJump(i)}
               ></span>
             ))}
