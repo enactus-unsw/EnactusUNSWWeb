@@ -91,7 +91,11 @@ export default function OurTeam() {
         }}
       />
 
-      {selectedTeamYear === '2026' ? <p>temp</p> : <Team2025 />}
+      {selectedTeamYear === '2026' ? (
+        <div className="mt-12 font-medium">2026 team view coming soon.</div>
+      ) : (
+        <Team2025 />
+      )}
     </div>
   );
 }
