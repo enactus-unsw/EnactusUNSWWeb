@@ -1,9 +1,9 @@
 //Importing this way so vite bundle it up for deployment
+import { Team2025 } from '@src/components/team/Team2025';
+import { Team2026 } from '@src/components/team/Team2026';
 import useDocumentTitle from '@src/hooks/use-document-title';
 
 import { useState } from 'react';
-
-import { Team2025 } from '../components/team/TeamYear2025';
 
 const teamPhoto = '/images/enactus_board_cropped.jpg';
 
@@ -91,11 +91,7 @@ export default function OurTeam() {
         }}
       />
 
-      {selectedTeamYear === '2026' ? (
-        <div className="mt-12 font-medium">2026 team view coming soon.</div>
-      ) : (
-        <Team2025 />
-      )}
+      {selectedTeamYear === '2026' ? <Team2026 /> : <Team2025 />}
     </div>
   );
 }
