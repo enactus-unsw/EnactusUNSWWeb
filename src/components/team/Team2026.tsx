@@ -24,35 +24,29 @@ export function Team2026() {
 
       {/* second row */}
       <div className="mt-8 grid grid-cols-1 gap-10 sm:grid-cols-2 md:grid-cols-3">
-        <TeamMember imageSrc={dummy} name="Iris Martin" role="Secretary" />
-        <TeamMember imageSrc={dummy} name="Iqtidar Rahman" role="Treasurer" />
+        <TeamMember imageSrc={dummy} name="Emily Goh" role="Secretary" />
+        <TeamMember imageSrc={dummy} name="Iris Dautriat" role="Treasurer" />
         <TeamMember
           imageSrc={dummy}
-          name="Brendan Huynh"
+          name="Amy Wang"
           role="Vice President of Internals"
         />
         <TeamMember
           imageSrc={dummy}
-          name="Alice Khau"
+          name="Jessica Tran"
           role="Vice President of Externals"
         />
         <TeamMember
           imageSrc={dummy}
-          name="Rifah Riyadh"
+          name="Harish Varathan"
           role="Vice President of Projects"
         />
         <TeamMember
           imageSrc={dummy}
-          name="Akanksha Sood"
+          name="Olivia Vu"
           role="Vice President of Projects"
         />
       </div>
-
-      {/* bottom row (returning officers) */}
-      {/* <div style={{ display: 'flex', justifyContent: 'center', gap: '14rem', marginTop: '2rem' }}>
-      <TeamMember imageSrc="src/images/teamPhotos/9.jpg" name="Denton Nguyen" role="Returning Officer" />
-      <TeamMember imageSrc="src/images/teamPhotos/10.jpg" name="Melani Gunawardana" role="Returning Officer" />
-    </div> */}
 
       {/* dashed section seperator line */}
       <div
@@ -82,40 +76,41 @@ export function Team2026() {
       <div className="sm:gap-30 mx-auto mt-8 grid w-fit grid-cols-1 gap-10 sm:grid-cols-2 md:gap-60">
         <TeamMember
           imageSrc={dummy}
-          name="Olivia Vu"
+          name="Felix Mathew"
           role="Prockets Director"
         />
         <TeamMember
           imageSrc={dummy}
-          name="Saaini Balakrishna"
+          name="Guntas Sandhu"
           role="Prockets Director"
         />
       </div>
 
-      {/* tech4impact row */}
-      <div className="sm:gap-30 mx-auto mt-8 grid w-fit grid-cols-1 gap-10 sm:grid-cols-2 md:gap-60">
+      {/* R&D row */}
+      <div className="sm:gap-30 mx-auto mt-8 grid w-fit grid-cols-1 flex-row gap-10 sm:grid-cols-2 md:gap-60">
         <TeamMember
           imageSrc={dummy}
-          name="Aryan Thukral"
-          role="Tech4Impact Director"
+          name="Tharshan Indrakumar"
+          role="R&D Director"
         />
-        <TeamMember
+        <TeamMember imageSrc={dummy} name="Ethan Khisa" role="R&D Director" />
+        {/* <TeamMember
           imageSrc={dummy}
-          name="Noyal Shaji"
-          role="Tech4Impact Director"
-        />
+          name="Abrar Hossain"
+          role="R&D Director"
+        /> */}
       </div>
 
       {/* plate2plate row */}
       <div className="sm:gap-30 mx-auto mt-8 grid w-fit grid-cols-1 gap-10 sm:grid-cols-2 md:gap-60">
         <TeamMember
           imageSrc={dummy}
-          name="Karen Huo"
+          name="Chahek Dawani"
           role="plate2plate Director"
         />
         <TeamMember
           imageSrc={dummy}
-          name="Jennifer Yu"
+          name="Martin Abdou"
           role="plate2plate Director"
         />
       </div>
@@ -124,13 +119,17 @@ export function Team2026() {
       <div className="sm:gap-30 mx-auto mt-8 grid w-fit grid-cols-1 gap-10 sm:grid-cols-2 md:gap-60">
         <TeamMember
           imageSrc={dummy}
-          name="Jayden Truong"
+          name="Henry Huang"
           role="Careers Director"
         />
-        <TeamMember imageSrc={dummy} name="Emily Goh" role="Careers Director" />
+        <TeamMember
+          imageSrc={dummy}
+          name="Samaira Sehgal"
+          role="Careers Director"
+        />
       </div>
 
-      {/* sponsorships and multimedia row */}
+      {/* sponsorships row */}
       <div className="sm:gap-30 mx-auto mt-8 grid w-fit grid-cols-1 gap-10 sm:grid-cols-2 md:gap-60">
         <TeamMember
           imageSrc={dummy}
@@ -141,6 +140,19 @@ export function Team2026() {
           imageSrc={dummy}
           name="Zainab Atif"
           role="Multimedia Director"
+        />
+      </div>
+
+      <div className="sm:gap-30 mx-auto mt-8 grid w-fit grid-cols-1 gap-10 sm:grid-cols-2 md:gap-60">
+        <TeamMember
+          imageSrc={dummy}
+          name="Hemansh Nayampalli"
+          role="Sponsorships Director"
+        />
+        <TeamMember
+          imageSrc={dummy}
+          name="Nathan Chung"
+          role="Sponsorships Director"
         />
       </div>
 
