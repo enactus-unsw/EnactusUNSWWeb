@@ -87,18 +87,14 @@ export function Team2026() {
       </div>
 
       {/* R&D row */}
-      <div className="sm:gap-30 mx-auto mt-8 grid w-fit grid-cols-1 flex-row gap-10 sm:grid-cols-2 md:gap-60">
+      <div className="sm:gap-30 mx-auto mt-8 flex w-fit grid-cols-1 flex-row gap-10 sm:grid-cols-2 md:gap-60">
         <TeamMember
           imageSrc={dummy}
           name="Tharshan Indrakumar"
           role="R&D Director"
         />
         <TeamMember imageSrc={dummy} name="Ethan Khisa" role="R&D Director" />
-        {/* <TeamMember
-          imageSrc={dummy}
-          name="Abrar Hossain"
-          role="R&D Director"
-        /> */}
+        <TeamMember imageSrc={dummy} name="Abrar Hossain" role="R&D Director" />
       </div>
 
       {/* plate2plate row */}
@@ -129,20 +125,26 @@ export function Team2026() {
         />
       </div>
 
-      {/* sponsorships row */}
-      <div className="sm:gap-30 mx-auto mt-8 grid w-fit grid-cols-1 gap-10 sm:grid-cols-2 md:gap-60">
+      {/* multimedia directors */}
+      <div className="sm:gap-30 mx-auto mt-8 flex w-fit grid-cols-1 gap-10 sm:grid-cols-2 md:gap-60">
         <TeamMember
           imageSrc={dummy}
-          name="Meenal Janjua"
-          role="Sponsorships Director"
+          name="Arthi Kathir"
+          role="Multimedia Director"
         />
         <TeamMember
           imageSrc={dummy}
-          name="Zainab Atif"
+          name="Kate Weekes"
+          role="Multimedia Director"
+        />
+        <TeamMember
+          imageSrc={dummy}
+          name="Riddhi Kulkarni"
           role="Multimedia Director"
         />
       </div>
 
+      {/* sponsorships row */}
       <div className="sm:gap-30 mx-auto mt-8 grid w-fit grid-cols-1 gap-10 sm:grid-cols-2 md:gap-60">
         <TeamMember
           imageSrc={dummy}
@@ -157,45 +159,32 @@ export function Team2026() {
       </div>
 
       {/* hr row */}
-      <div className="sm:gap-30 mx-auto mt-8 grid w-fit grid-cols-1 gap-10 sm:grid-cols-2 md:gap-60">
+      <div className="sm:gap-30 mx-auto mt-8 flex w-fit grid-cols-1 gap-10 sm:grid-cols-2 md:gap-60">
+        <TeamMember imageSrc={dummy} name="Tej Baveja" role="HR Director" />
+        <TeamMember imageSrc={dummy} name="Nikhil Sawant" role="HR Director" />
         <TeamMember
           imageSrc={dummy}
-          name="Fleur Randerath"
+          name="Anushka Palayanur"
           role="HR Director"
         />
-        <TeamMember imageSrc={dummy} name="Justin Bu" role="HR Director" />
       </div>
 
-      {/* it row */}
+      {/* IT row */}
       <div className="sm:gap-30 mx-auto mt-8 grid w-fit grid-cols-1 gap-10 sm:grid-cols-2 md:gap-60">
-        <TeamMember imageSrc={dummy} name="Amy Wang" role="IT Director" />
-        <TeamMember imageSrc={dummy} name="Iris Dautriat" role="IT Director" />
-      </div>
-
-      {/* marketing row */}
-      <div className="sm:gap-30 mx-auto mt-8 grid w-fit grid-cols-1 gap-10 sm:grid-cols-2 md:gap-60">
-        <TeamMember
-          imageSrc={dummy}
-          name="Henry Tat"
-          role="Marketing Director"
-        />
-        <TeamMember
-          imageSrc={dummy}
-          name="Jessica Tran"
-          role="Marketing Director"
-        />
+        <TeamMember imageSrc={dummy} name="Piyush Jha" role="IT Director" />
+        <TeamMember imageSrc={dummy} name="Ethan Richard" role="IT Director" />
       </div>
 
       {/* socials row */}
       <div className="sm:gap-30 mx-auto mt-8 grid w-fit grid-cols-1 gap-10 sm:grid-cols-2 md:gap-60">
         <TeamMember
           imageSrc={dummy}
-          name="Maanya Gawande"
+          name="Aditya Bavigadda"
           role="Social Director"
         />
         <TeamMember
           imageSrc={dummy}
-          name="Saarthak Aggarwal"
+          name="Allison Chan"
           role="Social Director"
         />
       </div>
