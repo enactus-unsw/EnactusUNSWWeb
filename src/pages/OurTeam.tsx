@@ -10,7 +10,7 @@ const teamPhoto = '/images/enactus_board_cropped.jpg';
 export default function OurTeam() {
   const [selectedTeamYear, setSelectedTeamYear] = useState('2026');
 
-  useDocumentTitle('Team | Enactus UNSW');
+  useDocumentTitle('Our Team | Enactus UNSW');
 
   return (
     <div style={{ textAlign: 'center', padding: '2rem' }}>
