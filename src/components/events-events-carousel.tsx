@@ -13,7 +13,15 @@ interface EventsData {
 const director_recruitment_2026 =
   '/images/eventsCoverPic/Enactus_event_director_recruimtent_2026.jpg';
 
+const subcom_recruitment_2026 =
+  '/images/eventsCoverPic/subcom_recruitment_2026.png';
+
 const events: EventsData[] = [
+  {
+    title: 'Subcomittee Recruitment',
+    link: 'https://app.tribespot.co/form/enactussubcomapps2026?utm_source=ig&utm_medium=social&utm_content=link_in_bio&fbclid=PAZXh0bgNhZW0CMTEAc3J0YwZhcHBfaWQMMjU2MjgxMDQwNTU4AAGneUeoAej2vco-PasbGVh-oRgjDS9mt9mm5_Tc69MfTbm470eQbs1fspz5I7A_aem_FAkWgQthIjvgmHU0u0QxzA',
+    image: subcom_recruitment_2026,
+  },
   {
     title: 'Director Recruitment',
     link: 'https://www.facebook.com/share/1F6cCpDtHn/',
