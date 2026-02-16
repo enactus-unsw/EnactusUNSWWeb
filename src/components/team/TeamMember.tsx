@@ -2,31 +2,13 @@ import { TeamMemberProps } from '../../types/team';
 
 export function TeamMember({ imageSrc, name, role }: TeamMemberProps) {
   return (
-    <div style={{ textAlign: 'center' }}>
-      <div
-        style={{
-          width: '220px',
-          height: '220px',
-          borderRadius: '50%',
-          backgroundColor: '#ddd',
-          border: '12px solid #FFC107',
-          margin: '0 auto',
-          overflow: 'hidden',
-        }}
-      >
-        <img
-          src={imageSrc}
-          alt={name}
-          style={{
-            width: '100%',
-            height: '100%',
-            objectFit: 'cover',
-          }}
-        />
+    <div className="text-center">
+      <div className="mx-auto aspect-square w-[160px] overflow-hidden rounded-full border-[10px] border-[#FFC107] bg-[#ddd] sm:w-[200px] sm:border-[12px] md:w-[220px]">
+        <img src={imageSrc} alt={name} className="h-full w-full object-cover" />
       </div>
-      <div style={{ marginTop: '0.5rem' }}>
-        <div style={{ fontWeight: 'bold', fontSize: '1.2rem' }}>{name}</div>
-        <div style={{ fontSize: '1rem' }}>{role}</div>
+      <div className="mt-2">
+        <div className="text-base font-bold sm:text-lg">{name}</div>
+        <div className="text-sm sm:text-base">{role}</div>
       </div>
     </div>
   );

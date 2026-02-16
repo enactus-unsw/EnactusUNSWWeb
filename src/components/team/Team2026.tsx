@@ -17,13 +17,13 @@ export function Team2026() {
       </h3>
 
       {/* top row */}
-      <div className="sm:gap-30 mx-auto mt-8 grid w-fit grid-cols-1 gap-10 sm:grid-cols-2 md:gap-60">
+      <div className="mx-auto mt-8 grid max-w-fit grid-cols-1 place-items-center gap-8 px-4 sm:grid-cols-2 sm:gap-12 md:gap-20">
         <TeamMember imageSrc={dummy} name="Noyal Shaji" role="Co-President" />
         <TeamMember imageSrc={dummy} name="Meenal Janjua" role="Co-President" />
       </div>
 
       {/* second row */}
-      <div className="mt-8 grid grid-cols-1 gap-10 sm:grid-cols-2 md:grid-cols-3">
+      <div className="mx-auto mt-8 grid max-w-4xl grid-cols-1 place-items-center gap-8 px-4 sm:grid-cols-2 sm:gap-10 md:grid-cols-3 md:gap-12">
         <TeamMember imageSrc={dummy} name="Emily Goh" role="Secretary" />
         <TeamMember imageSrc={dummy} name="Iris Dautriat" role="Treasurer" />
         <TeamMember
@@ -73,7 +73,7 @@ export function Team2026() {
       </h3>
 
       {/* prockets row */}
-      <div className="sm:gap-30 mx-auto mt-8 grid w-fit grid-cols-1 gap-10 sm:grid-cols-2 md:gap-60">
+      <div className="mx-auto mt-8 grid max-w-fit grid-cols-1 place-items-center gap-8 px-4 sm:grid-cols-2 sm:gap-12 md:gap-20">
         <TeamMember
           imageSrc={dummy}
           name="Felix Mathew"
@@ -86,8 +86,8 @@ export function Team2026() {
         />
       </div>
 
-      {/* R&D row */}
-      <div className="sm:gap-30 mx-auto mt-8 flex w-fit grid-cols-1 flex-row gap-10 sm:grid-cols-2 md:gap-60">
+      {/* R&D row - 3 members */}
+      <div className="mx-auto mt-8 grid max-w-4xl grid-cols-1 place-items-center gap-8 px-4 sm:grid-cols-2 sm:gap-10 md:grid-cols-3 md:gap-12">
         <TeamMember
           imageSrc={dummy}
           name="Tharshan Indrakumar"
@@ -98,7 +98,7 @@ export function Team2026() {
       </div>
 
       {/* plate2plate row */}
-      <div className="sm:gap-30 mx-auto mt-8 grid w-fit grid-cols-1 gap-10 sm:grid-cols-2 md:gap-60">
+      <div className="mx-auto mt-8 grid max-w-fit grid-cols-1 place-items-center gap-8 px-4 sm:grid-cols-2 sm:gap-12 md:gap-20">
         <TeamMember
           imageSrc={dummy}
           name="Chahek Dawani"
@@ -112,7 +112,7 @@ export function Team2026() {
       </div>
 
       {/* careers row */}
-      <div className="sm:gap-30 mx-auto mt-8 grid w-fit grid-cols-1 gap-10 sm:grid-cols-2 md:gap-60">
+      <div className="mx-auto mt-8 grid max-w-fit grid-cols-1 place-items-center gap-8 px-4 sm:grid-cols-2 sm:gap-12 md:gap-20">
         <TeamMember
           imageSrc={dummy}
           name="Henry Huang"
@@ -125,8 +125,8 @@ export function Team2026() {
         />
       </div>
 
-      {/* marketing directors */}
-      <div className="sm:gap-30 mx-auto mt-8 flex w-fit grid-cols-1 gap-10 sm:grid-cols-2 md:gap-60">
+      {/* marketing directors - 3 members */}
+      <div className="mx-auto mt-8 grid max-w-4xl grid-cols-1 place-items-center gap-8 px-4 sm:grid-cols-2 sm:gap-10 md:grid-cols-3 md:gap-12">
         <TeamMember
           imageSrc={dummy}
           name="Arthi Kathiravelupillai"
@@ -145,7 +145,7 @@ export function Team2026() {
       </div>
 
       {/* sponsorships row */}
-      <div className="sm:gap-30 mx-auto mt-8 grid w-fit grid-cols-1 gap-10 sm:grid-cols-2 md:gap-60">
+      <div className="mx-auto mt-8 grid max-w-fit grid-cols-1 place-items-center gap-8 px-4 sm:grid-cols-2 sm:gap-12 md:gap-20">
         <TeamMember
           imageSrc={dummy}
           name="Hemansh Nayampalli"
@@ -158,8 +158,8 @@ export function Team2026() {
         />
       </div>
 
-      {/* hr row */}
-      <div className="sm:gap-30 mx-auto mt-8 flex w-fit grid-cols-1 gap-10 sm:grid-cols-2 md:gap-60">
+      {/* hr row - 3 members */}
+      <div className="mx-auto mt-8 grid max-w-4xl grid-cols-1 place-items-center gap-8 px-4 sm:grid-cols-2 sm:gap-10 md:grid-cols-3 md:gap-12">
         <TeamMember imageSrc={dummy} name="Tej Baveja" role="HR Director" />
         <TeamMember imageSrc={dummy} name="Nikhil Sawant" role="HR Director" />
         <TeamMember
@@ -170,13 +170,13 @@ export function Team2026() {
       </div>
 
       {/* IT row */}
-      <div className="sm:gap-30 mx-auto mt-8 grid w-fit grid-cols-1 gap-10 sm:grid-cols-2 md:gap-60">
+      <div className="mx-auto mt-8 grid max-w-fit grid-cols-1 place-items-center gap-8 px-4 sm:grid-cols-2 sm:gap-12 md:gap-20">
         <TeamMember imageSrc={dummy} name="Piyush Jha" role="IT Director" />
         <TeamMember imageSrc={dummy} name="Ethan Richard" role="IT Director" />
       </div>
 
       {/* socials row */}
-      <div className="sm:gap-30 mx-auto mt-8 grid w-fit grid-cols-1 gap-10 sm:grid-cols-2 md:gap-60">
+      <div className="mx-auto mt-8 grid max-w-fit grid-cols-1 place-items-center gap-8 px-4 sm:grid-cols-2 sm:gap-12 md:gap-20">
         <TeamMember
           imageSrc={dummy}
           name="Aditya Bavigadda"
