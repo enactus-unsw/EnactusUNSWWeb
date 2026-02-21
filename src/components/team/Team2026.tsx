@@ -225,7 +225,7 @@ export function Team2026() {
         </div>
       </div>
 
-      {/* tech4i team */}
+      {/* R&D team */}
       <div>
         <h4
           style={{
@@ -234,7 +234,7 @@ export function Team2026() {
             marginTop: '2rem',
           }}
         >
-          Tech4Impact Team
+          R&D Team
         </h4>
         <div className="mt-4 flex justify-center gap-[2rem] sm:gap-[5rem]">
           -
