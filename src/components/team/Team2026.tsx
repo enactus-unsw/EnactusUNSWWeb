@@ -180,12 +180,12 @@ export function Team2026() {
         <TeamMember
           imageSrc={dummy}
           name="Aditya Bavigadda"
-          role="Social Director"
+          role="Socials Director"
         />
         <TeamMember
           imageSrc={dummy}
           name="Allison Chan"
-          role="Social Director"
+          role="Socials Director"
         />
       </div>
 
