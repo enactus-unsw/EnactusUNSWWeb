@@ -62,7 +62,7 @@ export default function ContactUs() {
         <h1 className="mb-8 text-5xl font-bold">Contact Us</h1>
         <h3 className="text-2xl font-semibold">
           Email:
-          <span className="font-normal"> it@enactusunsw.org</span>
+          <span className="font-normal"> admin@enactusunsw.org</span>
         </h3>
       </header>
       <div className="flex justify-center">
