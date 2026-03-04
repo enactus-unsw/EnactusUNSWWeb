@@ -43,7 +43,7 @@ export function Team2026() {
         />
         <TeamMember
           imageSrc={dummy}
-          name="Olivia Vu"
+          name="Nathan Chung"
           role="Vice President of Projects"
         />
       </div>
@@ -145,17 +145,17 @@ export function Team2026() {
       </div>
 
       {/* sponsorships row */}
-      <div className="sm:gap-30 mx-auto mt-8 grid w-fit grid-cols-1 gap-10 sm:grid-cols-2 md:gap-60">
+      <div className="sm:gap-30 mx-auto mt-8 w-fit grid-cols-1 gap-10 sm:grid-cols-2 md:gap-60">
         <TeamMember
           imageSrc={dummy}
           name="Hemansh Nayampalli"
           role="Sponsorships Director"
         />
-        <TeamMember
+        {/* <TeamMember
           imageSrc={dummy}
           name="Nathan Chung"
           role="Sponsorships Director"
-        />
+        /> */}
       </div>
 
       {/* hr row - 3 members */}
