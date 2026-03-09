@@ -17,15 +17,15 @@ const projects = [
       "A not-for-profit initiative dedicated to bridging the gap between households experiencing food insecurity and those who have the capacity to provide resources through a digital platform known as 'plate2plate'.",
     logo: plate2plateLogo,
   },
+  // {
+  //   id: 2,
+  //   title: 'Tech4Impact',
+  //   description:
+  //     'Tech4Impact is a project focused on helping those with limited access to technology overcome the digital divide. We refurbish old devices, giving them new life and donating them to those in need. Our goal is to increase technology access; creating equal opportunities for education, employment, and connectivity.',
+  //   logo: tech4ImpactLogo,
+  // },
   {
     id: 2,
-    title: 'Tech4Impact',
-    description:
-      'Tech4Impact is a project focused on helping those with limited access to technology overcome the digital divide. We refurbish old devices, giving them new life and donating them to those in need. Our goal is to increase technology access; creating equal opportunities for education, employment, and connectivity.',
-    logo: tech4ImpactLogo,
-  },
-  {
-    id: 3,
     title: 'Prockets',
     description:
       'Creating prosthetics more accessible to amputees - financially by developing a cost-effective component of the prosthetic and socially through a support network platform.',
