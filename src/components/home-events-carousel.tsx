@@ -5,19 +5,20 @@ import { useState } from 'react';
 import { Link } from 'react-router-dom';
 
 // Images of the event cover pictures
-const startupNetworkingNightImage =
-  '/images/eventsCoverPic/startupNetworkingNight.jpg';
-const projectShowcaseImage = '/images/eventsCoverPic/projectShowcase.jpg';
-const medsciXcaliXEnactusPubcrawl =
-  '/images/eventsCoverPic/Medsci_Cali_Enactus_Pubcrawl.jpg';
+('/images/eventsCoverPic/Medsci_Cali_Enactus_Pubcrawl.jpg');
 const social_impact_mentoring =
   '/images/eventsCoverPic/enactus_social_impact_mentoring.jpg';
-const pubcrawl_market_July_2025 =
-  '/images/eventsCoverPic/ENACTUS_pubcrawl_market_Jully_2025.jpg';
 const director_recruitment_2026 =
   '/images/eventsCoverPic/Enactus_event_director_recruimtent_2026.jpg';
+const interview_workshop_2026 =
+  '/images/eventsCoverPic/interviewWorkshop2026.png';
 
 const events = [
+  {
+    title: 'Interview Skills Workshop',
+    link: 'https://www.facebook.com/share/p/1aHC9jCvmV/',
+    image: interview_workshop_2026,
+  },
   {
     title: 'Director Recruitment',
     link: 'https://www.facebook.com/share/1F6cCpDtHn/',
@@ -27,26 +28,6 @@ const events = [
     title: 'Social Impact Mentoring',
     link: 'https://www.facebook.com/events/1500237394292332/',
     image: social_impact_mentoring,
-  },
-  {
-    title: 'Cops N’ Robbers Pubcrawl 2025',
-    link: 'https://www.facebook.com/share/1Z19f5osvq/',
-    image: pubcrawl_market_July_2025,
-  },
-  {
-    title: 'Start-Up Networking Night',
-    link: 'https://www.facebook.com/events/519442017819568',
-    image: startupNetworkingNightImage,
-  },
-  {
-    title: 'Project Showcase',
-    link: 'https://www.facebook.com/events/2729108283942901',
-    image: projectShowcaseImage,
-  },
-  {
-    title: 'MEDSCISOC X ENACTUS X CALISOC Pubcrawl',
-    link: 'https://fb.me/e/7JDXk8Tju',
-    image: medsciXcaliXEnactusPubcrawl,
   },
 ];
 
