@@ -2,8 +2,8 @@ import useDocumentTitle from '@src/hooks/use-document-title';
 
 import { useState } from 'react';
 
-import EventsEventsCarousel from '../components/events-events-carousel';
 import PastEventCards from '../components/past-event-cards';
+import EventsEventsCarousel from '../components/upcoming-events-carousel';
 
 const groupPhoto = '/images/eventsCoverPic/eventsHeaderImage.png';
 

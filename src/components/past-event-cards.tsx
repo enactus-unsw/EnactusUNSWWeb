@@ -25,9 +25,11 @@ const enactus_social_impact_mentoring =
   '/images/eventsCoverPic/enactus_social_impact_mentoring.jpg';
 const director_recruitment_2026 =
   '/images/eventsCoverPic/Enactus_event_director_recruimtent_2026.jpg';
-
 const subcom_recruitment_2026 =
   '/images/eventsCoverPic/subcom_recruitment_2026.png';
+const oweek_2026 = '/images/eventsCoverPic/enactus_oweek_2026.png';
+const director_meet_and_greet =
+  '/images/eventsCoverPic/director_meet_and_greet.png';
 
 const events2025 = [
   {
@@ -104,6 +106,18 @@ const events2026 = [
     title: 'Subcommittee Recruitment 2026',
     link: 'https://www.facebook.com/share/1F6cCpDtHn/',
     image: subcom_recruitment_2026,
+  },
+  {
+    id: 2,
+    title: 'Enactus O-Week 2026',
+    link: 'https://fb.me/e/69wZKkauR',
+    image: oweek_2026,
+  },
+  {
+    id: 3,
+    title: 'Director Meet and Greet',
+    link: 'https://www.instagram.com/p/DVKvPPykU5T/',
+    image: director_meet_and_greet,
   },
 ];
 
