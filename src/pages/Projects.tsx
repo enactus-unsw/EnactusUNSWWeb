@@ -115,9 +115,10 @@ export default function Projects() {
       </div>
 
       {/* Tech4Impact conatiner */}
-      <div className="w-full bg-[#F6F6F6]">
+      {/**
+       <div className="w-full bg-[#F6F6F6]">
         <div className="flex flex-col justify-evenly rounded-t-[5vw] bg-white p-5 pt-9 md:min-h-[25vh] md:flex-row md:pb-20 md:pl-20 md:pr-20">
-          {/* Tech4Impact Image */}
+
           <div className="mb-2 flex h-1/4 w-full items-center justify-center transition-transform duration-300 ease-in-out hover:scale-105 md:mb-20 md:ml-[4rem] md:mt-[12rem] md:w-1/2">
             <img
               className="h-[6rem] object-contain md:h-[12rem]"
@@ -125,7 +126,7 @@ export default function Projects() {
               alt="Tech4Impact Logo"
             />
           </div>
-          {/* Tech4Impact description */}
+
           <div className="flex flex-col p-2 md:w-1/2">
             <div className="mt-5 text-xl font-[700] tracking-tight md:mt-20 md:text-4xl">
               Tech4Impact
@@ -139,10 +140,7 @@ export default function Projects() {
             </p>
 
             <div className="mt-[3rem] flex flex-row items-center justify-center md:justify-start">
-              {/* <button className="bg-[#FFC222] hover:bg-yellow-700 text-2xl font-bold py-2 px-4 rounded-2xl h-[3.5rem] w-[15rem]">
-                LEARN MORE
-              </button> */}
-              <a
+         
                 href="https://www.instagram.com/tech4impact.au/"
                 target="_blank"
                 rel="noopener noreferrer"
@@ -157,6 +155,7 @@ export default function Projects() {
           </div>
         </div>
       </div>
+       */}
 
       {/* For testing style purposes: */}
       {/* <img src="src/images/ProjectsPage/Projects.png" alt="Design Overlay" className="fixed top-0 left-0 w-screen max-h-screen opacity-50 pointer-events-none z-50"/> */}
