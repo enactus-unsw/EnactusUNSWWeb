@@ -1,12 +1,17 @@
 import useDocumentTitle from '@src/hooks/use-document-title';
 
-import EnactusButton from '../components/atoms/button/enactusButton';
+import { useState } from 'react';
+
 import EventsEventsCarousel from '../components/events-events-carousel';
 import PastEventCards from '../components/past-event-cards';
 
 const groupPhoto = '/images/eventsCoverPic/eventsHeaderImage.png';
 
 export default function Events() {
+  const [selectedEventsYear, setSelectedEventsYear] = useState<'2026' | '2025'>(
+    '2026'
+  );
+
   useDocumentTitle('Events | Enactus UNSW');
 
   return (
@@ -39,14 +44,50 @@ export default function Events() {
         <h1 className="mb-6 text-[clamp(24px,6vw,40px)] font-bold">
           Past Events
         </h1>
-        <EnactusButton
-          to="/events"
-          className="mb-8 rounded-full bg-[#FFC222] pl-5 pr-5 text-black hover:bg-[#FFDD83]"
-        >
-          2025
-        </EnactusButton>
+        <div className="mb-8 flex justify-center gap-4">
+          <button
+            type="button"
+            style={{
+              backgroundColor:
+                selectedEventsYear === '2026' ? '#FFC107' : 'transparent',
+              color: '#000',
+              border: '2px solid #FFC107',
+              borderRadius: '9999px',
+              padding: '0.6rem 2rem',
+              fontWeight: 'bold',
+              fontSize: '1rem',
+              cursor: 'pointer',
+              boxShadow: '0 4px 8px rgba(0, 0, 0, 0.1)',
+            }}
+            onClick={() => {
+              setSelectedEventsYear('2026');
+            }}
+          >
+            2026
+          </button>
+          <button
+            type="button"
+            style={{
+              backgroundColor:
+                selectedEventsYear === '2025' ? '#FFC107' : 'transparent',
+              color: '#000',
+              border: '2px solid #FFC107',
+              borderRadius: '9999px',
+              padding: '0.6rem 2rem',
+              fontWeight: 'bold',
+              fontSize: '1rem',
+              cursor: 'pointer',
+              boxShadow: '0 4px 8px rgba(0, 0, 0, 0.1)',
+            }}
+            onClick={() => {
+              setSelectedEventsYear('2025');
+            }}
+          >
+            2025
+          </button>
+        </div>
         <div className="mb-12 flex flex-col items-center justify-center">
-          <PastEventCards />
+          <PastEventCards year={selectedEventsYear} />
         </div>
       </section>
     </>
