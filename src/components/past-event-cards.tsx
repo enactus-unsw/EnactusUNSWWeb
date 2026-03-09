@@ -23,8 +23,13 @@ const ENACTUS_pubcrawl_market_July_2025 =
   '/images/eventsCoverPic/ENACTUS_pubcrawl_market_Jully_2025.jpg';
 const enactus_social_impact_mentoring =
   '/images/eventsCoverPic/enactus_social_impact_mentoring.jpg';
+const director_recruitment_2026 =
+  '/images/eventsCoverPic/Enactus_event_director_recruimtent_2026.jpg';
 
-const events = [
+const subcom_recruitment_2026 =
+  '/images/eventsCoverPic/subcom_recruitment_2026.png';
+
+const events2025 = [
   {
     id: 1,
     title: 'Pitch for Impact Case Challenge',
@@ -85,9 +90,30 @@ const events = [
     link: 'https://www.facebook.com/events/1500237394292332/',
     image: enactus_social_impact_mentoring,
   },
+  {
+    id: 11,
+    title: 'Director Recruitment',
+    link: 'https://www.facebook.com/share/1F6cCpDtHn/',
+    image: director_recruitment_2026,
+  },
 ];
 
-export default function PastEventCards() {
+const events2026 = [
+  {
+    id: 1,
+    title: 'Subcommittee Recruitment 2026',
+    link: 'https://www.facebook.com/share/1F6cCpDtHn/',
+    image: subcom_recruitment_2026,
+  },
+];
+
+type PastEventCardsProps = {
+  year: '2025' | '2026';
+};
+
+export default function PastEventCards({ year }: PastEventCardsProps) {
+  const events = year === '2026' ? events2026 : events2025;
+
   return (
     <Box
       sx={{
