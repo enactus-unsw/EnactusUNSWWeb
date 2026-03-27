@@ -12,8 +12,14 @@ const director_recruitment_2026 =
   '/images/eventsCoverPic/Enactus_event_director_recruimtent_2026.jpg';
 const interview_workshop_2026 =
   '/images/eventsCoverPic/interviewWorkshop2026.png';
+const paint_n_sip_2026 = '/images/eventsCoverPic/2026_events/paint_n_sip.png';
 
 const events = [
+  {
+    title: "Paint n' Sip",
+    link: 'https://campus.hellorubric.com/?eid=58763',
+    image: paint_n_sip_2026,
+  },
   {
     title: 'Interview Skills Workshop',
     link: 'https://www.facebook.com/share/p/1aHC9jCvmV/',

@@ -30,6 +30,8 @@ const subcom_recruitment_2026 =
 const oweek_2026 = '/images/eventsCoverPic/enactus_oweek_2026.png';
 const director_meet_and_greet =
   '/images/eventsCoverPic/director_meet_and_greet.png';
+const interview_workshop_2026 =
+  '/images/eventsCoverPic/interviewWorkshop2026.png';
 
 const events2025 = [
   {
@@ -103,18 +105,24 @@ const events2025 = [
 const events2026 = [
   {
     id: 1,
+    title: 'Interview Skills Workshop w/ Rabobank',
+    link: 'https://www.facebook.com/share/p/1aHC9jCvmV/',
+    image: interview_workshop_2026,
+  },
+  {
+    id: 2,
     title: 'Subcommittee Recruitment 2026',
     link: 'https://www.facebook.com/share/1F6cCpDtHn/',
     image: subcom_recruitment_2026,
   },
   {
-    id: 2,
+    id: 3,
     title: 'Enactus O-Week 2026',
     link: 'https://fb.me/e/69wZKkauR',
     image: oweek_2026,
   },
   {
-    id: 3,
+    id: 4,
     title: 'Director Meet and Greet',
     link: 'https://www.instagram.com/p/DVKvPPykU5T/',
     image: director_meet_and_greet,
