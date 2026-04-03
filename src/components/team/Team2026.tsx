@@ -236,8 +236,13 @@ export function Team2026() {
         >
           R&D Team
         </h4>
-        <div className="mt-4 flex justify-center gap-[2rem] sm:gap-[5rem]">
-          -
+        <div className="mx-auto mt-4 grid w-fit grid-cols-3 gap-x-16 gap-y-2 text-center text-[1.1rem]">
+          <span>Wareesha Nadeem</span>
+          <span>Anton Jusayan</span>
+          <span>Prahalad Kasturi</span>
+          <span>Owen Suyko</span>
+          <span>Yim Namatra</span>
+          <span>Searith Bajwa</span>
         </div>
       </div>
 
