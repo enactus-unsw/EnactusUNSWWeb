@@ -205,7 +205,7 @@ export function Team2026() {
       {/* subcomittee  profile heading */}
       <h3 className="mt-12 text-[2rem] font-bold md:text-[2.4rem]">
         {' '}
-        SUBCOMMITTEES (Coming Soon)
+        SUBCOMMITTEES
       </h3>
 
       {/* subcom team list*/}
@@ -317,7 +317,18 @@ export function Team2026() {
           Information Technology Team
         </h4>
         <div className="mt-4 flex justify-center gap-[2rem] sm:gap-[5rem]">
-          -
+          <div>
+            <p>Alen Jowins</p>
+            <p>Ethan Woo</p>
+          </div>
+          <div>
+            <p>Cindy Yu</p>
+            <p>Aarnav Sheth</p>
+          </div>
+          <div>
+            <p>Janice Joju</p>
+            <p>Kusuma Tatineni</p>
+          </div>
         </div>
       </div>
 
