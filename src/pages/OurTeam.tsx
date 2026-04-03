@@ -16,7 +16,7 @@ export default function OurTeam() {
     <div style={{ textAlign: 'center', padding: '2rem' }}>
       <h2 style={{ fontSize: '3rem', fontWeight: 'bold' }}>Meet the Team</h2>
       <p style={{ fontSize: '1rem', marginTop: '0.5rem' }}>
-        The team making the magic happen.
+        The team making the magic happen
       </p>
       <div
         style={{
