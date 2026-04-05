@@ -280,7 +280,18 @@ export function Team2026() {
           Careers Team
         </h4>
         <div className="mt-4 flex justify-center gap-[2rem] sm:gap-[5rem]">
-          -
+          <div>
+            <p>Stella Kim</p>
+            <p>Sophie Chen</p>
+          </div>
+          <div>
+            <p>Jayla Yuen</p>
+            <p>James Yang</p>
+          </div>
+          <div>
+            <p>Yolanda Chai</p>
+            <p>Gavin Tchong</p>
+          </div>
         </div>
       </div>
 
