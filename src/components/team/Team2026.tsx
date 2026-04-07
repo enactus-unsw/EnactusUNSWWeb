@@ -221,7 +221,18 @@ export function Team2026() {
           Prockets Team
         </h4>
         <div className="mt-4 flex justify-center gap-[2rem] sm:gap-[5rem]">
-          -
+          <div>
+            <p>Sithula Gamage</p>
+            <p>Natsumi Pollock</p>
+          </div>
+          <div>
+            <p>Chandara Oeng</p>
+            <p>Kavin Maran</p>
+          </div>
+          <div>
+            <p>Charlotte Rogers</p>
+            <p>Ali Ali</p>
+          </div>
         </div>
       </div>
 
