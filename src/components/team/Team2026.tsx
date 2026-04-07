@@ -307,7 +307,18 @@ export function Team2026() {
           Sponsorships Team
         </h4>
         <div className="mt-4 flex justify-center gap-[2rem] sm:gap-[5rem]">
-          -
+          <div>
+            <p>Harry Lin</p>
+            <p>Diya Chakrapani</p>
+          </div>
+          <div>
+            <p>Leon Lin</p>
+            <p>Amigo Wong</p>
+          </div>
+          <div>
+            <p>Sarah So</p>
+            <p>Aditi Bhave</p>
+          </div>
         </div>
       </div>
 
