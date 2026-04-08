@@ -388,7 +388,22 @@ export function Team2026() {
           Marketing Team
         </h4>
         <div className="mt-4 flex justify-center gap-[2rem] sm:gap-[5rem]">
-          -
+          <div>
+            <p>Anish Reddy</p>
+            <p>Naina Mathews</p>
+          </div>
+          <div>
+            <p>Anna Jimmy</p>
+            <p>Nathaniel Thie</p>
+          </div>
+          <div>
+            <p>Mesha Thakker</p>
+            <p>Adi Agarwal</p>
+          </div>
+          <div>
+            <p>Pahal Wasu</p>
+            <p>Denise Noel</p>
+          </div>
         </div>
       </div>
 
@@ -404,7 +419,18 @@ export function Team2026() {
           Socials Team
         </h4>
         <div className="mt-4 flex justify-center gap-[2rem] sm:gap-[5rem]">
-          -
+          <div>
+            <p>Sanya Sehgal</p>
+            <p>Sarina Chen</p>
+          </div>
+          <div>
+            <p>Rithika Sivakkumaran</p>
+            <p>Aashka Sheth-Patel</p>
+          </div>
+          <div>
+            <p>Mark Su</p>
+            <p>Sukrit Mehra</p>
+          </div>
         </div>
       </div>
     </>
