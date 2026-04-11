@@ -275,7 +275,18 @@ export function Team2026() {
           plate2plate Team
         </h4>
         <div className="mt-4 flex justify-center gap-[2rem] sm:gap-[5rem]">
-          -
+          <div>
+            <p>Kristina Mar</p>
+            <p>Pratik Shah</p>
+          </div>
+          <div>
+            <p>Carrie Luo</p>
+            <p>Karthik Sunder Raj</p>
+          </div>
+          <div>
+            <p>James Deng</p>
+            <p>Habib Ullah</p>
+          </div>
         </div>
       </div>
 
