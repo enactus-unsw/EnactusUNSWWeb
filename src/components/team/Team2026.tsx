@@ -339,7 +339,6 @@ export function Team2026() {
           </div>
           <div>
             <p>Sarah So</p>
-            <p>Aditi Bhave</p>
           </div>
         </div>
       </div>
