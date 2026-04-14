@@ -430,7 +430,7 @@ export function Team2026() {
         </h4>
         <div className="mt-4 flex justify-center gap-[2rem] sm:gap-[5rem]">
           <div>
-            <p>Sanya Sehgal</p>
+            <p>Sukrit Mehra</p>
             <p>Sarina Chen</p>
           </div>
           <div>
@@ -439,7 +439,6 @@ export function Team2026() {
           </div>
           <div>
             <p>Mark Su</p>
-            <p>Sukrit Mehra</p>
           </div>
         </div>
       </div>
