@@ -431,10 +431,10 @@ export function Team2026() {
         <div className="mt-4 flex justify-center gap-[2rem] sm:gap-[5rem]">
           <div>
             <p>Sukrit Mehra</p>
-            <p>Sarina Chen</p>
+            <p>Rithika Sivakkumaran</p>
           </div>
           <div>
-            <p>Rithika Sivakkumaran</p>
+            <p>Sarina Chen</p>
             <p>Aashka Sheth-Patel</p>
           </div>
           <div>
