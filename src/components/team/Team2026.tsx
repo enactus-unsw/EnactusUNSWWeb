@@ -355,7 +355,17 @@ export function Team2026() {
           Human Resources Team
         </h4>
         <div className="mt-4 flex justify-center gap-[2rem] sm:gap-[5rem]">
-          -
+          <div>
+            <p>Ishkirat Singh</p>
+            <p>Ariba Mahasin</p>
+          </div>
+          <div>
+            <p>Daniel Pinto</p>
+            <p>Sahanna Sri</p>
+          </div>
+          <div>
+            <p>Christine Liu</p>
+          </div>
         </div>
       </div>
 
