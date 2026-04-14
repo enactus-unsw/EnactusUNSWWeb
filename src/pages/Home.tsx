@@ -10,7 +10,7 @@ import HomeProjectCards from '../components/home-project-cards';
 
 // Images
 const enactusUNSWLogo = '/images/Enactus UNSW Logo (Grey).jpg';
-const enactusTeamPhoto = '/images/enactus team 2025.jpeg';
+const enactusTeamPhoto = '/images/teamPhotos/2026/socwide_photo.png';
 const triangle = '/images/Triangle shape.png';
 const tiltedShape = '/images/tilted shape.png';
 
