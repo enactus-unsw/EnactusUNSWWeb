@@ -31,6 +31,9 @@ const hemansh = 'images/steer/hemansh.png';
 // careers
 const henry = 'images/steer/henry.png';
 
+// marketing
+const kate = 'images/steer/kate.png'
+
 export function Team2026() {
   return (
     <>
@@ -162,7 +165,7 @@ export function Team2026() {
           role="Marketing Director"
         />
         <TeamMember
-          imageSrc={dummy}
+          imageSrc={kate}
           name="Kate Weekes"
           role="Marketing Director"
         />
