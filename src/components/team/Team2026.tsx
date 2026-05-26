@@ -16,6 +16,7 @@ const tharshan = 'images/steer/tharshan.png';
 
 // it
 const piyush = 'images/steer/piyush.png';
+const ethan = 'images/steer/ethan.png';
 
 // p2p
 const martin = 'images/steer/martin.png';
@@ -32,7 +33,7 @@ const hemansh = 'images/steer/hemansh.png';
 const henry = 'images/steer/henry.png';
 
 // marketing
-const kate = 'images/steer/kate.png'
+const kate = 'images/steer/kate.png';
 
 export function Team2026() {
   return (
@@ -204,7 +205,7 @@ export function Team2026() {
       {/* IT row */}
       <div className="sm:gap-30 mx-auto mt-8 grid w-fit grid-cols-1 gap-10 sm:grid-cols-2 md:gap-60">
         <TeamMember imageSrc={piyush} name="Piyush Jha" role="IT Director" />
-        <TeamMember imageSrc={dummy} name="Ethan Richard" role="IT Director" />
+        <TeamMember imageSrc={ethan} name="Ethan Richard" role="IT Director" />
       </div>
 
       {/* socials row */}
