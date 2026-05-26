@@ -5,7 +5,7 @@ import useDocumentTitle from '@src/hooks/use-document-title';
 
 import { useState } from 'react';
 
-const teamPhoto = 'images/teamPhotos/2026/dirs_subbies.png'
+const teamPhoto = 'images/teamPhotos/2026/dirs_subbies.png';
 
 export default function OurTeam() {
   const [selectedTeamYear, setSelectedTeamYear] = useState('2026');

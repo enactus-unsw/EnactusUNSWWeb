@@ -2,6 +2,35 @@ import { TeamMember } from './TeamMember';
 
 const dummy = 'images/teamPhotos/dummy.jpg';
 
+// steer photos
+const amy = 'images/steer/amy.png';
+const nathan = 'images/steer/nathan.png';
+const emily = 'images/steer/emily.png';
+
+// socials
+const aditya = 'images/steer/aditya.png';
+const allison = 'images/steer/allison.png';
+
+// rnd
+const tharshan = 'images/steer/tharshan.png';
+
+// it
+const piyush = 'images/steer/piyush.png';
+
+// p2p
+const martin = 'images/steer/martin.png';
+const chahek = 'images/steer/chahek.png';
+
+// hr
+const tej = 'images/steer/tej.png';
+const nikhil = 'images/steer/nikhil.png';
+
+// spons
+const hemansh = 'images/steer/hemansh.png';
+
+// careers
+const henry = 'images/steer/henry.png';
+
 export function Team2026() {
   return (
     <>
@@ -24,10 +53,10 @@ export function Team2026() {
 
       {/* second row */}
       <div className="mt-8 grid grid-cols-1 gap-10 sm:grid-cols-2 md:grid-cols-3">
-        <TeamMember imageSrc={dummy} name="Emily Goh" role="Secretary" />
+        <TeamMember imageSrc={emily} name="Emily Goh" role="Secretary" />
         <TeamMember imageSrc={dummy} name="Iris Dautriat" role="Treasurer" />
         <TeamMember
-          imageSrc={dummy}
+          imageSrc={amy}
           name="Amy Wang"
           role="Vice President of Internals"
         />
@@ -42,7 +71,7 @@ export function Team2026() {
           role="Vice President of Projects"
         />
         <TeamMember
-          imageSrc={dummy}
+          imageSrc={nathan}
           name="Nathan Chung"
           role="Vice President of Projects"
         />
@@ -89,7 +118,7 @@ export function Team2026() {
       {/* R&D row - 3 members */}
       <div className="mt-8 grid grid-cols-1 gap-10 sm:grid-cols-2 md:grid-cols-3">
         <TeamMember
-          imageSrc={dummy}
+          imageSrc={tharshan}
           name="Tharshan Indrakumar"
           role="R&D Director"
         />
@@ -100,12 +129,12 @@ export function Team2026() {
       {/* plate2plate row */}
       <div className="sm:gap-30 mx-auto mt-8 grid w-fit grid-cols-1 gap-10 sm:grid-cols-2 md:gap-60">
         <TeamMember
-          imageSrc={dummy}
+          imageSrc={chahek}
           name="Chahek Dawani"
           role="plate2plate Director"
         />
         <TeamMember
-          imageSrc={dummy}
+          imageSrc={martin}
           name="Martin Abdou"
           role="plate2plate Director"
         />
@@ -114,7 +143,7 @@ export function Team2026() {
       {/* careers row */}
       <div className="sm:gap-30 mx-auto mt-8 grid w-fit grid-cols-1 gap-10 sm:grid-cols-2 md:gap-60">
         <TeamMember
-          imageSrc={dummy}
+          imageSrc={henry}
           name="Henry Huang"
           role="Careers Director"
         />
@@ -147,7 +176,7 @@ export function Team2026() {
       {/* sponsorships row */}
       <div className="sm:gap-30 mx-auto mt-8 w-fit grid-cols-1 gap-10 sm:grid-cols-2 md:gap-60">
         <TeamMember
-          imageSrc={dummy}
+          imageSrc={hemansh}
           name="Hemansh Nayampalli"
           role="Sponsorships Director"
         />
@@ -160,8 +189,8 @@ export function Team2026() {
 
       {/* hr row - 3 members */}
       <div className="mt-8 grid grid-cols-1 gap-10 sm:grid-cols-2 md:grid-cols-3">
-        <TeamMember imageSrc={dummy} name="Tej Baveja" role="HR Director" />
-        <TeamMember imageSrc={dummy} name="Nikhil Sawant" role="HR Director" />
+        <TeamMember imageSrc={tej} name="Tej Baveja" role="HR Director" />
+        <TeamMember imageSrc={nikhil} name="Nikhil Sawant" role="HR Director" />
         <TeamMember
           imageSrc={dummy}
           name="Anushka Palayanur"
@@ -171,19 +200,19 @@ export function Team2026() {
 
       {/* IT row */}
       <div className="sm:gap-30 mx-auto mt-8 grid w-fit grid-cols-1 gap-10 sm:grid-cols-2 md:gap-60">
-        <TeamMember imageSrc={dummy} name="Piyush Jha" role="IT Director" />
+        <TeamMember imageSrc={piyush} name="Piyush Jha" role="IT Director" />
         <TeamMember imageSrc={dummy} name="Ethan Richard" role="IT Director" />
       </div>
 
       {/* socials row */}
       <div className="sm:gap-30 mx-auto mt-8 grid w-fit grid-cols-1 gap-10 sm:grid-cols-2 md:gap-60">
         <TeamMember
-          imageSrc={dummy}
+          imageSrc={aditya}
           name="Aditya Bavigadda"
           role="Socials Director"
         />
         <TeamMember
-          imageSrc={dummy}
+          imageSrc={allison}
           name="Allison Chan"
           role="Socials Director"
         />
