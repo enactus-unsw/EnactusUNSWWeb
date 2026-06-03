@@ -18,6 +18,7 @@ const allison = 'images/steer/allison.png';
 
 // rnd
 const tharshan = 'images/steer/tharshan.png';
+const ethank = 'images/steer/ethank.png';
 
 // it
 const piyush = 'images/steer/piyush.png';
@@ -42,6 +43,7 @@ const samaira = 'images/steer/samaira.png';
 // marketing
 const kate = 'images/steer/kate.png';
 const arthi = 'images/steer/arthi.png';
+const riddhi = 'images/steer/riddhi.png';
 
 // prockets
 const felix = 'images/steer/felix.png';
@@ -142,7 +144,7 @@ export function Team2026() {
           name="Tharshan Indrakumar"
           role="R&D Director"
         />
-        <TeamMember imageSrc={dummy} name="Ethan Khisa" role="R&D Director" />
+        <TeamMember imageSrc={ethank} name="Ethan Khisa" role="R&D Director" />
         <TeamMember imageSrc={dummy} name="Abrar Hossain" role="R&D Director" />
       </div>
 
@@ -187,7 +189,7 @@ export function Team2026() {
           role="Marketing Director"
         />
         <TeamMember
-          imageSrc={dummy}
+          imageSrc={riddhi}
           name="Riddhi Kulkarni"
           role="Marketing Director"
         />
