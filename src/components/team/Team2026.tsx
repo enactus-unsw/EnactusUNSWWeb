@@ -6,7 +6,11 @@ const dummy = 'images/teamPhotos/dummy.jpg';
 const amy = 'images/steer/amy.png';
 const nathan = 'images/steer/nathan.png';
 const emily = 'images/steer/emily.png';
-const meenal = 'images/steer/meenal.png'
+const meenal = 'images/steer/meenal.png';
+const noyal = 'images/steer/noyal.png';
+const iris = 'images/steer/iris.png';
+const jessica = 'images/steer/jessica.png';
+const harish = 'images/steer/harish.png';
 
 // socials
 const aditya = 'images/steer/aditya.png';
@@ -26,20 +30,22 @@ const chahek = 'images/steer/chahek.png';
 // hr
 const tej = 'images/steer/tej.png';
 const nikhil = 'images/steer/nikhil.png';
+const anushka = 'images/steer/anushka.png';
 
 // spons
 const hemansh = 'images/steer/hemansh.png';
 
 // careers
 const henry = 'images/steer/henry.png';
-const samaira = 'images/steer/samaira.png'
+const samaira = 'images/steer/samaira.png';
 
 // marketing
 const kate = 'images/steer/kate.png';
-const arthi = 'images/steer/arthi.png'
+const arthi = 'images/steer/arthi.png';
 
 // prockets
-const felix = 'images/steer/felix.png'
+const felix = 'images/steer/felix.png';
+const guntas = 'images/steer/guntas.png';
 
 export function Team2026() {
   return (
@@ -57,26 +63,30 @@ export function Team2026() {
 
       {/* top row */}
       <div className="sm:gap-30 mx-auto mt-8 grid w-fit grid-cols-1 gap-10 sm:grid-cols-2 md:gap-60">
-        <TeamMember imageSrc={dummy} name="Noyal Shaji" role="Co-President" />
-        <TeamMember imageSrc={meenal} name="Meenal Janjua" role="Co-President" />
+        <TeamMember imageSrc={noyal} name="Noyal Shaji" role="Co-President" />
+        <TeamMember
+          imageSrc={meenal}
+          name="Meenal Janjua"
+          role="Co-President"
+        />
       </div>
 
       {/* second row */}
       <div className="mt-8 grid grid-cols-1 gap-10 sm:grid-cols-2 md:grid-cols-3">
         <TeamMember imageSrc={emily} name="Emily Goh" role="Secretary" />
-        <TeamMember imageSrc={dummy} name="Iris Dautriat" role="Treasurer" />
+        <TeamMember imageSrc={iris} name="Iris Dautriat" role="Treasurer" />
         <TeamMember
           imageSrc={amy}
           name="Amy Wang"
           role="Vice President of Internals"
         />
         <TeamMember
-          imageSrc={dummy}
+          imageSrc={jessica}
           name="Jessica Tran"
           role="Vice President of Externals"
         />
         <TeamMember
-          imageSrc={dummy}
+          imageSrc={harish}
           name="Harish Varathan"
           role="Vice President of Projects"
         />
@@ -119,7 +129,7 @@ export function Team2026() {
           role="Prockets Director"
         />
         <TeamMember
-          imageSrc={dummy}
+          imageSrc={guntas}
           name="Guntas Sandhu"
           role="Prockets Director"
         />
@@ -202,7 +212,7 @@ export function Team2026() {
         <TeamMember imageSrc={tej} name="Tej Baveja" role="HR Director" />
         <TeamMember imageSrc={nikhil} name="Nikhil Sawant" role="HR Director" />
         <TeamMember
-          imageSrc={dummy}
+          imageSrc={anushka}
           name="Anushka Palayanur"
           role="HR Director"
         />
