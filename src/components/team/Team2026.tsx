@@ -6,6 +6,7 @@ const dummy = 'images/teamPhotos/dummy.jpg';
 const amy = 'images/steer/amy.png';
 const nathan = 'images/steer/nathan.png';
 const emily = 'images/steer/emily.png';
+const meenal = 'images/steer/meenal.png'
 
 // socials
 const aditya = 'images/steer/aditya.png';
@@ -31,9 +32,14 @@ const hemansh = 'images/steer/hemansh.png';
 
 // careers
 const henry = 'images/steer/henry.png';
+const samaira = 'images/steer/samaira.png'
 
 // marketing
 const kate = 'images/steer/kate.png';
+const arthi = 'images/steer/arthi.png'
+
+// prockets
+const felix = 'images/steer/felix.png'
 
 export function Team2026() {
   return (
@@ -52,7 +58,7 @@ export function Team2026() {
       {/* top row */}
       <div className="sm:gap-30 mx-auto mt-8 grid w-fit grid-cols-1 gap-10 sm:grid-cols-2 md:gap-60">
         <TeamMember imageSrc={dummy} name="Noyal Shaji" role="Co-President" />
-        <TeamMember imageSrc={dummy} name="Meenal Janjua" role="Co-President" />
+        <TeamMember imageSrc={meenal} name="Meenal Janjua" role="Co-President" />
       </div>
 
       {/* second row */}
@@ -108,7 +114,7 @@ export function Team2026() {
       {/* prockets row */}
       <div className="sm:gap-30 mx-auto mt-8 grid w-fit grid-cols-1 gap-10 sm:grid-cols-2 md:gap-60">
         <TeamMember
-          imageSrc={dummy}
+          imageSrc={felix}
           name="Felix Mathew"
           role="Prockets Director"
         />
@@ -152,7 +158,7 @@ export function Team2026() {
           role="Careers Director"
         />
         <TeamMember
-          imageSrc={dummy}
+          imageSrc={samaira}
           name="Samaira Sehgal"
           role="Careers Director"
         />
@@ -161,7 +167,7 @@ export function Team2026() {
       {/* marketing directors - 3 members */}
       <div className="mt-8 grid grid-cols-1 gap-10 sm:grid-cols-2 md:grid-cols-3">
         <TeamMember
-          imageSrc={dummy}
+          imageSrc={arthi}
           name="Arthi Kathiravelupillai"
           role="Marketing Director"
         />
