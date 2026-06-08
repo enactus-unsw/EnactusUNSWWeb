@@ -65,37 +65,57 @@ export function Team2026() {
 
       {/* top row */}
       <div className="sm:gap-30 mx-auto mt-8 grid w-fit grid-cols-1 gap-10 sm:grid-cols-2 md:gap-60">
-        <TeamMember imageSrc={noyal} name="Noyal Shaji" role="Co-President" />
+        <TeamMember
+          imageSrc={noyal}
+          name="Noyal Shaji"
+          role="Co-President"
+          linkedin="https://www.linkedin.com/in/noyal-shaji-618a89267/"
+        />
         <TeamMember
           imageSrc={meenal}
           name="Meenal Janjua"
           role="Co-President"
+          linkedin="https://www.linkedin.com/in/meenaljanjua/"
         />
       </div>
 
       {/* second row */}
       <div className="mt-8 grid grid-cols-1 gap-10 sm:grid-cols-2 md:grid-cols-3">
-        <TeamMember imageSrc={emily} name="Emily Goh" role="Secretary" />
-        <TeamMember imageSrc={iris} name="Iris Dautriat" role="Treasurer" />
+        <TeamMember
+          imageSrc={emily}
+          name="Emily Goh"
+          role="Secretary"
+          linkedin="https://www.linkedin.com/in/emilygoh1213/"
+        />
+        <TeamMember
+          imageSrc={iris}
+          name="Iris Dautriat"
+          role="Treasurer"
+          linkedin="https://www.linkedin.com/in/iris-dautriat/"
+        />
         <TeamMember
           imageSrc={amy}
           name="Amy Wang"
           role="Vice President of Internals"
+          linkedin="https://www.linkedin.com/in/amy-wang18/"
         />
         <TeamMember
           imageSrc={jessica}
           name="Jessica Tran"
           role="Vice President of Externals"
+          linkedin="https://www.linkedin.com/in/jessica-tran1507/"
         />
         <TeamMember
           imageSrc={harish}
           name="Harish Varathan"
           role="Vice President of Projects"
+          linkedin="https://www.linkedin.com/in/harish-v-a7481024b/"
         />
         <TeamMember
           imageSrc={nathan}
           name="Nathan Chung"
           role="Vice President of Projects"
+          linkedin="https://www.linkedin.com/in/nathan-chung121/"
         />
       </div>
 
@@ -129,11 +149,13 @@ export function Team2026() {
           imageSrc={felix}
           name="Felix Mathew"
           role="Prockets Director"
+          linkedin="https://www.linkedin.com/in/felix-mathew-8565322bb/"
         />
         <TeamMember
           imageSrc={guntas}
           name="Guntas Sandhu"
           role="Prockets Director"
+          linkedin="https://www.linkedin.com/in/guntas-sandhu-993618337/"
         />
       </div>
 
@@ -143,9 +165,20 @@ export function Team2026() {
           imageSrc={tharshan}
           name="Tharshan Indrakumar"
           role="R&D Director"
+          linkedin="https://www.linkedin.com/in/tharshan-indrakumar/"
         />
-        <TeamMember imageSrc={ethank} name="Ethan Khisa" role="R&D Director" />
-        <TeamMember imageSrc={dummy} name="Abrar Hossain" role="R&D Director" />
+        <TeamMember
+          imageSrc={ethank}
+          name="Ethan Khisa"
+          role="R&D Director"
+          linkedin="https://www.linkedin.com/in/ethan-khisa/"
+        />
+        <TeamMember
+          imageSrc={dummy}
+          name="Abrar Hossain"
+          role="R&D Director"
+          linkedin="https://www.linkedin.com/in/abrar-hossain-289411258/"
+        />
       </div>
 
       {/* plate2plate row */}
@@ -154,11 +187,13 @@ export function Team2026() {
           imageSrc={chahek}
           name="Chahek Dawani"
           role="plate2plate Director"
+          linkedin="https://www.linkedin.com/in/chahek-dawani-68856322b/"
         />
         <TeamMember
           imageSrc={martin}
           name="Martin Abdou"
           role="plate2plate Director"
+          linkedin="https://www.linkedin.com/in/martin-abdou-05b706284/"
         />
       </div>
 
@@ -168,11 +203,13 @@ export function Team2026() {
           imageSrc={henry}
           name="Henry Huang"
           role="Careers Director"
+          linkedin="https://www.linkedin.com/in/henry-huang-964587270/"
         />
         <TeamMember
           imageSrc={samaira}
           name="Samaira Sehgal"
           role="Careers Director"
+          linkedin="https://www.linkedin.com/in/samairasehgal/"
         />
       </div>
 
@@ -182,48 +219,74 @@ export function Team2026() {
           imageSrc={arthi}
           name="Arthi Kathiravelupillai"
           role="Marketing Director"
+          linkedin="https://www.linkedin.com/in/arthi-kathir-8534b0285/"
         />
         <TeamMember
           imageSrc={kate}
           name="Kate Weekes"
           role="Marketing Director"
+          linkedin="https://www.linkedin.com/in/kate-weekes-4a1171263/"
         />
         <TeamMember
           imageSrc={riddhi}
           name="Riddhi Kulkarni"
           role="Marketing Director"
+          linkedin="https://www.linkedin.com/in/riddhikulkarni7/"
         />
       </div>
 
       {/* sponsorships row */}
-      <div className="sm:gap-30 mx-auto mt-8 w-fit grid-cols-1 gap-10 sm:grid-cols-2 md:gap-60">
+      <div className="sm:gap-30 mx-auto mt-8 grid w-fit grid-cols-1 gap-10 sm:grid-cols-2 md:gap-60">
         <TeamMember
           imageSrc={hemansh}
           name="Hemansh Nayampalli"
           role="Sponsorships Director"
+          linkedin="https://www.linkedin.com/in/hemansh-nayampalli-611944299/"
         />
-        {/* <TeamMember
+        <TeamMember
           imageSrc={dummy}
-          name="Nathan Chung"
+          name="Rasika Rezwan"
           role="Sponsorships Director"
-        /> */}
+          linkedin="https://www.linkedin.com/in/rasika-rezwan-143b97224/"
+        />
       </div>
 
       {/* hr row - 3 members */}
       <div className="mt-8 grid grid-cols-1 gap-10 sm:grid-cols-2 md:grid-cols-3">
-        <TeamMember imageSrc={tej} name="Tej Baveja" role="HR Director" />
-        <TeamMember imageSrc={nikhil} name="Nikhil Sawant" role="HR Director" />
+        <TeamMember
+          imageSrc={tej}
+          name="Tej Baveja"
+          role="HR Director"
+          linkedin="https://www.linkedin.com/in/tej-baveja-94b132304/"
+        />
+        <TeamMember
+          imageSrc={nikhil}
+          name="Nikhil Sawant"
+          role="HR Director"
+          linkedin="https://www.linkedin.com/in/nikhil-sawant100905/"
+        />
         <TeamMember
           imageSrc={anushka}
           name="Anushka Palayanur"
           role="HR Director"
+          linkedin="https://www.linkedin.com/in/anushka-p-8595382ab/"
         />
       </div>
 
       {/* IT row */}
       <div className="sm:gap-30 mx-auto mt-8 grid w-fit grid-cols-1 gap-10 sm:grid-cols-2 md:gap-60">
-        <TeamMember imageSrc={piyush} name="Piyush Jha" role="IT Director" />
-        <TeamMember imageSrc={ethan} name="Ethan Richard" role="IT Director" />
+        <TeamMember
+          imageSrc={piyush}
+          name="Piyush Jha"
+          role="IT Director"
+          linkedin="https://www.linkedin.com/in/piyushj1/"
+        />
+        <TeamMember
+          imageSrc={ethan}
+          name="Ethan Richard"
+          role="IT Director"
+          linkedin="https://www.linkedin.com/in/ethan-richard-1203er/"
+        />
       </div>
 
       {/* socials row */}
@@ -232,11 +295,13 @@ export function Team2026() {
           imageSrc={aditya}
           name="Aditya Bavigadda"
           role="Socials Director"
+          linkedin="https://www.linkedin.com/in/aditya-bavigadda-71a232212/"
         />
         <TeamMember
           imageSrc={allison}
           name="Allison Chan"
           role="Socials Director"
+          linkedin="https://www.linkedin.com/in/allison-chan24/"
         />
       </div>
 
