@@ -32,6 +32,13 @@ const director_meet_and_greet =
   '/images/eventsCoverPic/director_meet_and_greet.png';
 const interview_workshop_2026 =
   '/images/eventsCoverPic/interviewWorkshop2026.png';
+const sponsDirectorRecruitment = '/images/eventsCoverPic/sponsDirectorRecruitment.png';
+const projectShowcase26 = '/images/eventsCoverPic/projectShowcase26.png';
+const rabobankSiteVisit = '/images/eventsCoverPic/rabobankSiteVisit.png';
+const munchAndMiles = '/images/eventsCoverPic/munchAndMiles.png';
+const impactNetworkingNight = '/images/eventsCoverPic/impactNetworkingNight.png';
+const oceansSwellCruise = '/images/eventsCoverPic/oceansSwell.png';
+const enactusPitchNight = '/images/eventsCoverPic/enactusPitchNight.png';
 
 const events2025 = [
   {
@@ -126,6 +133,48 @@ const events2026 = [
     title: 'Director Meet and Greet',
     link: 'https://www.instagram.com/p/DVKvPPykU5T/',
     image: director_meet_and_greet,
+  },
+  {
+    id: 5,
+    title: 'Sponsorship Director Recruitment',
+    link: 'https://www.instagram.com/p/DXL20DUEU9o/',
+    image: sponsDirectorRecruitment,
+  },
+  {
+    id: 6,
+    title: 'Project Showcase',
+    link: 'https://www.instagram.com/p/DZrjME6Roxm/',
+    image: projectShowcase26,
+  },
+  {
+    id: 7,
+    title: 'Rabobank Site Visit',
+    link: 'https://www.instagram.com/p/DZq6nisJ319/',
+    image: rabobankSiteVisit,
+  },
+  {
+    id: 8,
+    title: 'Munch and Miles',
+    link: 'https://www.instagram.com/p/DZZEyBYEab9/?img_index=1',
+    image: munchAndMiles,
+  },
+  {
+    id: 9,
+    title: 'Impact Networking Night',
+    link: 'https://www.instagram.com/p/DaC2OZnJkFG/',
+    image: impactNetworkingNight,
+  },
+  {
+    id: 10,
+    title: 'Ocean’s Swell Cruise 2026',
+    link: 'https://www.instagram.com/p/DZ31oqrn3r5/',
+    image: oceansSwellCruise,
+  },
+  {
+    id: 11,
+    title: 'Enactus Pitch Night',
+    link: 'https://www.instagram.com/p/DbG5xRYTynt/',
+    image: enactusPitchNight,
   },
 ];
 
