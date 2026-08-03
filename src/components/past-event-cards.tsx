@@ -32,11 +32,13 @@ const director_meet_and_greet =
   '/images/eventsCoverPic/director_meet_and_greet.png';
 const interview_workshop_2026 =
   '/images/eventsCoverPic/interviewWorkshop2026.png';
-const sponsDirectorRecruitment = '/images/eventsCoverPic/sponsDirectorRecruitment.png';
+const sponsDirectorRecruitment =
+  '/images/eventsCoverPic/sponsDirectorRecruitment.png';
 const projectShowcase26 = '/images/eventsCoverPic/projectShowcase26.png';
 const rabobankSiteVisit = '/images/eventsCoverPic/rabobankSiteVisit.png';
 const munchAndMiles = '/images/eventsCoverPic/munchAndMiles.png';
-const impactNetworkingNight = '/images/eventsCoverPic/impactNetworkingNight.png';
+const impactNetworkingNight =
+  '/images/eventsCoverPic/impactNetworkingNight.png';
 const oceansSwellCruise = '/images/eventsCoverPic/oceansSwell.png';
 const enactusPitchNight = '/images/eventsCoverPic/enactusPitchNight.png';
 

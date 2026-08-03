@@ -13,27 +13,26 @@ const director_recruitment_2026 =
 const interview_workshop_2026 =
   '/images/eventsCoverPic/interviewWorkshop2026.png';
 const paint_n_sip_2026 = '/images/eventsCoverPic/2026_events/paint_n_sip.png';
+const impactNetworkingNight =
+  '/images/eventsCoverPic/impactNetworkingNight.png';
+const oceansSwellCruise = '/images/eventsCoverPic/oceansSwell.png';
+const enactusPitchNight = '/images/eventsCoverPic/enactusPitchNight.png';
 
 const events = [
   {
-    title: "Paint n' Sip",
-    link: 'https://campus.hellorubric.com/?eid=58763',
-    image: paint_n_sip_2026,
+    title: 'Enactus Pitch Night',
+    link: 'https://www.instagram.com/p/DbG5xRYTynt/',
+    image: enactusPitchNight,
   },
   {
-    title: 'Interview Skills Workshop',
-    link: 'https://www.facebook.com/share/p/1aHC9jCvmV/',
-    image: interview_workshop_2026,
+    title: 'Impact Networking Night',
+    link: 'https://www.instagram.com/p/DaC2OZnJkFG/',
+    image: impactNetworkingNight,
   },
   {
-    title: 'Director Recruitment',
-    link: 'https://www.facebook.com/share/1F6cCpDtHn/',
-    image: director_recruitment_2026,
-  },
-  {
-    title: 'Social Impact Mentoring',
-    link: 'https://www.facebook.com/events/1500237394292332/',
-    image: social_impact_mentoring,
+    title: 'Ocean’s Swell Cruise 2026',
+    link: 'https://www.instagram.com/p/DZ31oqrn3r5/',
+    image: oceansSwellCruise,
   },
 ];
 
