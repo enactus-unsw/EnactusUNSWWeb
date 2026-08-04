@@ -12,9 +12,9 @@ const procketsLogo = '/images/prockets_logo.png';
 const projects = [
   {
     id: 1,
-    title: 'plate2plate',
+    title: 'FoodCompass',
     description:
-      "A not-for-profit initiative dedicated to bridging the gap between households experiencing food insecurity and those who have the capacity to provide resources through a digital platform known as 'plate2plate'.",
+      "A not-for-profit initiative dedicated to bridging the gap between students experiencing food insecurity and those who have the capacity to provide resources through a digital platform known as 'FoodCompass'.",
     logo: plate2plateLogo,
   },
   // {

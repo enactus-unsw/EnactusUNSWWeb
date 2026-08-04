@@ -3,7 +3,8 @@ import useDocumentTitle from '@src/hooks/use-document-title';
 import EnactusButton from '../components/atoms/button/enactusButton';
 
 const tech4impactlogo = '/images/tech4impact_logo.png';
-const plate2platelogo = '/images/plate2plate_logo.png';
+// const plate2platelogo = '/images/plate2plate_logo.png';
+const foodcompasslogo = '/images/Logos/foodcompass_logo.png';
 const procketslogo = '/images/prockets_logo.png';
 const instagramlogo = '/images/Logos/Instagram.png';
 const titleBackground = '/images/ProjectsPage/titleBackground.png';
@@ -48,7 +49,10 @@ export default function Projects() {
             developing a cost-effective component of the prosthetic and socially
             through a support network platform.
             <br />
-            <br /> <p>Runner-Up, Enactus Nationals 2026 Early Stage</p>
+            <br />{' '}
+            <p>
+              Early Stage Runner-Up, Enactus Australia National Competition 2026
+            </p>
           </p>
           {/* Prockets website & instagram*/}
           <div className="mt-10 flex flex-row items-center justify-center md:justify-start">
@@ -80,13 +84,16 @@ export default function Projects() {
         {/* plate2plate description */}
         <div className="flex w-full flex-col p-2 md:ml-[12rem] md:w-1/2">
           <div className="text-xl font-[700] tracking-tight md:mt-20 md:text-4xl">
-            plate2plate
+            FoodCompass
           </div>
           <p className="mt-5 items-center justify-center text-sm font-[400] md:mt-12 md:text-xl md:leading-10">
-            A not for profit initiative dedicated to bridging the gap between
-            households experiencing food insecurity and those who have the
+            A not-for-profit initiative dedicated to bridging the gap between
+            students experiencing food insecurity and those who have the
             capacity to provide resources through a digital platform known as
-            'plate2plate'.
+            'FoodCompass'.
+            <br />
+            <br />
+            Main Stage Top 4, Enactus Australia National Competition 2026
           </p>
 
           <div className="mt-10 flex flex-row items-center justify-center pl-0 md:justify-start">
@@ -104,13 +111,21 @@ export default function Projects() {
                 alt="Instagram"
               />
             </a>
+            <EnactusButton
+              to="https://food-compass.org"
+              target="_blank"
+              rel="noopener noreferrer"
+              className="ml-4 bg-[#FFC222] text-black hover:bg-[#FFDD83]"
+            >
+              Visit the Website
+            </EnactusButton>
           </div>
         </div>
         {/* plate2plate Image */}
         <div className="mb-2 flex h-1/4 items-center justify-center transition-transform duration-300 ease-in-out hover:scale-105 md:mb-20 md:mt-10 md:w-1/2 md:pr-20">
           <img
             className="h-[10rem] object-contain md:h-[30rem]"
-            src={plate2platelogo}
+            src={foodcompasslogo}
             alt="plate2plate Logo"
           />
         </div>

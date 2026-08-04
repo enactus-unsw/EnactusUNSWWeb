@@ -186,13 +186,13 @@ export function Team2026() {
         <TeamMember
           imageSrc={chahek}
           name="Chahek Dawani"
-          role="plate2plate Director"
+          role="FoodCompass Director"
           linkedin="https://www.linkedin.com/in/chahek-dawani-68856322b/"
         />
         <TeamMember
           imageSrc={martin}
           name="Martin Abdou"
-          role="plate2plate Director"
+          role="FoodCompass Director"
           linkedin="https://www.linkedin.com/in/martin-abdou-05b706284/"
         />
       </div>
@@ -388,7 +388,7 @@ export function Team2026() {
             marginTop: '2rem',
           }}
         >
-          plate2plate Team
+          FoodCompass Team
         </h4>
         <div className="mt-4 flex justify-center gap-[2rem] sm:gap-[5rem]">
           <div>
