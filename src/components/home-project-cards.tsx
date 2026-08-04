@@ -28,7 +28,7 @@ const projects = [
     id: 2,
     title: 'Prockets',
     description:
-      'Creating prosthetics more accessible to amputees - financially by developing a cost-effective component of the prosthetic and socially through a support network platform.',
+      'Creating prosthetics more accessible to amputees - financially by developing a cost-effective component of the prosthetic and socially through a support network platform.\n\nRunner-Up, Enactus Nationals 2026 Early Stage',
     logo: procketsLogo,
   },
 ];

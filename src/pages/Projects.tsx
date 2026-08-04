@@ -47,6 +47,8 @@ export default function Projects() {
             Creating prosthetics more accessible to amputees - financially by
             developing a cost-effective component of the prosthetic and socially
             through a support network platform.
+            <br />
+            <br /> <p>Runner-Up, Enactus Nationals 2026 Early Stage</p>
           </p>
           {/* Prockets website & instagram*/}
           <div className="mt-10 flex flex-row items-center justify-center md:justify-start">
