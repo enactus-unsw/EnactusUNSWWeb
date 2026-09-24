@@ -5,8 +5,8 @@ import CardActionArea from '@mui/material/CardActionArea';
 import CardContent from '@mui/material/CardContent';
 import Typography from '@mui/material/Typography';
 
-const plate2plateLogo = '/images/plate2plate_logo.png';
-const tech4ImpactLogo = '/images/tech4impact_logo.png';
+
+const foodcompass_logo = '/images/Logos/foodcompass_logo.png';
 const procketsLogo = '/images/prockets_logo.png';
 
 const projects = [
@@ -15,15 +15,8 @@ const projects = [
     title: 'FoodCompass',
     description:
       "A not-for-profit initiative dedicated to bridging the gap between students experiencing food insecurity and those who have the capacity to provide resources through a digital platform known as 'FoodCompass'.",
-    logo: plate2plateLogo,
+    logo: foodcompass_logo,
   },
-  // {
-  //   id: 2,
-  //   title: 'Tech4Impact',
-  //   description:
-  //     'Tech4Impact is a project focused on helping those with limited access to technology overcome the digital divide. We refurbish old devices, giving them new life and donating them to those in need. Our goal is to increase technology access; creating equal opportunities for education, employment, and connectivity.',
-  //   logo: tech4ImpactLogo,
-  // },
   {
     id: 2,
     title: 'Prockets',
